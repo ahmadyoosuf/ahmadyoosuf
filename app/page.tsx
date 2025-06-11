@@ -17,6 +17,7 @@ import {
   Zap,
   Brain,
   Users,
+  Linkedin,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
@@ -34,12 +35,10 @@ export default function PersonalWebsite() {
   const y = useTransform(scrollYProgress, [0, 0.3], [0, 100])
   const isMobile = useMobile()
 
-  // Smooth spring animation for mouse tracking
   const springConfig = { damping: 25, stiffness: 700 }
   const mouseX = useSpring(mousePosition.x, springConfig)
   const mouseY = useSpring(mousePosition.y, springConfig)
 
-  // Handle mouse movement for subtle parallax effects
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -47,36 +46,28 @@ export default function PersonalWebsite() {
         y: (e.clientY - window.innerHeight / 2) / 50,
       })
     }
-
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
-  // Handle scroll effect for header and section detection
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
-
-      // Determine active section based on scroll position
       const sections = document.querySelectorAll("section[id]")
       const scrollPosition = window.scrollY + 100
-
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop
         const sectionHeight = (section as HTMLElement).offsetHeight
         const sectionId = section.getAttribute("id") || ""
-
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           setActiveSection(sectionId)
         }
       })
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement
@@ -84,12 +75,10 @@ export default function PersonalWebsite() {
         setIsMenuOpen(false)
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside)
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [isMenuOpen])
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden"
@@ -101,7 +90,6 @@ export default function PersonalWebsite() {
     }
   }, [isMenuOpen])
 
-  // Key projects
   const projects = [
     {
       title: "MARSAD",
@@ -130,7 +118,6 @@ export default function PersonalWebsite() {
     },
   ]
 
-  // Security reports
   const securityReports = [
     {
       title: "Stripe SEPA Direct Debit Validation Vulnerability",
@@ -152,7 +139,6 @@ export default function PersonalWebsite() {
     },
   ]
 
-  // Blog posts data
   const blogPosts = [
     {
       title: "Why I Hunt Bugs in Payment Systems",
@@ -181,7 +167,6 @@ export default function PersonalWebsite() {
     },
   ]
 
-  // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
     visible: {
@@ -232,6 +217,12 @@ export default function PersonalWebsite() {
     }
   }
 
+  // Updated contact items
+  const contactItems = [
+    { icon: Mail, label: "Email", value: "ahmad@ahmadyoosuf.com", href: "mailto:ahmad@ahmadyoosuf.com", color: "ruby" },
+    { icon: MessageSquare, label: "Phone", value: "+91 6382429579", href: "tel:+916382429579", color: "diamond" },
+  ]
+
   return (
     <div className="flex min-h-screen flex-col bg-obsidian-950 text-diamond-100 overflow-x-hidden">
       {/* Header */}
@@ -267,50 +258,64 @@ export default function PersonalWebsite() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-2">
-            {["home", "work", "reports", "blog", "contact"].map((section) => (
-              <button
-                key={section}
-                className={cn(
-                  "px-6 py-3 text-sm font-medium rounded-full transition-all duration-500 relative group",
-                  activeSection === section ? "text-ruby-400" : "text-platinum-400 hover:text-diamond-200",
-                )}
-                onClick={() => handleNavClick(section)}
-              >
-                {activeSection === section && (
-                  <motion.div
-                    layoutId="activeSection"
-                    className="absolute inset-0 luxury-glass rounded-full"
-                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                  />
-                )}
-                <span className="relative z-10">
-                  {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
-                </span>
-              </button>
-            ))}
+            {["home", "work", "reports", "blog"].map(
+              (
+                section, // Removed "contact" from here as it's now an icon
+              ) => (
+                <button
+                  key={section}
+                  className={cn(
+                    "px-6 py-3 text-sm font-medium rounded-full transition-all duration-500 relative group",
+                    activeSection === section ? "text-ruby-400" : "text-platinum-400 hover:text-diamond-200",
+                  )}
+                  onClick={() => handleNavClick(section)}
+                >
+                  {activeSection === section && (
+                    <motion.div
+                      layoutId="activeSection"
+                      className="absolute inset-0 luxury-glass rounded-full"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                    />
+                  )}
+                  <span className="relative z-10">
+                    {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
+                  </span>
+                </button>
+              ),
+            )}
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-4">
+            {/* Contact, GitHub, LinkedIn Icons */}
+            <button
+              onClick={() => handleNavClick("contact")}
+              aria-label="Contact"
+              className="text-platinum-400 hover:text-ruby-400 transition-colors duration-300 group p-2 rounded-full luxury-glass-hover"
+            >
+              <Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            </button>
             <Link
-              href="https://github.com/Ahmad8426"
+              href="https://github.com/ahmadyoosuf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-platinum-400 hover:text-ruby-400 transition-colors duration-300 group hidden sm:block"
+              className="text-platinum-400 hover:text-ruby-400 transition-colors duration-300 group p-2 rounded-full luxury-glass-hover"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
             </Link>
-
-            <Button
-              className="btn-luxury text-diamond-50 border-0 rounded-full px-4 sm:px-6 py-2 sm:py-2.5 h-auto text-xs sm:text-sm font-medium group"
-              onClick={() => handleNavClick("contact")}
+            <Link
+              href="https://linkedin.com/in/ahmadyoosuf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-platinum-400 hover:text-ruby-400 transition-colors duration-300 group p-2 rounded-full luxury-glass-hover"
+              aria-label="LinkedIn"
             >
-              <span className="group-hover:scale-105 transition-transform duration-300">Contact Me</span>
-            </Button>
+              <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+            </Link>
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full luxury-glass menu-button group ml-2"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full luxury-glass menu-button group ml-2" // ml-2 for spacing from new icons
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -354,24 +359,29 @@ export default function PersonalWebsite() {
       >
         <div className="absolute inset-0 bg-obsidian-950/90" />
         <div className="relative flex flex-col items-center justify-center h-full gap-8 px-6">
-          {["home", "work", "reports", "blog", "contact"].map((section, index) => (
-            <motion.button
-              key={section}
-              className={cn(
-                "px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 w-full max-w-xs text-center luxury-glass-hover",
-                activeSection === section ? "text-ruby-400" : "text-platinum-300 hover:text-diamond-100",
-              )}
-              onClick={() => handleNavClick(section)}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{
-                opacity: isMenuOpen ? 1 : 0,
-                y: isMenuOpen ? 0 : 50,
-              }}
-              transition={{ delay: index * 0.1, duration: 0.3 }}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
-            </motion.button>
-          ))}
+          {["home", "work", "reports", "blog", "contact"].map(
+            (
+              section,
+              index, // "contact" can be here for mobile nav
+            ) => (
+              <motion.button
+                key={section}
+                className={cn(
+                  "px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 w-full max-w-xs text-center luxury-glass-hover",
+                  activeSection === section ? "text-ruby-400" : "text-platinum-300 hover:text-diamond-100",
+                )}
+                onClick={() => handleNavClick(section)}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{
+                  opacity: isMenuOpen ? 1 : 0,
+                  y: isMenuOpen ? 0 : 50,
+                }}
+                transition={{ delay: index * 0.1, duration: 0.3 }}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
+              </motion.button>
+            ),
+          )}
         </div>
       </motion.div>
 
@@ -856,17 +866,13 @@ export default function PersonalWebsite() {
                   </div>
 
                   <div className="space-y-6">
-                    {[
-                      { icon: Mail, label: "Email", value: "ahmad@ahmadyoosuf.com", color: "ruby" },
-                      { icon: Github, label: "GitHub", value: "github.com/Ahmad8426", color: "platinum" },
-                      { icon: MessageSquare, label: "Phone", value: "+91 6382429579", color: "diamond" },
-                    ].map((contact, index) => (
+                    {contactItems.map((contact, index) => (
                       <div key={index} className="flex items-center gap-4 group">
                         <div
                           className={cn(
                             "w-12 h-12 rounded-xl luxury-glass flex items-center justify-center group-hover:scale-110 transition-transform duration-300",
                             contact.color === "ruby" && "group-hover:bg-ruby-500/10",
-                            contact.color === "platinum" && "group-hover:bg-platinum-500/10",
+                            contact.color === "platinum" && "group-hover:bg-platinum-500/10", // Retained for potential future use
                             contact.color === "diamond" && "group-hover:bg-diamond-500/10",
                           )}
                         >
@@ -881,7 +887,12 @@ export default function PersonalWebsite() {
                         </div>
                         <div>
                           <p className="text-sm text-platinum-500 mb-1">{contact.label}</p>
-                          <p className="font-medium text-diamond-200">{contact.value}</p>
+                          <a
+                            href={contact.href}
+                            className="font-medium text-diamond-200 hover:text-ruby-400 transition-colors"
+                          >
+                            {contact.value}
+                          </a>
                         </div>
                       </div>
                     ))}
@@ -974,12 +985,22 @@ export default function PersonalWebsite() {
 
               <div className="flex space-x-4">
                 <Link
-                  href="https://github.com/Ahmad8426"
+                  href="https://github.com/ahmadyoosuf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-platinum-500 hover:text-ruby-400 transition-colors duration-300 group"
+                  aria-label="GitHub Profile"
                 >
                   <Github className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                </Link>
+                <Link
+                  href="https://linkedin.com/in/ahmadyoosuf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-platinum-500 hover:text-ruby-400 transition-colors duration-300 group"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 </Link>
               </div>
             </div>
@@ -990,7 +1011,7 @@ export default function PersonalWebsite() {
                 {["Home", "Work", "Reports", "Blog", "Contact"].map((item) => (
                   <li key={item}>
                     <button
-                      onClick={() => handleNavClick(item.toLowerCase())}
+                      onClick={() => handleNavClick(item.toLowerCase().replace(" ", "-"))}
                       className="text-platinum-400 hover:text-ruby-400 transition-colors text-sm group"
                     >
                       <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">

@@ -1,30 +1,51 @@
-# Ahmad
+# Ahmad Mohamed Yoosuf
+### AI • Security • Product
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+> Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve real problems.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/aqahhar000-gmailcoms-projects/v0-ahmad-ev)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/4LuM08XA6gn)
+---
 
-## Overview
+I specialize in developing high-impact AI-driven products and uncovering critical security vulnerabilities in complex digital infrastructures. My approach integrates rapid, pragmatic innovation with a deep understanding of systemic risks, always aiming to deliver solutions that are both technically robust and strategically sound.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+<br>
 
-## Deployment
+<details>
+<summary><strong>My Work & Impact</strong></summary>
 
-Your project is live at:
+#### AI Product Innovation
+I architect and build AI solutions that address tangible challenges with demonstrable advantages in performance and user experience.
+*   **MARSAD:** Solely designed and developed a sophisticated social media intelligence platform for an international research consortium (HBKU, Qatar & US/UK institutions), delivering the complex system from concept to deployment in a matter of weeks. This project underscores my capability for rapid execution and building scalable, impactful solutions under demanding timelines.
+*   **OCRPro & A111y:** Engineered OCRPro, an advanced OCR engine that surpasses industry benchmarks in cost, speed, and accuracy. Developed A111y, an AI-powered accessibility tool, to help create more inclusive digital products. These projects reflect my commitment to practical AI that delivers clear, measurable value.
 
-**[https://vercel.com/aqahhar000-gmailcoms-projects/v0-ahmad-ev](https://vercel.com/aqahhar000-gmailcoms-projects/v0-ahmad-ev)**
+#### Strategic Security Research
+My security research focuses on identifying and addressing systemic vulnerabilities in critical infrastructure, particularly within financial technology.
+*   **Payment System Vulnerabilities:** Uncovered significant flaws in SEPA Direct Debit implementations used by major platforms like **Stripe** and **Dropbox**. These findings, responsibly disclosed, helped prompt remediation for systems affecting millions of users and substantial transaction volumes. My work emphasizes a holistic view of security, considering the interplay of technology, regulation, and economic incentives.
 
-## Build your app
+#### Leadership & Ecosystem Development
+I believe in contributing to a more skilled and equitable technology landscape.
+*   **The Yoosuf Foundation:** As founder, I mentor and provide resources for over 50 first-generation students pursuing careers in technology. This initiative is dedicated to empowering promising talent by bridging information gaps and fostering opportunities.
 
-Continue building your app on:
+</details>
 
-**[https://v0.dev/chat/projects/4LuM08XA6gn](https://v0.dev/chat/projects/4LuM08XA6gn)**
+<br>
 
-## How It Works
+<details>
+<summary><strong>Core Philosophy</strong></summary>
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+*   **Execution Velocity:** Prioritizing rapid iteration from idea to validated impact. Speed, when directed by clear strategy, is a decisive advantage.
+*   **Pragmatic Innovation:** Applying AI and advanced technologies to solve real-world problems with solutions that are demonstrably better, not just newer.
+*   **Systemic Security:** Understanding that true security involves addressing root causes—often found in design assumptions and operational incentives—rather than merely treating symptoms.
+*   **Purposeful Technology:** Committing to the development and deployment of technology that is not only powerful but also ethically considered and aligned with broader societal well-being.
+*   **Intellectual Rigor:** Approaching complex challenges by questioning assumptions, seeking fundamental truths, and striving for clarity in both thought and execution.
+
+</details>
+
+---
+
+I am passionate about tackling ambitious challenges at the intersection of artificial intelligence, security, and product strategy.
+
+**Connect with me:**
+*   **LinkedIn:** [linkedin.com/in/ahmadyoosuf](https://linkedin.com/in/ahmadyoosuf)
+*   **Email:** `ahmad@ahmadyoosuf.com`
+
+_Currently exploring opportunities where I can leverage my expertise to lead innovative projects and build technologies that create significant, positive impact._
