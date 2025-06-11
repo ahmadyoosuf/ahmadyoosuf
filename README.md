@@ -1,6 +1,8 @@
 # Ahmad Mohamed Yoosuf
 
-## Building systems that matter  
+## [Personal Website](https://ahmadyoosuf.com)
+
+### Building systems that matter  
 Identifying vulnerabilities that others miss. Creating products that solve real problems.
 
 ---
@@ -37,7 +39,7 @@ Identifying vulnerabilities that others miss. Creating products that solve real 
   <summary><strong>Social Impact</strong></summary>
 
   **The Yoosuf Foundation**  
-  • Founded an educational nonprofit mentoring 50 + first-generation, low-income students.  
+  • Founded an educational nonprofit mentoring 50+ first-generation, low-income students.  
   • Provides structured guidance, resources, and grant support—making implicit knowledge explicit.  
 </details>
 
@@ -58,7 +60,7 @@ Identifying vulnerabilities that others miss. Creating products that solve real 
 ## Let’s Connect
 
 - **Email:** ahmad@ahmadyoosuf.com  
-- **GitHub:** [@ahmadyoosuf](https://github.com/ahmadyoosuf) 
+- **GitHub:** [@ahmadyoosuf](https://github.com/ahmadyoosuf)  
 - **Foundation:** [The Yoosuf Foundation](https://theyoosuffoundation.org)  
 
-> Crafting long-horizon solutions with precision, integrity, and enduring impact.  
+> Crafting long-horizon solutions with precision, integrity, and enduring impact.
