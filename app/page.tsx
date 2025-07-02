@@ -429,7 +429,7 @@ export default function PersonalWebsite() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="luxury-glass-hover text-diamond-200 rounded-full px-8 py-4 h-auto text-base font-medium group border-white/10"
+                    className="luxury-glass-hover text-diamond-200 rounded-full px-8 py-4 h-auto text-base font-medium group border-white/10 bg-transparent"
                     onClick={() => handleNavClick("reports")}
                   >
                     <FileText className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
@@ -484,22 +484,6 @@ export default function PersonalWebsite() {
                   </div>
                 </div>
               </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, duration: 0.8 }}
-          >
-            <div className="w-6 h-10 border-2 border-platinum-600 rounded-full flex justify-center">
-              <motion.div
-                className="w-1 h-3 bg-ruby-400 rounded-full mt-2"
-                animate={{ y: [0, 12, 0] }}
-                transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-              />
             </div>
           </motion.div>
         </section>

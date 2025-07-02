@@ -1,66 +1,51 @@
 # Ahmad Mohamed Yoosuf
+### AI • Security • Product
 
-## [Personal Website](https://ahmadyoosuf.com)
-
-### Building systems that matter  
-Identifying vulnerabilities that others miss. Creating products that solve real problems.
+> Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve real problems.
 
 ---
 
+I specialize in developing high-impact AI-driven products and uncovering critical security vulnerabilities in complex digital infrastructures. My approach integrates rapid, pragmatic innovation with a deep understanding of systemic risks, always aiming to deliver solutions that are both technically robust and strategically sound.
+
+<br>
+
 <details>
-  <summary><strong>Security Research</strong></summary>
+<summary><strong>My Work & Impact</strong></summary>
 
-  **Independent SEPA Direct Debit Analysis**  
-  • Discovered bypass in Stripe’s SEPA flow allowing premium activation without valid IBAN.  
-  • Revealed Dropbox’s acceptance of arbitrary IBAN formats to grant paid subscriptions.  
+#### AI Product Innovation
+I architect and build AI solutions that address tangible challenges with demonstrable advantages in performance and user experience.
+*   **MARSAD:** Solely designed and developed a sophisticated social media intelligence platform for an international research consortium (HBKU, Qatar & US/UK institutions), delivering the complex system from concept to deployment in a matter of weeks. This project underscores my capability for rapid execution and building scalable, impactful solutions under demanding timelines.
+*   **OCRPro & A111y:** Engineered OCRPro, an advanced OCR engine that surpasses industry benchmarks in cost, speed, and accuracy. Developed A111y, an AI-powered accessibility tool, to help create more inclusive digital products. These projects reflect my commitment to practical AI that delivers clear, measurable value.
 
-  **Systemic Insight**  
-  • Framed findings as design‐level trade-offs between conversion and risk.  
-  • Prioritized clarity and formal rigor; avoided superficial “bug hunt” narratives.  
+#### Strategic Security Research
+My security research focuses on identifying and addressing systemic vulnerabilities in critical infrastructure, particularly within financial technology.
+*   **Payment System Vulnerabilities:** Uncovered significant flaws in SEPA Direct Debit implementations used by major platforms like **Stripe** and **Dropbox**. These findings, responsibly disclosed, helped prompt remediation for systems affecting millions of users and substantial transaction volumes. My work emphasizes a holistic view of security, considering the interplay of technology, regulation, and economic incentives.
+
+#### Leadership & Ecosystem Development
+I believe in contributing to a more skilled and equitable technology landscape.
+*   **The Yoosuf Foundation:** As founder, I mentor and provide resources for over 50 first-generation students pursuing careers in technology. This initiative is dedicated to empowering promising talent by bridging information gaps and fostering opportunities.
+
 </details>
 
-<details>
-  <summary><strong>AI-Driven Products</strong></summary>
-
-  **MARSAD**  
-  • Solo‐developed social media intelligence platform for HBKU and international partners in weeks.  
-  • Transforms raw feeds into research-grade insights for policy and academic use.  
-
-  **OCRPro**  
-  • Hybrid OCR engine surpassing AWS Textract, Azure OCR, and Google Cloud OCR on cost, speed, and edge-case accuracy.  
-  • Usage-based pricing; optimized for real-world document diversity.  
-
-  **A111y**  
-  • AI-powered accessibility auditor integrated into developer workflows.  
-  • Surfaces prioritized, context-aware recommendations instead of exhaustive rule lists.  
-</details>
+<br>
 
 <details>
-  <summary><strong>Social Impact</strong></summary>
+<summary><strong>Core Philosophy</strong></summary>
 
-  **The Yoosuf Foundation**  
-  • Founded an educational nonprofit mentoring 50+ first-generation, low-income students.  
-  • Provides structured guidance, resources, and grant support—making implicit knowledge explicit.  
+*   **Execution Velocity:** Prioritizing rapid iteration from idea to validated impact. Speed, when directed by clear strategy, is a decisive advantage.
+*   **Pragmatic Innovation:** Applying AI and advanced technologies to solve real-world problems with solutions that are demonstrably better, not just newer.
+*   **Systemic Security:** Understanding that true security involves addressing root causes—often found in design assumptions and operational incentives—rather than merely treating symptoms.
+*   **Purposeful Technology:** Committing to the development and deployment of technology that is not only powerful but also ethically considered and aligned with broader societal well-being.
+*   **Intellectual Rigor:** Approaching complex challenges by questioning assumptions, seeking fundamental truths, and striving for clarity in both thought and execution.
+
 </details>
 
 ---
 
-## Philosophy & Approach
+I am passionate about tackling ambitious challenges at the intersection of artificial intelligence, security, and product strategy.
 
-> “Speed is the only moat.”  
->  
-> Constraints fuel clarity. Shipping prototypes uncovers truths that planning never will.
+**Connect with me:**
+*   **LinkedIn:** [linkedin.com/in/ahmadyoosuf](https://linkedin.com/in/ahmadyoosuf)
+*   **Email:** `ahmad@ahmadyoosuf.com`
 
-> “Success is ecological, not self-made.”  
->  
-> Every achievement rests on visible and invisible infrastructures of knowledge, access, and permission.
-
----
-
-## Let’s Connect
-
-- **Email:** ahmad@ahmadyoosuf.com  
-- **GitHub:** [@ahmadyoosuf](https://github.com/ahmadyoosuf)  
-- **Foundation:** [The Yoosuf Foundation](https://theyoosuffoundation.org)  
-
-> Crafting long-horizon solutions with precision, integrity, and enduring impact.
+_Currently exploring opportunities where I can leverage my expertise to lead innovative projects and build technologies that create significant, positive impact._
