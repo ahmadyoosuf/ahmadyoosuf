@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { ArrowRight, FileText, Github, Mail, MessageSquare, Shield, Zap, Brain, Linkedin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
@@ -438,10 +437,12 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
-                  Selected Work
-                </Badge>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-luxury">Products & Projects</h2>
+                <div className="flex justify-center">
+                  <div className="btn-luxury text-diamond-50 rounded-full px-10 py-5 text-xl font-bold group">
+                    <span className="group-hover:scale-105 transition-transform duration-300">Selected Work</span>
+                  </div>
+                </div>
+
                 <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed rounded-sm">
                   A curated selection of my work across AI, security research, and full-stack development
                 </p>
@@ -597,8 +598,6 @@ export default function PersonalWebsite() {
                 variants={fadeInUp}
               >
                 <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Blog</h3>
-                
-                
               </motion.div>
 
               <motion.div
@@ -639,42 +638,48 @@ export default function PersonalWebsite() {
         {/* Contact Section */}
         <section id="contact" className="py-16 sm:py-20 md:py-24 lg:py-32 relative section-divider">
           <div className="container relative z-10 px-4 md:px-6">
-            <motion.div
-              className="max-w-5xl mx-auto luxury-glass rounded-3xl p-6 sm:p-8 md:p-12 luxury-shadow"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-            >
-              <div className="flex flex-col items-center justify-center gap-8">
-                <div className="text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Get In Touch</h3>
-                  <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Let's Connect</h4>
-                  <p className="text-platinum-400 leading-relaxed mb-6">
-                    Interested in discussing a project, collaboration, or just want to connect? I'd love to hear from you 
-                  </p>
-                </div>
-                <div className="flex flex-col items-center gap-4">
-                  {contactItems.map((contact, index) => (
-                    <div key={index} className="flex items-center mb-4">
-                      <contact.icon className={`h-5 w-5 text-${contact.color}-400 mr-2`} />
-                      <div>
-                        <span className="font-semibold">{contact.label}</span>
-                        <span className="block text-platinum-400">{contact.value}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+            <div className="max-w-screen-xl mx-auto">
+              <motion.div
+                className="text-center space-y-6 max-w-4xl mx-auto mb-20"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={fadeInUp}
+              >
+                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Get In Touch</h3>
+                <p className="text-platinum-400 leading-relaxed mb-6">
+                  Interested in discussing a project, collaboration, or just want to connect? I'd love to hear from you.
+                </p>
+              </motion.div>
 
-                
-              </div>
-            </motion.div>
+              <motion.div
+                className="flex flex-col sm:flex-row gap-8 justify-center items-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={staggerContainer}
+              >
+                {contactItems.map((contact, index) => (
+                  <motion.a
+                    key={index}
+                    href={contact.href}
+                    variants={scaleIn}
+                    className="luxury-glass-hover rounded-2xl p-6 group flex items-center gap-4 min-w-[280px] transition-all duration-300 hover:scale-105"
+                  >
+                    <contact.icon className="h-6 w-6 text-ruby-400 group-hover:scale-110 transition-transform duration-300" />
+                    <div>
+                      <span className="font-semibold text-diamond-200 block">{contact.label}</span>
+                      <span className="text-platinum-400">{contact.value}</span>
+                    </div>
+                  </motion.a>
+                ))}
+              </motion.div>
+            </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      
     </div>
   )
 }
