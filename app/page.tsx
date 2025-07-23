@@ -5,20 +5,7 @@ import Link from "next/link"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import {
-  ArrowRight,
-  ChevronRight,
-  ExternalLink,
-  FileText,
-  Github,
-  Mail,
-  MessageSquare,
-  Shield,
-  Zap,
-  Brain,
-  Users,
-  Linkedin,
-} from "lucide-react"
+import { ArrowRight, FileText, Github, Mail, MessageSquare, Shield, Zap, Brain, Linkedin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
 import Image from "next/image"
@@ -409,11 +396,10 @@ export default function PersonalWebsite() {
                 </motion.h1>
 
                 <motion.p
-                  className="text-lg md:text-xl text-platinum-400 max-w-3xl mx-auto leading-relaxed"
+                  className="md:text-xl max-w-3xl mx-auto leading-relaxed font-semibold text-2xl text-slate-300"
                   variants={fadeInUp}
                 >
-                  Building systems that matter. Identifying vulnerabilities that others miss. Creating products that
-                  solve real problems.
+                  Building products that matter 
                 </motion.p>
 
                 <motion.div className="flex flex-col sm:flex-row gap-4 justify-center pt-8" variants={fadeInUp}>
@@ -436,53 +422,6 @@ export default function PersonalWebsite() {
                     <span className="group-hover:scale-105 transition-transform duration-300">Security Reports</span>
                   </Button>
                 </motion.div>
-
-                <div className="grid grid-cols-3 gap-8 pt-12 sm:pt-16 max-w-4xl mx-auto">
-                  <div className="flex flex-col items-center space-y-3">
-                    <div className="w-16 h-16 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-ruby-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="text-3xl font-bold text-luxury">3+</div>
-                    <div className="text-sm text-platinum-500 text-center">AI Products</div>
-                  </div>
-
-                  <div className="flex flex-col items-center space-y-3">
-                    <div className="w-16 h-16 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-ruby-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="text-3xl font-bold text-luxury">10+</div>
-                    <div className="text-sm text-platinum-500 text-center">Vulnerabilities</div>
-                  </div>
-
-                  <div className="flex flex-col items-center space-y-3">
-                    <div className="w-16 h-16 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-ruby-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="text-3xl font-bold text-luxury">50+</div>
-                    <div className="text-sm text-platinum-500 text-center">Students Mentored</div>
-                  </div>
-                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -517,70 +456,44 @@ export default function PersonalWebsite() {
                 variants={staggerContainer}
               >
                 {/* Featured Project - MARSAD */}
-                <motion.div
-                  variants={fadeInUp}
-                  className="luxury-glass-hover rounded-3xl p-8 md:p-12 luxury-shadow group"
-                >
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-6">
-                        <Badge className="bg-ruby-500/10 text-ruby-400 border-ruby-500/20 px-3 py-1">
-                          Featured Project
-                        </Badge>
-                        <Badge className="bg-platinum-500/10 text-platinum-400 border-platinum-500/20 px-3 py-1">
-                          International Collaboration
-                        </Badge>
-                      </div>
-
-                      <h3 className="text-3xl font-bold text-luxury mb-4">MARSAD</h3>
-                      <p className="text-platinum-400 text-lg leading-relaxed mb-6">
-                        A comprehensive social media intelligence platform led by Hamad Bin Khalifa University (HBKU) in
-                        collaboration with institutions across Qatar, US, and UK. I designed and developed the entire
-                        platform solo in just a few weeks, creating a system that analyzes social media data to provide
-                        actionable insights for research and policy-making.
-                      </p>
-
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {["AI", "Data Analysis", "Full-Stack", "Research"].map((tag) => (
-                          <Badge key={tag} className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-
-                      <Link
-                        href="https://marsadi.vercel.app"
-                        className="inline-flex items-center text-ruby-400 hover:text-ruby-300 transition-colors text-lg font-medium group"
-                      >
-                        View Project
-                        <ExternalLink className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      </Link>
+                <motion.div variants={fadeInUp}>
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
+                    <div className="flex flex-col items-center gap-4">
+                      <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
+                        Featured Project
+                      </Badge>
+                      <Badge className="px-4 py-2 text-sm luxury-glass text-platinum-400 border-platinum-500/20 rounded-full backdrop-blur-xl">
+                        International Collaboration
+                      </Badge>
                     </div>
-
-                    <div className="lg:w-80">
-                      <div className="luxury-glass rounded-2xl p-6 h-full">
-                        <div className="flex items-center gap-3 mb-4">
-                          <Brain className="h-8 w-8 text-ruby-400" />
-                          <div>
-                            <div className="text-sm text-platinum-500">Platform Type</div>
-                            <div className="font-medium text-diamond-200">Intelligence System</div>
-                          </div>
-                        </div>
-                        <div className="space-y-4">
-                          <div className="flex justify-between">
-                            <span className="text-platinum-500">Development Time</span>
-                            <span className="text-diamond-200 font-medium">Few Weeks</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-platinum-500">Team Size</span>
-                            <span className="text-diamond-200 font-medium">Solo</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-platinum-500">Institutions</span>
-                            <span className="text-diamond-200 font-medium">3 Countries</span>
-                          </div>
-                        </div>
+                    <div className="max-w-2xl">
+                      <h3 className="text-2xl md:text-3xl font-bold text-diamond-200 mb-4">MARSAD</h3>
+                      <p className="text-platinum-400 leading-relaxed mb-6">
+                        A comprehensive social media intelligence platform led by Hamad Bin Khalifa University (HBKU) in
+                        collaboration with institutions across Qatar, US, and UK. I led the design and development of
+                        the entire platform, creating a system that analyzes social media data to provide actionable
+                        insights for research and policy-making.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">AI</Badge>
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
+                          Data Analysis
+                        </Badge>
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
+                          Full-Stack
+                        </Badge>
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
+                          Research
+                        </Badge>
                       </div>
+                      <Button
+                        size="lg"
+                        className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                        onClick={() => window.open("https://marsadi.vercel.app", "_blank")}
+                      >
+                        <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                      </Button>
                     </div>
                   </div>
                 </motion.div>
@@ -615,13 +528,14 @@ export default function PersonalWebsite() {
                           ))}
                         </div>
 
-                        <Link
-                          href={project.link}
-                          className="inline-flex items-center text-ruby-400 hover:text-ruby-300 transition-colors font-medium group"
+                        <Button
+                          size="lg"
+                          className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                          onClick={() => window.open(project.link, "_blank")}
                         >
-                          View Project
-                          <ExternalLink className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-                        </Link>
+                          <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
+                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                        </Button>
                       </motion.div>
                     ))}
                   </div>
@@ -629,42 +543,37 @@ export default function PersonalWebsite() {
 
                 {/* The Yoosuf Foundation */}
                 <motion.div variants={fadeInUp} className="luxury-glass-hover rounded-3xl p-8 md:p-12 luxury-shadow">
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-4 mb-6">
-                        <div className="w-12 h-12 luxury-glass rounded-xl flex items-center justify-center">
-                          <Users className="h-6 w-6 text-platinum-400" />
-                        </div>
-                        <Badge className="bg-platinum-500/10 text-platinum-400 border-platinum-500/20 px-3 py-1">
-                          Social Impact
-                        </Badge>
-                      </div>
-
-                      <h3 className="text-3xl font-bold text-luxury mb-4">The Yoosuf Foundation</h3>
-                      <p className="text-platinum-400 text-lg leading-relaxed mb-6">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div className="flex flex-col items-center gap-4">
+                      <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
+                        Social Impact
+                      </Badge>
+                      <Badge className="px-4 py-2 text-sm luxury-glass text-platinum-400 border-platinum-500/20 rounded-full backdrop-blur-xl">
+                        Educational nonprofit
+                      </Badge>
+                    </div>
+                    <div className="max-w-2xl">
+                      <h3 className="text-2xl md:text-3xl font-bold text-diamond-200 mb-4">The Yoosuf Foundation</h3>
+                      <p className="text-platinum-400 leading-relaxed mb-6">
                         Educational nonprofit connecting first-generation students with resources, mentorship, and grant
                         opportunities. Currently mentoring 50+ promising talents from low-income, first-generation
                         backgrounds, providing them with the guidance and support they need to succeed in technology.
                       </p>
-
-                      <div className="grid grid-cols-2 gap-6 mb-6">
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-ruby-400 mb-1">50+</div>
-                          <div className="text-sm text-platinum-500">Students Mentored</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-platinum-400 mb-1">100%</div>
-                          <div className="text-sm text-platinum-500">First-Generation</div>
-                        </div>
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">50+</Badge>
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">100%</Badge>
+                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
+                          First-Generation
+                        </Badge>
                       </div>
-
-                      <Link
-                        href="https://theyoosuffoundation.org"
-                        className="inline-flex items-center text-platinum-400 hover:text-platinum-300 transition-colors text-lg font-medium group"
+                      <Button
+                        size="lg"
+                        className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                        onClick={() => window.open("https://theyoosuffoundation.org", "_blank")}
                       >
-                        Learn More
-                        <ExternalLink className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      </Link>
+                        <span className="group-hover:scale-105 transition-transform duration-300">Learn More</span>
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                      </Button>
                     </div>
                   </div>
                 </motion.div>
@@ -684,11 +593,9 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
-                  Security Research
-                </Badge>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-luxury">Vulnerability Reports</h2>
-                <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Security Research</h3>
+                <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Vulnerability Reports</h4>
+                <p className="text-platinum-400 leading-relaxed mb-6">
                   Critical security vulnerabilities I've identified in major platforms and payment systems, helping
                   secure systems used by millions of users worldwide.
                 </p>
@@ -703,37 +610,19 @@ export default function PersonalWebsite() {
               >
                 {securityReports.map((report, index) => (
                   <motion.div
-                    key={index}
-                    variants={scaleIn}
-                    className="luxury-glass-hover rounded-2xl overflow-hidden group"
+                    key={report.title}
+                    className={`luxury-glass-hover rounded-2xl p-6 group ${getSeverityColor(report.severity)}`}
                   >
-                    <div className="p-8">
-                      <div className="flex justify-between items-start mb-6">
-                        <Badge className={cn("px-3 py-1", getSeverityColor(report.severity))}>
-                          {report.severity} Severity
-                        </Badge>
-                        <span className="text-platinum-500 text-sm">{report.date}</span>
-                      </div>
-
-                      <h3 className="text-xl font-bold text-diamond-200 mb-3 group-hover:text-luxury transition-colors duration-300">
-                        {report.title}
-                      </h3>
-
-                      <p className="text-platinum-400 leading-relaxed mb-4">{report.description}</p>
-
-                      <div className="flex items-center gap-2 mb-6">
-                        <Shield className="h-4 w-4 text-ruby-400" />
-                        <span className="text-sm text-ruby-400 font-medium">{report.impact}</span>
-                      </div>
-
-                      <Link
-                        href={`/reports/${report.slug}`}
-                        className="inline-flex items-center text-ruby-400 hover:text-ruby-300 transition-colors font-medium group"
-                      >
-                        Read Full Report
-                        <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                      </Link>
+                    <div className="flex justify-between items-center mb-4">
+                      <span className="text-sm font-semibold">{report.severity} Severity</span>
+                      <span className="text-xs text-platinum-500">{report.date}</span>
                     </div>
+                    <h4 className="text-lg font-bold text-diamond-200">{report.title}</h4>
+                    <p className="text-platinum-400 leading-relaxed mb-4">{report.description}</p>
+                    <span className="text-xs text-platinum-500">{report.impact}</span>
+                    <Link href={`/reports/${report.slug}`} className="text-ruby-400 hover:underline mt-2 block">
+                      Read Full Report
+                    </Link>
                   </motion.div>
                 ))}
               </motion.div>
@@ -760,11 +649,9 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <Badge className="px-4 py-2 text-sm luxury-glass text-platinum-400 border-platinum-500/20 rounded-full backdrop-blur-xl">
-                  Insights & Perspectives
-                </Badge>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-luxury">From My Blog</h2>
-                <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Insights & Perspectives</h3>
+                <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">From My Blog</h4>
+                <p className="text-platinum-400 leading-relaxed mb-6">
                   Thoughts on security, development, leadership, and the intersection of technology with society. Deep
                   dives into the challenges and opportunities shaping our digital future.
                 </p>
@@ -778,32 +665,14 @@ export default function PersonalWebsite() {
                 variants={staggerContainer}
               >
                 {blogPosts.map((post, index) => (
-                  <motion.div key={index} variants={scaleIn} className="group">
-                    <div className="luxury-glass-hover rounded-2xl overflow-hidden h-full">
-                      <div className="p-8">
-                        <div className="flex items-center justify-between mb-4">
-                          <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                            {post.category}
-                          </Badge>
-                          <span className="text-2xs text-platinum-500 uppercase tracking-wider">{post.readTime}</span>
-                        </div>
-
-                        <h3 className="text-lg font-bold text-diamond-200 mb-3 group-hover:text-luxury transition-colors duration-300 leading-tight">
-                          {post.title}
-                        </h3>
-
-                        <p className="text-platinum-500 text-xs mb-4">{post.date}</p>
-                        <p className="text-platinum-400 leading-relaxed mb-6 text-sm">{post.excerpt}</p>
-
-                        <Link
-                          href={`/blog/${post.slug}`}
-                          className="text-ruby-400 flex items-center gap-2 font-medium hover:text-ruby-300 transition-colors group"
-                        >
-                          <span className="group-hover:scale-105 transition-transform duration-300">Read More</span>
-                          <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                        </Link>
-                      </div>
-                    </div>
+                  <motion.div key={post.title} className="luxury-glass-hover rounded-2xl p-6 group">
+                    <span className="text-xs text-platinum-500">{post.category}</span>
+                    <h4 className="text-lg font-bold text-diamond-200">{post.title}</h4>
+                    <span className="text-xs text-platinum-500">{post.date}</span>
+                    <p className="text-platinum-400 leading-relaxed mb-4">{post.excerpt}</p>
+                    <Link href={`/blog/${post.slug}`} className="text-ruby-400 hover:underline">
+                      Read More
+                    </Link>
                   </motion.div>
                 ))}
               </motion.div>
@@ -815,11 +684,8 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <Link href="/blog">
-                  <Button className="luxury-glass-hover text-diamond-200 rounded-full px-8 py-3 h-auto font-medium group border-white/10">
-                    <span className="group-hover:scale-105 transition-transform duration-300">View All Posts</span>
-                    <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                <Link href="/blog" className="text-ruby-400 hover:underline">
+                  View All Posts
                 </Link>
               </motion.div>
             </div>
@@ -836,95 +702,47 @@ export default function PersonalWebsite() {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
             >
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                <div className="space-y-8">
-                  <div>
-                    <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl mb-6">
-                      Get In Touch
-                    </Badge>
-                    <h2 className="text-3xl md:text-4xl font-bold text-luxury mb-4">Let's Connect</h2>
-                    <p className="text-lg text-platinum-400 leading-relaxed">
-                      Interested in discussing a project, collaboration opportunity, or just want to connect? I'd love
-                      to hear from you and explore how we can work together.
-                    </p>
-                  </div>
-
-                  <div className="space-y-6">
-                    {contactItems.map((contact, index) => (
-                      <div key={index} className="flex items-center gap-4 group">
-                        <div
-                          className={cn(
-                            "w-12 h-12 rounded-xl luxury-glass flex items-center justify-center group-hover:scale-110 transition-transform duration-300",
-                            contact.color === "ruby" && "group-hover:bg-ruby-500/10",
-                            contact.color === "platinum" && "group-hover:bg-platinum-500/10", // Retained for potential future use
-                            contact.color === "diamond" && "group-hover:bg-diamond-500/10",
-                          )}
-                        >
-                          <contact.icon
-                            className={cn(
-                              "h-5 w-5",
-                              contact.color === "ruby" && "text-ruby-400",
-                              contact.color === "platinum" && "text-platinum-400",
-                              contact.color === "diamond" && "text-diamond-400",
-                            )}
-                          />
-                        </div>
-                        <div>
-                          <p className="text-sm text-platinum-500 mb-1">{contact.label}</p>
-                          <a
-                            href={contact.href}
-                            className="font-medium text-diamond-200 hover:text-ruby-400 transition-colors"
-                          >
-                            {contact.value}
-                          </a>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+              <div className="flex flex-col items-center justify-center gap-8">
+                <div className="text-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Get In Touch</h3>
+                  <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Let's Connect</h4>
+                  <p className="text-platinum-400 leading-relaxed mb-6">
+                    Interested in discussing a project, collaboration opportunity, or just want to connect? I'd love to
+                    hear from you and explore how we can work together.
+                  </p>
                 </div>
-
-                <div className="luxury-glass rounded-2xl p-8">
-                  <form className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-platinum-400 mb-2">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        className="w-full px-4 py-3 luxury-glass rounded-xl focus:outline-none focus:ring-2 focus:ring-ruby-500/50 text-diamond-200 placeholder-platinum-500 transition-all duration-300"
-                        placeholder="Your name"
-                      />
+                <div className="flex flex-col items-center gap-4">
+                  {contactItems.map((contact, index) => (
+                    <div key={index} className="flex items-center mb-4">
+                      <contact.icon className={`h-5 w-5 text-${contact.color}-400 mr-2`} />
+                      <div>
+                        <span className="font-semibold">{contact.label}</span>
+                        <span className="block text-platinum-400">{contact.value}</span>
+                      </div>
                     </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-platinum-400 mb-2">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        className="w-full px-4 py-3 luxury-glass rounded-xl focus:outline-none focus:ring-2 focus:ring-ruby-500/50 text-diamond-200 placeholder-platinum-500 transition-all duration-300"
-                        placeholder="Your email"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-platinum-400 mb-2">
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        rows={5}
-                        className="w-full px-4 py-3 luxury-glass rounded-xl focus:outline-none focus:ring-2 focus:ring-ruby-500/50 text-diamond-200 placeholder-platinum-500 transition-all duration-300 resize-none"
-                        placeholder="Your message"
-                      />
-                    </div>
-
-                    <Button className="w-full btn-luxury text-diamond-50 rounded-xl px-6 py-4 h-auto font-medium group">
-                      <span className="group-hover:scale-105 transition-transform duration-300">Send Message</span>
-                    </Button>
-                  </form>
+                  ))}
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="w-full px-4 py-2 text-sm rounded-full luxury-glass text-diamond-50 border-white/10"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full px-4 py-2 text-sm rounded-full luxury-glass text-diamond-50 border-white/10"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    className="w-full px-4 py-2 text-sm rounded-lg luxury-glass text-diamond-50 border-white/10"
+                  />
+                  <Button
+                    size="lg"
+                    className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                  >
+                    <span className="group-hover:scale-105 transition-transform duration-300">Send Message</span>
+                  </Button>
                 </div>
               </div>
             </motion.div>
@@ -933,121 +751,59 @@ export default function PersonalWebsite() {
       </main>
 
       {/* Footer */}
-      <footer className="relative bg-obsidian-950 border-t border-white/[0.05]">
-        <div className="container py-12 md:py-16 px-4 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            <div className="col-span-2">
-              <motion.div
-                className="flex items-center gap-3 mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className="relative group">
-                  <div className="absolute inset-0 ruby-gradient rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
-                  <div className="relative flex items-center justify-center w-12 h-12 luxury-glass rounded-xl overflow-hidden">
-                    <Image
-                      src="/images/logo.png"
-                      alt="Ahmad Yoosuf Logo"
-                      width={48}
-                      height={48}
-                      className="object-contain p-1"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-bold text-luxury tracking-tight">Ahmad Yoosuf</span>
-                  <span className="text-2xs text-platinum-500 tracking-wider uppercase">AI • Security • Product</span>
-                </div>
-              </motion.div>
-
-              <p className="text-platinum-400 mb-6 max-w-sm leading-relaxed">
+      <footer className="bg-obsidian-950 text-platinum-400 py-12">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col md:flex-row justify-between">
+            <div>
+              <h3 className="text-lg font-bold text-diamond-100">Ahmad Yoosuf</h3>
+              <p className="text-sm">AI • Security • Product</p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <p className="text-sm">
                 Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve
                 real problems.
               </p>
-
-              <div className="flex space-x-4">
-                <Link
-                  href="https://github.com/ahmadyoosuf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-platinum-500 hover:text-ruby-400 transition-colors duration-300 group"
-                  aria-label="GitHub Profile"
-                >
-                  <Github className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                </Link>
-                <Link
-                  href="https://linkedin.com/in/ahmadyoosuf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-platinum-500 hover:text-ruby-400 transition-colors duration-300 group"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                </Link>
-              </div>
             </div>
+          </div>
 
-            <div>
-              <h3 className="font-semibold text-diamond-200 mb-4 text-sm uppercase tracking-wider">Navigation</h3>
-              <ul className="space-y-3">
-                {["Home", "Work", "Reports", "Blog", "Contact"].map((item) => (
-                  <li key={item}>
-                    <button
-                      onClick={() => handleNavClick(item.toLowerCase().replace(" ", "-"))}
-                      className="text-platinum-400 hover:text-ruby-400 transition-colors text-sm group"
-                    >
-                      <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">
-                        {item}
-                      </span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="mt-8">
+            <h4 className="text-sm font-semibold">Navigation</h4>
+            <ul className="mt-2">
+              {["Home", "Work", "Reports", "Blog", "Contact"].map((item) => (
+                <li key={item} className="text-sm hover:text-ruby-400 transition-colors duration-300">
+                  <Link href={`#${item.toLowerCase()}`}>{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div>
-              <h3 className="font-semibold text-diamond-200 mb-4 text-sm uppercase tracking-wider">Projects</h3>
-              <ul className="space-y-3">
-                {[
-                  { name: "MARSAD", href: "https://marsadi.vercel.app" },
-                  { name: "OCRPro", href: "https://ocrpro.vercel.app" },
-                  { name: "A111y", href: "https://a111y.vercel.app" },
-                  { name: "The Yoosuf Foundation", href: "https://theyoosuffoundation.org" },
-                  { name: "Security Reports", href: "/reports" },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-platinum-400 hover:text-ruby-400 transition-colors text-sm group"
-                    >
-                      <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">
-                        {item.name}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="mt-8">
+            <h4 className="text-sm font-semibold">Projects</h4>
+            <ul className="mt-2">
+              {[
+                { name: "MARSAD", href: "https://marsadi.vercel.app" },
+                { name: "OCRPro", href: "https://ocrpro.vercel.app" },
+                { name: "A111y", href: "https://a111y.vercel.app" },
+                { name: "The Yoosuf Foundation", href: "https://theyoosuffoundation.org" },
+                { name: "Security Reports", href: "/reports" },
+              ].map((item) => (
+                <li key={item.name} className="text-sm hover:text-ruby-400 transition-colors duration-300">
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/[0.05]">
-          <div className="container py-6 px-4 md:px-6">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-sm text-platinum-500">
-                © {new Date().getFullYear()} Ahmad Mohamed Yoosuf. All rights reserved.
-              </p>
-              <div className="flex gap-6">
-                <Link href="#" className="text-sm text-platinum-500 hover:text-platinum-300 transition-colors">
-                  Privacy
-                </Link>
-                <Link href="#" className="text-sm text-platinum-500 hover:text-platinum-300 transition-colors">
-                  Terms
-                </Link>
-              </div>
-            </div>
+        <div className="mt-8 border-t border-white/[0.05] pt-4 text-center">
+          <p className="text-sm">© {new Date().getFullYear()} Ahmad Mohamed Yoosuf. All rights reserved.</p>
+          <div className="flex justify-center gap-4 mt-2">
+            <Link href="/privacy" className="text-sm hover:text-ruby-400 transition-colors duration-300">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-sm hover:text-ruby-400 transition-colors duration-300">
+              Terms
+            </Link>
           </div>
         </div>
       </footer>
