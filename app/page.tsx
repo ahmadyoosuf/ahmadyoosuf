@@ -399,7 +399,7 @@ export default function PersonalWebsite() {
                   className="md:text-xl max-w-3xl mx-auto leading-relaxed font-semibold text-2xl text-slate-300"
                   variants={fadeInUp}
                 >
-                  Building products that matter 
+                  Building products that matter
                 </motion.p>
 
                 <motion.div className="flex flex-col sm:flex-row gap-4 justify-center pt-8" variants={fadeInUp}>
@@ -442,9 +442,8 @@ export default function PersonalWebsite() {
                   Selected Work
                 </Badge>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-luxury">Products & Projects</h2>
-                <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed">
-                  A curated selection of my work across AI, security research, and product development. Each project
-                  represents a unique challenge and innovative solution.
+                <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed rounded-sm">
+                  A curated selection of my work across AI, security research, and full-stack development
                 </p>
               </motion.div>
 
@@ -455,37 +454,21 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={staggerContainer}
               >
-                {/* Featured Project - MARSAD */}
+                {/* Projects Grid */}
                 <motion.div variants={fadeInUp}>
-                  <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
-                    <div className="flex flex-col items-center gap-4">
-                      <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
-                        Featured Project
-                      </Badge>
-                      <Badge className="px-4 py-2 text-sm luxury-glass text-platinum-400 border-platinum-500/20 rounded-full backdrop-blur-xl">
-                        International Collaboration
-                      </Badge>
-                    </div>
-                    <div className="max-w-2xl">
-                      <h3 className="text-2xl md:text-3xl font-bold text-diamond-200 mb-4">MARSAD</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <motion.div variants={scaleIn} className="luxury-glass-hover rounded-2xl p-8 group">
+                      <div className="flex items-center gap-4 mb-6">
+                        <h4 className="text-xl font-bold text-diamond-200">MARSAD</h4>
+                      </div>
+
                       <p className="text-platinum-400 leading-relaxed mb-6">
                         A comprehensive social media intelligence platform led by Hamad Bin Khalifa University (HBKU) in
                         collaboration with institutions across Qatar, US, and UK. I led the design and development of
                         the entire platform, creating a system that analyzes social media data to provide actionable
                         insights for research and policy-making.
                       </p>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">AI</Badge>
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                          Data Analysis
-                        </Badge>
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                          Full-Stack
-                        </Badge>
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                          Research
-                        </Badge>
-                      </div>
+
                       <Button
                         size="lg"
                         className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
@@ -494,14 +477,8 @@ export default function PersonalWebsite() {
                         <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
-                    </div>
-                  </div>
-                </motion.div>
+                    </motion.div>
 
-                {/* AI Products Grid */}
-                <motion.div variants={fadeInUp}>
-                  <h3 className="text-2xl font-bold text-luxury mb-8 border-b border-white/[0.05] pb-4">AI Products</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.slice(1).map((project, index) => (
                       <motion.div
                         key={project.title}
@@ -509,24 +486,10 @@ export default function PersonalWebsite() {
                         className="luxury-glass-hover rounded-2xl p-8 group"
                       >
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-12 h-12 luxury-glass rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <project.icon className="h-6 w-6 text-ruby-400" />
-                          </div>
                           <h4 className="text-xl font-bold text-diamond-200">{project.title}</h4>
                         </div>
 
                         <p className="text-platinum-400 leading-relaxed mb-6">{project.description}</p>
-
-                        <div className="flex flex-wrap gap-2 mb-6">
-                          {project.tags.map((tag) => (
-                            <Badge
-                              key={tag}
-                              className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1"
-                            >
-                              {tag}
-                            </Badge>
-                          ))}
-                        </div>
 
                         <Button
                           size="lg"
@@ -538,34 +501,18 @@ export default function PersonalWebsite() {
                         </Button>
                       </motion.div>
                     ))}
-                  </div>
-                </motion.div>
 
-                {/* The Yoosuf Foundation */}
-                <motion.div variants={fadeInUp} className="luxury-glass-hover rounded-3xl p-8 md:p-12 luxury-shadow">
-                  <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                    <div className="flex flex-col items-center gap-4">
-                      <Badge className="px-4 py-2 text-sm luxury-glass text-ruby-400 border-ruby-500/20 rounded-full backdrop-blur-xl">
-                        Social Impact
-                      </Badge>
-                      <Badge className="px-4 py-2 text-sm luxury-glass text-platinum-400 border-platinum-500/20 rounded-full backdrop-blur-xl">
-                        Educational nonprofit
-                      </Badge>
-                    </div>
-                    <div className="max-w-2xl">
-                      <h3 className="text-2xl md:text-3xl font-bold text-diamond-200 mb-4">The Yoosuf Foundation</h3>
+                    <motion.div variants={scaleIn} className="luxury-glass-hover rounded-2xl p-8 group">
+                      <div className="flex items-center gap-4 mb-6">
+                        <h4 className="text-xl font-bold text-diamond-200">The Yoosuf Foundation</h4>
+                      </div>
+
                       <p className="text-platinum-400 leading-relaxed mb-6">
                         Educational nonprofit connecting first-generation students with resources, mentorship, and grant
-                        opportunities. Currently mentoring 50+ promising talents from low-income, first-generation
+                        opportunities. Currently mentoring promising talents from low-income, first-generation
                         backgrounds, providing them with the guidance and support they need to succeed in technology.
                       </p>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">50+</Badge>
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">100%</Badge>
-                        <Badge className="luxury-glass text-platinum-300 border-platinum-500/20 px-3 py-1">
-                          First-Generation
-                        </Badge>
-                      </div>
+
                       <Button
                         size="lg"
                         className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
@@ -574,7 +521,7 @@ export default function PersonalWebsite() {
                         <span className="group-hover:scale-105 transition-transform duration-300">Learn More</span>
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
-                    </div>
+                    </motion.div>
                   </div>
                 </motion.div>
               </motion.div>
@@ -593,10 +540,10 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Security Research</h3>
+                <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Security Research</h3>
                 <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Vulnerability Reports</h4>
                 <p className="text-platinum-400 leading-relaxed mb-6">
-                  Critical security vulnerabilities I've identified in major platforms and payment systems, helping
+                  Vulnerabilities that I've identified and reported in major platforms and payment systems, helping
                   secure systems used by millions of users worldwide.
                 </p>
               </motion.div>
@@ -649,12 +596,9 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Insights & Perspectives</h3>
-                <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">From My Blog</h4>
-                <p className="text-platinum-400 leading-relaxed mb-6">
-                  Thoughts on security, development, leadership, and the intersection of technology with society. Deep
-                  dives into the challenges and opportunities shaping our digital future.
-                </p>
+                <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Blog</h3>
+                
+                
               </motion.div>
 
               <motion.div
@@ -665,7 +609,7 @@ export default function PersonalWebsite() {
                 variants={staggerContainer}
               >
                 {blogPosts.map((post, index) => (
-                  <motion.div key={post.title} className="luxury-glass-hover rounded-2xl p-6 group">
+                  <motion.div key={post.title} variants={scaleIn} className="luxury-glass-hover rounded-2xl p-6 group">
                     <span className="text-xs text-platinum-500">{post.category}</span>
                     <h4 className="text-lg font-bold text-diamond-200">{post.title}</h4>
                     <span className="text-xs text-platinum-500">{post.date}</span>
@@ -707,8 +651,7 @@ export default function PersonalWebsite() {
                   <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Get In Touch</h3>
                   <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Let's Connect</h4>
                   <p className="text-platinum-400 leading-relaxed mb-6">
-                    Interested in discussing a project, collaboration opportunity, or just want to connect? I'd love to
-                    hear from you and explore how we can work together.
+                    Interested in discussing a project, collaboration, or just want to connect? I'd love to hear from you 
                   </p>
                 </div>
                 <div className="flex flex-col items-center gap-4">
@@ -722,28 +665,8 @@ export default function PersonalWebsite() {
                     </div>
                   ))}
                 </div>
-                <div className="flex flex-col items-center gap-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full px-4 py-2 text-sm rounded-full luxury-glass text-diamond-50 border-white/10"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-4 py-2 text-sm rounded-full luxury-glass text-diamond-50 border-white/10"
-                  />
-                  <textarea
-                    placeholder="Message"
-                    className="w-full px-4 py-2 text-sm rounded-lg luxury-glass text-diamond-50 border-white/10"
-                  />
-                  <Button
-                    size="lg"
-                    className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
-                  >
-                    <span className="group-hover:scale-105 transition-transform duration-300">Send Message</span>
-                  </Button>
-                </div>
+
+                
               </div>
             </motion.div>
           </div>
@@ -751,62 +674,7 @@ export default function PersonalWebsite() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-obsidian-950 text-platinum-400 py-12">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div>
-              <h3 className="text-lg font-bold text-diamond-100">Ahmad Yoosuf</h3>
-              <p className="text-sm">AI • Security • Product</p>
-            </div>
-            <div className="mt-4 md:mt-0">
-              <p className="text-sm">
-                Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve
-                real problems.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8">
-            <h4 className="text-sm font-semibold">Navigation</h4>
-            <ul className="mt-2">
-              {["Home", "Work", "Reports", "Blog", "Contact"].map((item) => (
-                <li key={item} className="text-sm hover:text-ruby-400 transition-colors duration-300">
-                  <Link href={`#${item.toLowerCase()}`}>{item}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="mt-8">
-            <h4 className="text-sm font-semibold">Projects</h4>
-            <ul className="mt-2">
-              {[
-                { name: "MARSAD", href: "https://marsadi.vercel.app" },
-                { name: "OCRPro", href: "https://ocrpro.vercel.app" },
-                { name: "A111y", href: "https://a111y.vercel.app" },
-                { name: "The Yoosuf Foundation", href: "https://theyoosuffoundation.org" },
-                { name: "Security Reports", href: "/reports" },
-              ].map((item) => (
-                <li key={item.name} className="text-sm hover:text-ruby-400 transition-colors duration-300">
-                  <Link href={item.href}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-8 border-t border-white/[0.05] pt-4 text-center">
-          <p className="text-sm">© {new Date().getFullYear()} Ahmad Mohamed Yoosuf. All rights reserved.</p>
-          <div className="flex justify-center gap-4 mt-2">
-            <Link href="/privacy" className="text-sm hover:text-ruby-400 transition-colors duration-300">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-sm hover:text-ruby-400 transition-colors duration-300">
-              Terms
-            </Link>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   )
 }
