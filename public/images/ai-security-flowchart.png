@@ -1,10 +1,11 @@
-"use client"
+```typescriptreact file="app/page.tsx"
+[v0-no-op-code-block-prefix]"use client"
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, Github, Mail, MessageSquare, Shield, Zap, Brain, Linkedin } from "lucide-react"
+import { ArrowRight, FileText, Github, Mail, MessageSquare, Shield, Zap, Brain, Linkedin } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
 import Image from "next/image"
@@ -79,8 +80,7 @@ export default function PersonalWebsite() {
   const projects = [
     {
       title: "Amaze",
-      description:
-        "Agentic cloud security platform that automates vulnerability detection, analysis, and remediation for AWS environments.",
+      description: "AI-powered cloud security platform that automates vulnerability detection, analysis, and remediation for AWS environments.",
       tags: ["AI", "Cloud Security", "Automation"],
       link: "https://amazehq.vercel.app",
       icon: Shield,
@@ -135,12 +135,11 @@ export default function PersonalWebsite() {
 
   const blogPosts = [
     {
-      title: "Agentic Cloud Security: Beyond Detection",
+      title: "AI-Driven Cloud Security: Beyond Detection",
       category: "Security",
       date: "July 20, 2025",
-      excerpt:
-        "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
-      slug: "agentic-cloud-security",
+      excerpt: "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
+      slug: "ai-driven-cloud-security",
       readTime: "9 min read",
     },
     {
@@ -253,7 +252,9 @@ export default function PersonalWebsite() {
               <span className="text-base sm:text-lg md:text-xl font-bold text-luxury tracking-tight truncate">
                 Ahmad Yoosuf
               </span>
-              
+              <span className="text-2xs text-platinum-500 tracking-wider uppercase hidden sm:block">
+                AI • Security • Product
+              </span>
             </div>
           </motion.div>
 
@@ -405,12 +406,12 @@ export default function PersonalWebsite() {
                   className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none"
                   variants={fadeInUp}
                 >
-                  <span className="block text-luxury mb-2 text-4xl">Ahmad Mohamed</span>
-                  <span className="block text-diamond-200 font-light text-4xl">Yoosuf</span>
+                  <span className="block text-luxury mb-2">Ahmad Mohamed</span>
+                  <span className="block text-diamond-200 font-light">Yoosuf</span>
                 </motion.h1>
 
                 <motion.p
-                  className="md:text-xl max-w-3xl mx-auto leading-relaxed text-2xl font-light text-card-foreground"
+                  className="md:text-xl max-w-3xl mx-auto leading-relaxed font-semibold text-2xl text-slate-300"
                   variants={fadeInUp}
                 >
                   Building products that matter
@@ -422,7 +423,7 @@ export default function PersonalWebsite() {
                     className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                     onClick={() => handleNavClick("work")}
                   >
-                    <span className="group-hover:scale-105 transition-transform duration-300 text-black">View My Work</span>
+                    <span className="group-hover:scale-105 transition-transform duration-300">View My Work</span>
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
 
@@ -453,7 +454,7 @@ export default function PersonalWebsite() {
                 variants={fadeInUp}
               >
                 <div className="flex justify-center">
-                  <div className="btn-luxury rounded-full text-xl font-bold group px-7 py-4 text-black">
+                  <div className="btn-luxury text-diamond-50 rounded-full px-10 py-5 text-xl font-bold group">
                     <span className="group-hover:scale-105 transition-transform duration-300">Selected Work</span>
                   </div>
                 </div>
@@ -490,7 +491,7 @@ export default function PersonalWebsite() {
                           className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                           onClick={() => window.open(project.link, "_blank")}
                         >
-                          <span className="group-hover:scale-105 transition-transform duration-300 text-black">View Project</span>
+                          <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
                           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                         </Button>
                       </motion.div>
@@ -511,7 +512,7 @@ export default function PersonalWebsite() {
                         className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                         onClick={() => window.open("https://theyoosuffoundation.org", "_blank")}
                       >
-                        <span className="group-hover:scale-105 transition-transform duration-300 text-black">Learn More</span>
+                        <span className="group-hover:scale-105 transition-transform duration-300">Learn More</span>
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
                     </motion.div>

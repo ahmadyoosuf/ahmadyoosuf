@@ -7,6 +7,15 @@ import { Button } from "@/components/ui/button"
 const getBlogPosts = () => {
   return [
     {
+      title: "Agentic Cloud Security: Beyond Detection",
+      slug: "agentic-cloud-security",
+      date: "July 20, 2025",
+      category: "Security",
+      excerpt:
+        "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
+      readTime: "9 min read",
+    },
+    {
       title: "Why I Hunt Bugs in Payment Systems",
       slug: "payment-systems-bugs",
       date: "January 12, 2025",

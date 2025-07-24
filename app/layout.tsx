@@ -3,30 +3,30 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Ahmad Mohamed Yoosuf | AI • Security • Product",
+  title: "Ahmad",
   description:
-    "Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve real problems.",
+    "Building products that matter",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Ahmad Mohamed Yoosuf | AI • Security • Product",
+    title: "Ahmad",
     description:
-      "Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve real problems.",
+      "Building products that matter",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Mohamed Yoosuf | AI • Security • Product",
+    title: "Ahmad",
     description:
-      "Building systems that matter. Identifying vulnerabilities that others miss. Creating products that solve real problems.",
+      "Building products that matter",
   },
   robots: {
     index: true,
     follow: true,
   },
-    generator: 'v0.dev'
+    generator: ''
 }
 
 export default function RootLayout({
