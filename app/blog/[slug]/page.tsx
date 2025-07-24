@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ArrowLeft, Calendar, Tag, User } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
+import { ArrowLeft, Calendar, User } from "lucide-react"
 
 // This would typically come from a CMS or MDX files
 const getBlogPost = (slug: string) => {
@@ -10,8 +9,6 @@ const getBlogPost = (slug: string) => {
       title: "Why I Hunt Bugs in Payment Systems",
       date: "January 12, 2025",
       author: "Ahmad Mohamed Yoosuf",
-      category: "Security",
-      readTime: "8 min read",
       content: `
       <p>Most security researchers go after authentication bypasses or XSS vulnerabilities. I hunt payment bugs. Not because they're technically complex (they're often embarrassingly simple), but because they reveal something profound about how we build systems.</p>
       
@@ -75,14 +72,11 @@ const getBlogPost = (slug: string) => {
       title: "The Myth of the Self-Made Success",
       date: "December 28, 2024",
       author: "Ahmad Mohamed Yoosuf",
-      category: "Leadership",
-      readTime: "12 min read",
       content: `
-      <p>My father studied until 3rd grade. He became an Islamic scholar and educationist. By every Silicon Valley metric, he was a failure. By every metric that matters, he was not.</p>
+      <p>My father studied just until 3rd grade. He became an Islamic scholar and educationist. By every Silicon Valley metric, he was a failure. By every metric that matters, he was not.</p>
       
       <p>I founded The Yoosuf Foundation in his name, and after mentoring 50+ first-generation students, I've learned something that contradicts everything we're told about success: the "self-made" narrative is not just wrong. It's actively harmful.</p>
       
-      <h2>The GitHub Student Pack Revelation</h2>
       <p>Last month, I helped a brilliant student access the GitHub Student Developer Pack. Free domain, free hosting, $100 in cloud credits. His reaction? "Why didn't anyone tell me this existed?"</p>
       
       <p>That's when it hit me. The difference between him and his peers wasn't talent or drive. It was information. His classmates knew because their older siblings knew. Their siblings knew because their parents knew. The chain of knowledge that seems obvious to some is completely invisible to others.</p>
@@ -137,102 +131,12 @@ const getBlogPost = (slug: string) => {
       <p>And systems can be fixed.</p>
     `,
     },
-    "building-ai-products": {
-      title: "Building AI Products That Actually Work",
-      date: "November 15, 2024",
-      author: "Ahmad Mohamed Yoosuf",
-      category: "AI",
-      readTime: "10 min read",
-      content: `
-      <p>After building OCRPro and A111y, I've learned that successful AI products aren't about using the latest models or the most complex architectures. They're about solving real problems in ways that existing solutions don't.</p>
-      
-      <h2>The Problem with Most AI Products</h2>
-      <p>The AI landscape is littered with products that are technically impressive but practically useless. They demonstrate capabilities without addressing actual user needs, or they solve problems that don't really exist. This happens when teams focus on the technology rather than the problem.</p>
-      
-      <h2>OCRPro: A Case Study in Practical AI</h2>
-      <p>When I started building OCRPro, the market already had established players like AWS Textract, Azure OCR, and Google Cloud OCR. The question wasn't whether we could build an OCR engine. It was whether we could build one that was meaningfully better.</p>
-      
-      <h3>Finding the Gap</h3>
-      <p>Through extensive testing, I discovered that existing solutions had three main issues:</p>
-      <ul>
-        <li><strong>Cost:</strong> Enterprise OCR solutions were prohibitively expensive for many use cases</li>
-        <li><strong>Speed:</strong> Processing times were often too slow for real-time applications</li>
-        <li><strong>Accuracy on edge cases:</strong> Performance degraded significantly on non-standard documents</li>
-      </ul>
-      
-      <h3>The Solution</h3>
-      <p>OCRPro addresses these issues through:</p>
-      <ul>
-        <li>A hybrid architecture that balances accuracy and speed</li>
-        <li>Specialized models for different document types</li>
-        <li>Aggressive optimization for common use cases</li>
-        <li>A pricing model that scales with actual usage, not enterprise contracts</li>
-      </ul>
-      
-      <p>The result? An OCR engine that outperforms industry leaders on the metrics that actually matter to users.</p>
-      
-      <h2>A11y: Making Accessibility Accessible</h2>
-      <p>A11y emerged from a different observation: while everyone agrees that web accessibility is important, most developers find accessibility testing tools too complex or too removed from their workflow.</p>
-      
-      <h3>The Traditional Approach</h3>
-      <p>Most accessibility tools either:</p>
-      <ul>
-        <li>Require extensive manual testing</li>
-        <li>Generate overwhelming reports with hundreds of issues</li>
-        <li>Focus on compliance rather than actual user experience</li>
-      </ul>
-      
-      <h3>Our Approach</h3>
-      <p>A11y takes a different path:</p>
-      <ul>
-        <li><strong>AI-powered analysis:</strong> Understands context, not just rules</li>
-        <li><strong>Prioritized recommendations:</strong> Shows what matters most</li>
-        <li><strong>Developer-friendly:</strong> Integrates into existing workflows</li>
-        <li><strong>Focus on impact:</strong> Measures real accessibility improvements</li>
-      </ul>
-      
-      <h2>Lessons Learned</h2>
-      
-      <h3>1. Start with the Problem, Not the Technology</h3>
-      <p>Both OCRPro and A11y succeeded because they started with clear problem statements. The AI technology was a means to solve these problems, not the end goal.</p>
-      
-      <h3>2. Benchmark Against Real-World Usage</h3>
-      <p>Academic benchmarks are useful, but real-world performance is what matters. OCRPro's edge came from optimizing for actual documents users process, not standardized test sets.</p>
-      
-      <h3>3. Make It 10x Better, Not 10% Better</h3>
-      <p>To compete with established solutions, marginal improvements aren't enough. You need to be dramatically better on at least one dimension that users care about.</p>
-      
-      <h3>4. Developer Experience Is User Experience</h3>
-      <p>For developer tools like A111y, the API design, documentation, and integration process are as important as the core functionality.</p>
-      
-      <h3>5. Measure What Matters</h3>
-      <p>Success metrics should align with user value. For OCRPro, it's not just accuracy. It's accuracy per dollar and accuracy per second. For A11y, it's not just finding issues. It's helping developers fix them.</p>
-      
-      <h2>The Future of Practical AI</h2>
-      <p>As AI capabilities continue to expand, the opportunity isn't in building more powerful models. It's in applying existing capabilities to solve real problems better than current solutions.</p>
-      
-      <p>The next generation of successful AI products will be those that:</p>
-      <ul>
-        <li>Solve specific, well-defined problems</li>
-        <li>Integrate seamlessly into existing workflows</li>
-        <li>Provide clear, measurable value</li>
-        <li>Focus on user outcomes, not technical metrics</li>
-      </ul>
-      
-      <h2>Conclusion</h2>
-      <p>Building AI products that actually work isn't about having the most advanced technology. It's about understanding problems deeply and applying technology thoughtfully. OCRPro and A11y succeed not because they use cutting-edge AI, but because they use AI to cut through real-world problems.</p>
-      
-      <p>The best AI products are often the ones where users don't even think about the AI. They just appreciate that their problem is solved better than before.</p>
-    `,
-    },
     "speed-is-the-only-moat": {
       title: "Speed Is the Only Moat",
       date: "October 22, 2024",
       author: "Ahmad Mohamed Yoosuf",
-      category: "Product",
-      readTime: "6 min read",
       content: `
-      <p>I built MARSAD in a few weeks. Solo. Not because I'm exceptional, but because I had to. In the time it would take to write a requirements document, the entire competitive landscape can shift. Speed isn't just an advantage. It's the only sustainable one.</p>
+      <p>We built many things in a few weeks. Not just because we'are exceptional, but because we had to. In the time it would take to write a requirements document, the entire competitive landscape can shift. Speed isn't just an advantage. It's the only sustainable one.</p>
       
       <h2>The Half-Life of Features</h2>
       <p>Every feature you build can be replicated. With AI, that replication time has dropped from months to days. Sometimes hours. That innovative OCR preprocessing pipeline that took you weeks to perfect? Someone can describe it to Claude and get 80% of the way there before lunch.</p>
@@ -305,13 +209,11 @@ const getBlogPost = (slug: string) => {
     `,
     },
     "agentic-cloud-security": {
-      title: "Agentic Cloud Security: Beyond Detection",
+      title: "Agentic Cloud Security",
       date: "July 20, 2025",
       author: "Ahmad Mohamed Yoosuf",
-      category: "Security",
-      readTime: "9 min read",
       content: `
-    <p>Most security tools just generate alerts. Security teams need a closed-loop system that detects, analyzes, and fixes issues automatically.</p>
+    <p>Most security tools just generate alerts. Security teams need a closed-loop system that detects, analyzes, and fixes issues.</p>
     
     <h2>The Alert Fatigue Problem</h2>
     <p>Security teams are drowning in alerts from dozens of tools. Most are low context and require manual investigation. Critical threats get lost in a sea of trivial notifications. The industry has responded with more dashboards, not more solutions.</p>
@@ -465,11 +367,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               <User className="h-4 w-4 mr-2" />
               {post.author}
             </div>
-            <div className="flex items-center">
-              <Tag className="h-4 w-4 mr-2" />
-              <Badge className="glass-card text-platinum-300 border-platinum-500/20 px-3 py-1">{post.category}</Badge>
-            </div>
-            <span className="text-platinum-500">{post.readTime}</span>
           </div>
 
           <div className="mt-8 report-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }} />

@@ -136,37 +136,30 @@ export default function PersonalWebsite() {
   const blogPosts = [
     {
       title: "Agentic Cloud Security: Beyond Detection",
-      category: "Security",
       date: "July 20, 2025",
       excerpt:
         "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
       slug: "agentic-cloud-security",
-      readTime: "9 min read",
     },
     {
       title: "Why I Hunt Bugs in Payment Systems",
-      category: "Security",
       date: "January 12, 2025",
       excerpt: "The real vulnerabilities aren't in the code. They're in the assumptions about how money should move.",
       slug: "payment-systems-bugs",
-      readTime: "8 min read",
     },
     {
       title: "The Myth of the Self-Made Success",
-      category: "Leadership",
       date: "December 28, 2024",
       excerpt:
         "After mentoring 50+ first-generation professionals, I've learned that 'pulling yourself up by your bootstraps' is terrible advice.",
       slug: "myth-of-self-made",
-      readTime: "12 min read",
     },
     {
-      title: "Building AI Products That Actually Work",
-      category: "AI",
-      date: "November 15, 2024",
-      excerpt: "Lessons learned from building OCRPro and A111y - two AI products that solve real problems.",
-      slug: "building-ai-products",
-      readTime: "10 min read",
+      title: "Speed Is the Only Moat",
+      date: "October 22, 2024",
+      excerpt:
+        "In a world where AI can replicate any feature in days, the only sustainable advantage is how fast you can move.",
+      slug: "speed-is-the-only-moat",
     },
   ]
 
@@ -220,7 +213,6 @@ export default function PersonalWebsite() {
     }
   }
 
-  // Updated contact items
   const contactItems = [
     { icon: Mail, label: "Email", value: "ahmad@ahmadyoosuf.com", href: "mailto:ahmad@ahmadyoosuf.com", color: "ruby" },
     { icon: MessageSquare, label: "Phone", value: "+91 6382429579", href: "tel:+916382429579", color: "diamond" },
@@ -253,41 +245,35 @@ export default function PersonalWebsite() {
               <span className="text-base sm:text-lg md:text-xl font-bold text-luxury tracking-tight truncate">
                 Ahmad Yoosuf
               </span>
-              
             </div>
           </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-2">
-            {["home", "work", "reports", "blog"].map(
-              (
-                section, // Removed "contact" from here as it's now an icon
-              ) => (
-                <button
-                  key={section}
-                  className={cn(
-                    "px-6 py-3 text-sm font-medium rounded-full transition-all duration-500 relative group",
-                    activeSection === section ? "text-ruby-400" : "text-platinum-400 hover:text-diamond-200",
-                  )}
-                  onClick={() => handleNavClick(section)}
-                >
-                  {activeSection === section && (
-                    <motion.div
-                      layoutId="activeSection"
-                      className="absolute inset-0 luxury-glass rounded-full"
-                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                    />
-                  )}
-                  <span className="relative z-10">
-                    {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
-                  </span>
-                </button>
-              ),
-            )}
+            {["home", "work", "reports", "blog"].map((section) => (
+              <button
+                key={section}
+                className={cn(
+                  "px-6 py-3 text-sm font-medium rounded-full transition-all duration-500 relative group",
+                  activeSection === section ? "text-ruby-400" : "text-platinum-400 hover:text-diamond-200",
+                )}
+                onClick={() => handleNavClick(section)}
+              >
+                {activeSection === section && (
+                  <motion.div
+                    layoutId="activeSection"
+                    className="absolute inset-0 luxury-glass rounded-full"
+                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                  />
+                )}
+                <span className="relative z-10">
+                  {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
+                </span>
+              </button>
+            ))}
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-4">
-            {/* Contact, GitHub, LinkedIn Icons */}
             <button
               onClick={() => handleNavClick("contact")}
               aria-label="Contact"
@@ -314,9 +300,8 @@ export default function PersonalWebsite() {
               <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
             </Link>
 
-            {/* Mobile menu button */}
             <button
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full luxury-glass menu-button group ml-2" // ml-2 for spacing from new icons
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full luxury-glass menu-button group ml-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -360,29 +345,24 @@ export default function PersonalWebsite() {
       >
         <div className="absolute inset-0 bg-obsidian-950/90" />
         <div className="relative flex flex-col items-center justify-center h-full gap-8 px-6">
-          {["home", "work", "reports", "blog", "contact"].map(
-            (
-              section,
-              index, // "contact" can be here for mobile nav
-            ) => (
-              <motion.button
-                key={section}
-                className={cn(
-                  "px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 w-full max-w-xs text-center luxury-glass-hover",
-                  activeSection === section ? "text-ruby-400" : "text-platinum-300 hover:text-diamond-100",
-                )}
-                onClick={() => handleNavClick(section)}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{
-                  opacity: isMenuOpen ? 1 : 0,
-                  y: isMenuOpen ? 0 : 50,
-                }}
-                transition={{ delay: index * 0.1, duration: 0.3 }}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
-              </motion.button>
-            ),
-          )}
+          {["home", "work", "reports", "blog", "contact"].map((section, index) => (
+            <motion.button
+              key={section}
+              className={cn(
+                "px-8 py-4 text-lg font-medium rounded-full transition-all duration-300 w-full max-w-xs text-center luxury-glass-hover",
+                activeSection === section ? "text-ruby-400" : "text-platinum-300 hover:text-diamond-100",
+              )}
+              onClick={() => handleNavClick(section)}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{
+                opacity: isMenuOpen ? 1 : 0,
+                y: isMenuOpen ? 0 : 50,
+              }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1).replace("-", " ")}
+            </motion.button>
+          ))}
         </div>
       </motion.div>
 
@@ -422,7 +402,9 @@ export default function PersonalWebsite() {
                     className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                     onClick={() => handleNavClick("work")}
                   >
-                    <span className="group-hover:scale-105 transition-transform duration-300 text-black">View My Work</span>
+                    <span className="group-hover:scale-105 transition-transform duration-300 text-black">
+                      View My Work
+                    </span>
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
 
@@ -470,7 +452,6 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={staggerContainer}
               >
-                {/* Projects Grid */}
                 <motion.div variants={fadeInUp}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
@@ -490,7 +471,9 @@ export default function PersonalWebsite() {
                           className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                           onClick={() => window.open(project.link, "_blank")}
                         >
-                          <span className="group-hover:scale-105 transition-transform duration-300 text-black">View Project</span>
+                          <span className="group-hover:scale-105 transition-transform duration-300 text-black">
+                            View Project
+                          </span>
                           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                         </Button>
                       </motion.div>
@@ -511,7 +494,9 @@ export default function PersonalWebsite() {
                         className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
                         onClick={() => window.open("https://theyoosuffoundation.org", "_blank")}
                       >
-                        <span className="group-hover:scale-105 transition-transform duration-300 text-black">Learn More</span>
+                        <span className="group-hover:scale-105 transition-transform duration-300 text-black">
+                          Learn More
+                        </span>
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
                     </motion.div>
@@ -534,11 +519,8 @@ export default function PersonalWebsite() {
                 variants={fadeInUp}
               >
                 <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Security Research</h3>
-                <h4 className="text-xl md:text-2xl font-bold text-diamond-200 mb-4">Vulnerability Reports</h4>
-                <p className="text-platinum-400 leading-relaxed mb-6">
-                  Vulnerabilities that I've identified and reported in major platforms and payment systems, helping
-                  secure systems used by millions of users worldwide.
-                </p>
+                
+                
               </motion.div>
 
               <motion.div
@@ -566,14 +548,6 @@ export default function PersonalWebsite() {
                   </motion.div>
                 ))}
               </motion.div>
-
-              <motion.div
-                className="text-center mt-12"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              />
             </div>
           </div>
         </section>
@@ -601,7 +575,6 @@ export default function PersonalWebsite() {
               >
                 {blogPosts.map((post, index) => (
                   <motion.div key={post.title} variants={scaleIn} className="luxury-glass-hover rounded-2xl p-6 group">
-                    <span className="text-xs text-platinum-500">{post.category}</span>
                     <h4 className="text-lg font-bold text-diamond-200">{post.title}</h4>
                     <span className="text-xs text-platinum-500">{post.date}</span>
                     <p className="text-platinum-400 leading-relaxed mb-4">{post.excerpt}</p>
@@ -612,17 +585,7 @@ export default function PersonalWebsite() {
                 ))}
               </motion.div>
 
-              <motion.div
-                className="text-center mt-12"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              >
-                <Link href="/blog" className="text-ruby-400 hover:underline">
-                  View All Posts
-                </Link>
-              </motion.div>
+              
             </div>
           </div>
         </section>
@@ -670,8 +633,6 @@ export default function PersonalWebsite() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
     </div>
   )
 }
