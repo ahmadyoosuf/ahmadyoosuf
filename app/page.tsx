@@ -273,13 +273,7 @@ export default function PersonalWebsite() {
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-4">
-            <button
-              onClick={() => handleNavClick("contact")}
-              aria-label="Contact"
-              className="text-platinum-400 hover:text-ruby-400 transition-colors duration-300 group p-2 rounded-full luxury-glass-hover"
-            >
-              <Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-            </button>
+            
             <Link
               href="https://github.com/ahmadyoosuf"
               target="_blank"
@@ -432,8 +426,6 @@ export default function PersonalWebsite() {
                 variants={fadeInUp}
               >
                 <div className="text-platinum-400 font-semibold text-5xl">Selected Work</div>
-
-                
               </motion.div>
 
               <motion.div
@@ -591,18 +583,26 @@ export default function PersonalWebsite() {
               </motion.div>
 
               <motion.div
-                className="flex justify-center"
+                className="flex flex-col sm:flex-row gap-8 justify-center items-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
+                variants={staggerContainer}
               >
-                <a
-                  href="mailto:ahmad@ahmadyoosuf.com"
-                  className="text-ruby-400 hover:text-ruby-300 transition-colors duration-300 text-lg font-medium"
-                >
-                  ahmad@ahmadyoosuf.com
-                </a>
+                {contactItems.map((contact, index) => (
+                  <motion.a
+                    key={index}
+                    href={contact.href}
+                    variants={scaleIn}
+                    className="luxury-glass-hover rounded-2xl p-6 group flex items-center gap-4 min-w-[280px] transition-all duration-300 hover:scale-105"
+                  >
+                    <contact.icon className="h-6 w-6 text-ruby-400 group-hover:scale-110 transition-transform duration-300" />
+                    <div>
+                      <span className="font-semibold text-diamond-200 block">{contact.label}</span>
+                      <span className="text-platinum-400">{contact.value}</span>
+                    </div>
+                  </motion.a>
+                ))}
               </motion.div>
             </div>
           </div>
