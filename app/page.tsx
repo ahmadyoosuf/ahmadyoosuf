@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, Github, Mail, MessageSquare, Shield, Zap, Brain, Linkedin } from "lucide-react"
+import { ArrowRight, FileText, Github, Mail, Shield, Zap, Brain, Linkedin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
 import Image from "next/image"
@@ -135,7 +135,7 @@ export default function PersonalWebsite() {
 
   const blogPosts = [
     {
-      title: "Agentic Cloud Security: Beyond Detection",
+      title: "Agentic Cloud Security",
       date: "July 20, 2025",
       excerpt:
         "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
@@ -215,7 +215,6 @@ export default function PersonalWebsite() {
 
   const contactItems = [
     { icon: Mail, label: "Email", value: "ahmad@ahmadyoosuf.com", href: "mailto:ahmad@ahmadyoosuf.com", color: "ruby" },
-    { icon: MessageSquare, label: "Phone", value: "+91 6382429579", href: "tel:+916382429579", color: "diamond" },
   ]
 
   return (
@@ -382,15 +381,15 @@ export default function PersonalWebsite() {
                 variants={staggerContainer}
               >
                 <motion.h1
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none"
+                  className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none sm:text-8xl"
                   variants={fadeInUp}
                 >
-                  <span className="block text-luxury mb-2 text-4xl">Ahmad Mohamed</span>
-                  <span className="block text-diamond-200 font-light text-4xl">Yoosuf</span>
+                  <span className="block text-luxury mb-2 text-6xl">Ahmad Mohamed</span>
+                  <span className="block text-diamond-200 font-light text-6xl">Yoosuf</span>
                 </motion.h1>
 
                 <motion.p
-                  className="md:text-xl max-w-3xl mx-auto leading-relaxed text-2xl font-light text-card-foreground"
+                  className="md:text-xl max-w-3xl mx-auto leading-relaxed font-light text-card-foreground text-5xl"
                   variants={fadeInUp}
                 >
                   Building products that matter
@@ -399,13 +398,11 @@ export default function PersonalWebsite() {
                 <motion.div className="flex flex-col sm:flex-row gap-4 justify-center pt-8" variants={fadeInUp}>
                   <Button
                     size="lg"
-                    className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                    className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
                     onClick={() => handleNavClick("work")}
                   >
-                    <span className="group-hover:scale-105 transition-transform duration-300 text-black">
-                      View My Work
-                    </span>
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                    <span className="group-hover:scale-105 transition-transform duration-300">View My Work</span>
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
 
                   <Button
@@ -435,8 +432,8 @@ export default function PersonalWebsite() {
                 variants={fadeInUp}
               >
                 <div className="flex justify-center">
-                  <div className="btn-luxury rounded-full text-xl font-bold group px-7 py-4 text-black">
-                    <span className="group-hover:scale-105 transition-transform duration-300">Selected Work</span>
+                  <div className="bg-slate-800 text-slate-200 rounded-lg px-6 py-3 text-sm font-semibold">
+                    Selected Work
                   </div>
                 </div>
 
@@ -461,29 +458,27 @@ export default function PersonalWebsite() {
                         className="luxury-glass-hover rounded-2xl p-8 group"
                       >
                         <div className="flex items-center gap-4 mb-6">
-                          <h4 className="text-xl font-bold text-diamond-200">{project.title}</h4>
+                          <h4 className="text-xl font-semibold text-slate-200">{project.title}</h4>
                         </div>
 
-                        <p className="text-platinum-400 leading-relaxed mb-6">{project.description}</p>
+                        <p className="text-slate-400 leading-relaxed mb-6">{project.description}</p>
 
                         <Button
                           size="lg"
-                          className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                          className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
                           onClick={() => window.open(project.link, "_blank")}
                         >
-                          <span className="group-hover:scale-105 transition-transform duration-300 text-black">
-                            View Project
-                          </span>
-                          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                          <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
+                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                         </Button>
                       </motion.div>
                     ))}
                     <motion.div variants={scaleIn} className="luxury-glass-hover rounded-2xl p-8 group">
                       <div className="flex items-center gap-4 mb-6">
-                        <h4 className="text-xl font-bold text-diamond-200">The Yoosuf Foundation</h4>
+                        <h4 className="text-xl font-semibold text-slate-200">The Yoosuf Foundation</h4>
                       </div>
 
-                      <p className="text-platinum-400 leading-relaxed mb-6">
+                      <p className="text-slate-400 leading-relaxed mb-6">
                         Educational nonprofit connecting first-generation students with resources, mentorship, and grant
                         opportunities. Currently mentoring promising talents from low-income, first-generation
                         backgrounds, providing them with the guidance and support they need to succeed in technology.
@@ -491,13 +486,11 @@ export default function PersonalWebsite() {
 
                       <Button
                         size="lg"
-                        className="btn-luxury text-diamond-50 rounded-full px-8 py-4 h-auto text-base font-medium group"
+                        className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
                         onClick={() => window.open("https://theyoosuffoundation.org", "_blank")}
                       >
-                        <span className="group-hover:scale-105 transition-transform duration-300 text-black">
-                          Learn More
-                        </span>
-                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                        <span className="group-hover:scale-105 transition-transform duration-300">Learn More</span>
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
                     </motion.div>
                   </div>
@@ -518,9 +511,7 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Security Research</h3>
-                
-                
+                <h3 className="text-2xl md:text-3xl font-semibold text-slate-200 mb-4">Security Research</h3>
               </motion.div>
 
               <motion.div
@@ -539,8 +530,8 @@ export default function PersonalWebsite() {
                       <span className="text-sm font-semibold">{report.severity} Severity</span>
                       <span className="text-xs text-platinum-500">{report.date}</span>
                     </div>
-                    <h4 className="text-lg font-bold text-diamond-200">{report.title}</h4>
-                    <p className="text-platinum-400 leading-relaxed mb-4">{report.description}</p>
+                    <h4 className="text-lg font-bold text-slate-200">{report.title}</h4>
+                    <p className="text-slate-400 leading-relaxed mb-4">{report.description}</p>
                     <span className="text-xs text-platinum-500">{report.impact}</span>
                     <Link href={`/reports/${report.slug}`} className="text-ruby-400 hover:underline mt-2 block">
                       Read Full Report
@@ -584,8 +575,6 @@ export default function PersonalWebsite() {
                   </motion.div>
                 ))}
               </motion.div>
-
-              
             </div>
           </div>
         </section>
@@ -608,26 +597,18 @@ export default function PersonalWebsite() {
               </motion.div>
 
               <motion.div
-                className="flex flex-col sm:flex-row gap-8 justify-center items-center"
+                className="flex justify-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
-                variants={staggerContainer}
+                variants={fadeInUp}
               >
-                {contactItems.map((contact, index) => (
-                  <motion.a
-                    key={index}
-                    href={contact.href}
-                    variants={scaleIn}
-                    className="luxury-glass-hover rounded-2xl p-6 group flex items-center gap-4 min-w-[280px] transition-all duration-300 hover:scale-105"
-                  >
-                    <contact.icon className="h-6 w-6 text-ruby-400 group-hover:scale-110 transition-transform duration-300" />
-                    <div>
-                      <span className="font-semibold text-diamond-200 block">{contact.label}</span>
-                      <span className="text-platinum-400">{contact.value}</span>
-                    </div>
-                  </motion.a>
-                ))}
+                <a
+                  href="mailto:ahmad@ahmadyoosuf.com"
+                  className="text-ruby-400 hover:text-ruby-300 transition-colors duration-300 text-lg font-medium"
+                >
+                  ahmad@ahmadyoosuf.com
+                </a>
               </motion.div>
             </div>
           </div>
