@@ -408,10 +408,10 @@ export default function PersonalWebsite() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="luxury-glass-hover text-diamond-200 rounded-full px-8 py-4 h-auto text-base font-medium group border-white/10 bg-transparent"
+                    className="bg-transparent border-slate-700 hover:bg-slate-800 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group"
                     onClick={() => handleNavClick("reports")}
                   >
-                    <FileText className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
+                    <FileText className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
                     <span className="group-hover:scale-105 transition-transform duration-300">Security Reports</span>
                   </Button>
                 </motion.div>
@@ -431,15 +431,9 @@ export default function PersonalWebsite() {
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeInUp}
               >
-                <div className="flex justify-center">
-                  <div className="bg-slate-800 text-slate-200 rounded-lg px-6 py-3 text-sm font-semibold">
-                    Selected Work
-                  </div>
-                </div>
+                <div className="text-platinum-400 font-semibold text-5xl">Selected Work</div>
 
-                <p className="text-lg text-platinum-400 max-w-3xl mx-auto leading-relaxed rounded-sm">
-                  A curated selection of my work across AI, security research, and full-stack development
-                </p>
+                
               </motion.div>
 
               <motion.div
