@@ -90,17 +90,9 @@ export default function PersonalWebsite() {
       description:
         "Social media intelligence platform led by HBKU in collaboration with institutions across Qatar, US, and UK. Designed and developed the entire platform solo in a few weeks.",
       tags: ["AI", "Data Analysis", "Full-Stack"],
-      link: "https://marsadi.vercel.app",
+      link: "https://marsadai.vercel.app",
       icon: Brain,
       featured: true,
-    },
-    {
-      title: "OCRPro",
-      description:
-        "State-of-the-art OCR engine that outperforms industry leaders like AWS Textract, Azure OCR, and Google Cloud OCR in terms of cost, speed, and accuracy.",
-      tags: ["AI", "Computer Vision", "API"],
-      link: "https://ocrpro.vercel.app",
-      icon: Zap,
     },
     {
       title: "A111y",
