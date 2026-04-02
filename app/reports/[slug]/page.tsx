@@ -1,14 +1,13 @@
-"use client"
-
-import { useState } from "react"
 import Link from "next/link"
+import { notFound } from "next/navigation"
 import { ArrowLeft, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
+import { renderMarkdown } from "@/lib/markdown"
+import { getSeverityColor } from "@/lib/severity"
 
-// This would typically come from a CMS or MDX files
 const getReportContent = (slug: string) => {
-  const reports = {
+  const reports: Record<string, { title: string; date: string; severity: string; cvss: string; content: string }> = {
     "stripe-vulnerability": {
       title:
         "Critical Vulnerability Report: SEPA Direct Debit Payment System Validation Issue on Stripe Payment Gateway",
@@ -20,7 +19,7 @@ const getReportContent = (slug: string) => {
 
 A significant vulnerability has been identified in Stripe's SEPA Direct Debit payment system implementation, affecting multiple client companies including nele.ai. This vulnerability allows for premium subscription activation without proper IBAN validation, potentially violating EU financial regulations around payment verification and posing risks of unauthorized IBAN usage.
 
-**CVSS Score**: **8.8 (High)**  
+**CVSS Score**: **8.8 (High)**
 - **Attack Vector**: Network
 - **Attack Complexity**: Low
 - **Privileges Required**: None
@@ -99,7 +98,7 @@ This widespread vulnerability in Stripe's SEPA Direct Debit implementation poten
 
 A significant vulnerability has been identified in Dropbox's SEPA Direct Debit payment system that allows premium subscription activation without proper IBAN validation. This could potentially violate EU financial regulations around payment verification and pose risks of unauthorized IBAN usage.
 
-**CVSS Score**: **8.8 (High)**  
+**CVSS Score**: **8.8 (High)**
 - **Attack Vector**: Network
 - **Attack Complexity**: Low
 - **Privileges Required**: None
@@ -113,7 +112,7 @@ The vulnerability is currently being discussed in a private Telegram group with 
 The current implementation allows:
 1. Premium subscription activation using any IBAN without proper verification
 2. Bypass of standard payment controls via VPN (tested with Italy, postal code 00185)
-3. Immediate access to Dropbox Essentials Plus + 1TB Add-on + Replay (€366 value)
+3. Immediate access to Dropbox Essentials Plus + 1TB Add-on + Replay (\u20AC366 value)
 
 ## Regulatory Implications
 
@@ -175,73 +174,12 @@ While the exact responsibility for IBAN validation between payment service provi
   return reports[slug as keyof typeof reports]
 }
 
-export default function ReportPage({ params }: { params: { slug: string } }) {
-  const report = getReportContent(params.slug)
-  const [isGeneratingPdf, setIsGeneratingPdf] = useState(false)
+export default async function ReportPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const report = getReportContent(slug)
 
   if (!report) {
-    return (
-      <div className="min-h-screen bg-obsidian-950 text-platinum-100 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4 text-gradient">Report Not Found</h1>
-          <Link href="/reports" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-            Back to Reports
-          </Link>
-        </div>
-      </div>
-    )
-  }
-
-  const handleDownloadPdf = () => {
-    setIsGeneratingPdf(true)
-    // Simulate PDF generation
-    setTimeout(() => {
-      setIsGeneratingPdf(false)
-      // In a real implementation, this would trigger the actual PDF download
-      alert("PDF downloaded successfully")
-    }, 1500)
-  }
-
-  const getSeverityColor = (severity: string) => {
-    switch (severity.toLowerCase()) {
-      case "critical":
-        return "bg-red-500/10 text-red-400 border-red-500/20"
-      case "high":
-        return "bg-orange-500/10 text-orange-400 border-orange-500/20"
-      case "medium":
-        return "bg-yellow-500/10 text-yellow-400 border-yellow-500/20"
-      case "low":
-        return "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
-      default:
-        return "bg-platinum-500/10 text-platinum-400 border-platinum-500/20"
-    }
-  }
-
-  // Function to convert markdown to HTML (simplified version)
-  const renderMarkdown = (markdown: string) => {
-    // Handle headers - remove extra # symbols
-    let html = markdown
-      .replace(/^#{2,}\s*(.*)/gm, '<h2 class="text-2xl font-bold mt-8 mb-4 text-gradient">$1</h2>')
-      .replace(/^#{3,}\s*(.*)/gm, '<h3 class="text-xl font-bold mt-6 mb-3 text-platinum-200">$1</h3>')
-      .replace(/^#{4,}\s*(.*)/gm, '<h4 class="text-lg font-bold mt-4 mb-2 text-platinum-300">$1</h4>')
-
-    // Handle lists - convert all to bullet points
-    html = html.replace(/^\d+\.\s+(.*)/gm, '<li class="ml-6 list-disc mb-2 text-platinum-400">$1</li>')
-    html = html.replace(/^-\s+(.*)/gm, '<li class="ml-6 list-disc mb-2 text-platinum-400">$1</li>')
-
-    // Handle paragraphs
-    html = html.replace(/^(?!<h|<li|<ul|<ol|<p|<div)(.*)/gm, '<p class="mb-4 text-platinum-400 leading-relaxed">$1</p>')
-
-    // Handle bold
-    html = html.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-platinum-200">$1</strong>')
-
-    // Handle italic
-    html = html.replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
-
-    // Clean up empty paragraphs
-    html = html.replace(/<p>\s*<\/p>/g, "")
-
-    return html
+    notFound()
   }
 
   return (
@@ -249,7 +187,7 @@ export default function ReportPage({ params }: { params: { slug: string } }) {
       <div className="container px-4 py-24 mx-auto max-w-4xl">
         <Link
           href="/reports"
-          className="inline-flex items-center text-sm text-platinum-500 hover:text-emerald-400 mb-8 transition-colors group"
+          className="inline-flex items-center text-sm text-platinum-500 hover:text-ruby-400 mb-8 transition-colors group"
         >
           <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
           Back to all reports
@@ -264,7 +202,7 @@ export default function ReportPage({ params }: { params: { slug: string } }) {
               </Badge>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gradient leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-luxury leading-tight">
               {report.title}
             </h1>
 
@@ -274,8 +212,6 @@ export default function ReportPage({ params }: { params: { slug: string } }) {
                 {report.date}
               </div>
             </div>
-
-            <div className="flex flex-wrap gap-3 mb-8">{/* Removed buttons */}</div>
           </div>
 
           <div className="mt-8 report-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(report.content) }} />

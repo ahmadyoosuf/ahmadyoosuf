@@ -49,7 +49,7 @@ export default function BlogPage() {
             <div>
               <Link
                 href="/"
-                className="inline-flex items-center text-sm text-platinum-500 hover:text-emerald-400 mb-6 transition-colors group"
+                className="inline-flex items-center text-sm text-platinum-500 hover:text-ruby-400 mb-6 transition-colors group"
               >
                 <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
                 Back to home
@@ -78,7 +78,7 @@ export default function BlogPage() {
 
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="text-emerald-400 flex items-center gap-2 font-medium hover:text-emerald-300 transition-colors group"
+                    className="text-ruby-400 flex items-center gap-2 font-medium hover:text-ruby-300 transition-colors group"
                   >
                     <span className="group-hover:scale-105 transition-transform duration-300">Read More</span>
                     <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
