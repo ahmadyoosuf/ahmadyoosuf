@@ -1,24 +1,23 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, Github, Mail, Shield, Zap, Brain, Linkedin } from "lucide-react"
+import { motion, useSpring } from "framer-motion"
+import { Github, Linkedin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
 import Image from "next/image"
+import { HeroSection } from "@/components/sections/hero-section"
+import { WorkSection } from "@/components/sections/work-section"
+import { ReportsSection } from "@/components/sections/reports-section"
+import { BlogSection } from "@/components/sections/blog-section"
+import { ContactSection } from "@/components/sections/contact-section"
 
 export default function PersonalWebsite() {
   const [activeSection, setActiveSection] = useState("home")
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const heroRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll()
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.3], [1, 0.95])
-  const y = useTransform(scrollYProgress, [0, 0.3], [0, 100])
   const isMobile = useMobile()
 
   const springConfig = { damping: 25, stiffness: 700 }
@@ -76,138 +75,11 @@ export default function PersonalWebsite() {
     }
   }, [isMenuOpen])
 
-  const projects = [
-    {
-      title: "Amaze",
-      description:
-        "Agentic cloud security platform that automates vulnerability detection, analysis, and remediation for AWS environments.",
-      tags: ["AI", "Cloud Security", "Automation"],
-      link: "https://amazehq.vercel.app",
-      icon: Shield,
-    },
-    {
-      title: "MARSAD",
-      description:
-        "Social media intelligence platform led by HBKU in collaboration with institutions across Qatar, US, and UK. Designed and developed the entire platform solo in a few weeks.",
-      tags: ["AI", "Data Analysis", "Full-Stack"],
-      link: "https://marsadai.vercel.app",
-      icon: Brain,
-      featured: true,
-    },
-    {
-      title: "A111y",
-      description:
-        "AI-powered accessibility checker that helps developers and designers create more inclusive digital experiences by identifying and resolving accessibility issues.",
-      tags: ["AI", "Accessibility", "DevTools"],
-      link: "https://a111y.vercel.app",
-      icon: Shield,
-    },
-  ]
-
-  const securityReports = [
-    {
-      title: "Stripe SEPA Direct Debit Validation Vulnerability",
-      date: "December 2024",
-      severity: "High",
-      description:
-        "Critical vulnerability in Stripe's SEPA Direct Debit payment system implementation affecting multiple client companies.",
-      slug: "stripe-vulnerability",
-      impact: "Premium purchase bypass",
-    },
-    {
-      title: "Dropbox Payment System Validation Issue",
-      date: "November 2024",
-      severity: "High",
-      description:
-        "Significant vulnerability in Dropbox's SEPA Direct Debit payment system allowing premium subscription activation without proper IBAN validation.",
-      slug: "dropbox-vulnerability",
-      impact: "Premium purchase bypass",
-    },
-  ]
-
-  const blogPosts = [
-    {
-      title: "Agentic Cloud Security",
-      date: "July 20, 2025",
-      excerpt:
-        "Most security tools just generate alerts. The real goal is a closed-loop system that detects, analyzes, and fixes issues automatically.",
-      slug: "agentic-cloud-security",
-    },
-    {
-      title: "Why I Hunt Bugs in Payment Systems",
-      date: "January 12, 2025",
-      excerpt: "The real vulnerabilities aren't in the code. They're in the assumptions about how money should move.",
-      slug: "payment-systems-bugs",
-    },
-    {
-      title: "The Myth of the Self-Made Success",
-      date: "December 28, 2024",
-      excerpt:
-        "After mentoring 50+ first-generation professionals, I've learned that 'pulling yourself up by your bootstraps' is terrible advice.",
-      slug: "myth-of-self-made",
-    },
-    {
-      title: "Speed Is the Only Moat",
-      date: "October 22, 2024",
-      excerpt:
-        "In a world where AI can replicate any feature in days, the only sustainable advantage is how fast you can move.",
-      slug: "speed-is-the-only-moat",
-    },
-  ]
-
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
-    },
-  }
-
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1,
-      },
-    },
-  }
-
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
-    },
-  }
-
   const handleNavClick = (sectionId: string) => {
     document.querySelector(`#${sectionId}`)?.scrollIntoView({ behavior: "smooth" })
     setActiveSection(sectionId)
     setIsMenuOpen(false)
   }
-
-  const getSeverityColor = (severity: string) => {
-    switch (severity.toLowerCase()) {
-      case "critical":
-        return "bg-ruby-500/10 text-ruby-400 border-ruby-500/20"
-      case "high":
-        return "bg-ruby-600/10 text-ruby-500 border-ruby-600/20"
-      case "medium":
-        return "bg-platinum-500/10 text-platinum-400 border-platinum-500/20"
-      case "low":
-        return "bg-diamond-500/10 text-diamond-400 border-diamond-500/20"
-      default:
-        return "bg-platinum-500/10 text-platinum-400 border-platinum-500/20"
-    }
-  }
-
-  const contactItems = [
-    { icon: Mail, label: "Email", value: "ahmad@ahmadyoosuf.com", href: "mailto:ahmad@ahmadyoosuf.com", color: "ruby" },
-  ]
 
   return (
     <div className="flex min-h-screen flex-col bg-obsidian-950 text-diamond-100 overflow-x-hidden">
@@ -265,7 +137,6 @@ export default function PersonalWebsite() {
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-4">
-            
             <Link
               href="https://github.com/ahmadyoosuf"
               target="_blank"
@@ -352,253 +223,11 @@ export default function PersonalWebsite() {
       </motion.div>
 
       <main className="flex-1 relative">
-        {/* Hero Section */}
-        <section
-          id="home"
-          ref={heroRef}
-          className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32"
-        >
-          <motion.div className="container relative z-10 px-4 md:px-6" style={{ opacity, scale, y }}>
-            <div className="max-w-screen-xl mx-auto">
-              <motion.div
-                className="text-center space-y-8 max-w-5xl mx-auto"
-                initial="hidden"
-                animate="visible"
-                variants={staggerContainer}
-              >
-                <motion.h1
-                  className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none sm:text-8xl"
-                  variants={fadeInUp}
-                >
-                  <span className="block text-luxury mb-2 text-6xl">Ahmad Mohamed</span>
-                  <span className="block text-diamond-200 font-light text-6xl">Yoosuf</span>
-                </motion.h1>
-
-                <motion.p
-                  className="md:text-xl max-w-3xl mx-auto leading-relaxed font-light text-card-foreground text-5xl"
-                  variants={fadeInUp}
-                >
-                  Building products that matter
-                </motion.p>
-
-                <motion.div className="flex flex-col sm:flex-row gap-4 justify-center pt-8" variants={fadeInUp}>
-                  <Button
-                    size="lg"
-                    className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
-                    onClick={() => handleNavClick("work")}
-                  >
-                    <span className="group-hover:scale-105 transition-transform duration-300">View My Work</span>
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
-
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent border-slate-700 hover:bg-slate-800 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group"
-                    onClick={() => handleNavClick("reports")}
-                  >
-                    <FileText className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-                    <span className="group-hover:scale-105 transition-transform duration-300">Security Reports</span>
-                  </Button>
-                </motion.div>
-              </motion.div>
-            </div>
-          </motion.div>
-        </section>
-
-        {/* Work Section */}
-        <section id="work" className="py-16 sm:py-20 md:py-24 lg:py-32 relative section-divider">
-          <div className="container relative z-10 px-4 md:px-6">
-            <div className="max-w-screen-xl mx-auto">
-              <motion.div
-                className="text-center space-y-6 max-w-4xl mx-auto mb-20"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              >
-                <div className="text-platinum-400 font-semibold text-5xl">Selected Work</div>
-              </motion.div>
-
-              <motion.div
-                className="space-y-16"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={staggerContainer}
-              >
-                <motion.div variants={fadeInUp}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project) => (
-                      <motion.div
-                        key={project.title}
-                        variants={scaleIn}
-                        className="luxury-glass-hover rounded-2xl p-8 group"
-                      >
-                        <div className="flex items-center gap-4 mb-6">
-                          <h4 className="text-xl font-semibold text-slate-200">{project.title}</h4>
-                        </div>
-
-                        <p className="text-slate-400 leading-relaxed mb-6">{project.description}</p>
-
-                        <Button
-                          size="lg"
-                          className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
-                          onClick={() => window.open(project.link, "_blank")}
-                        >
-                          <span className="group-hover:scale-105 transition-transform duration-300">View Project</span>
-                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                        </Button>
-                      </motion.div>
-                    ))}
-                    <motion.div variants={scaleIn} className="luxury-glass-hover rounded-2xl p-8 group">
-                      <div className="flex items-center gap-4 mb-6">
-                        <h4 className="text-xl font-semibold text-slate-200">The Yoosuf Foundation</h4>
-                      </div>
-
-                      <p className="text-slate-400 leading-relaxed mb-6">
-                        Educational nonprofit connecting first-generation students with resources, mentorship, and grant
-                        opportunities. Currently mentoring promising talents from low-income, first-generation
-                        backgrounds, providing them with the guidance and support they need to succeed in technology.
-                      </p>
-
-                      <Button
-                        size="lg"
-                        className="bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg px-6 py-3 text-sm font-medium transition-all duration-300 group border-0"
-                        onClick={() => window.open("https://theyoosuffoundation.org", "_blank")}
-                      >
-                        <span className="group-hover:scale-105 transition-transform duration-300">Learn More</span>
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                      </Button>
-                    </motion.div>
-                  </div>
-                </motion.div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Security Reports Section */}
-        <section id="reports" className="py-16 sm:py-20 md:py-24 lg:py-32 relative section-divider">
-          <div className="container relative z-10 px-4 md:px-6">
-            <div className="max-w-screen-xl mx-auto">
-              <motion.div
-                className="text-center space-y-6 max-w-4xl mx-auto mb-20"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              >
-                <h3 className="text-2xl md:text-3xl font-semibold text-slate-200 mb-4">Security Research</h3>
-              </motion.div>
-
-              <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 gap-8"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={staggerContainer}
-              >
-                {securityReports.map((report, index) => (
-                  <motion.div
-                    key={report.title}
-                    className={`luxury-glass-hover rounded-2xl p-6 group ${getSeverityColor(report.severity)}`}
-                  >
-                    <div className="flex justify-between items-center mb-4">
-                      <span className="text-sm font-semibold">{report.severity} Severity</span>
-                      <span className="text-xs text-platinum-500">{report.date}</span>
-                    </div>
-                    <h4 className="text-lg font-bold text-slate-200">{report.title}</h4>
-                    <p className="text-slate-400 leading-relaxed mb-4">{report.description}</p>
-                    <span className="text-xs text-platinum-500">{report.impact}</span>
-                    <Link href={`/reports/${report.slug}`} className="text-ruby-400 hover:underline mt-2 block">
-                      Read Full Report
-                    </Link>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Blog Section */}
-        <section id="blog" className="py-16 sm:py-20 md:py-24 lg:py-32 relative section-divider">
-          <div className="container relative z-10 px-4 md:px-6">
-            <div className="max-w-screen-xl mx-auto">
-              <motion.div
-                className="text-center space-y-6 max-w-4xl mx-auto mb-20"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              >
-                <h3 className="md:text-3xl font-bold text-luxury mb-4 text-3xl">Blog</h3>
-              </motion.div>
-
-              <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={staggerContainer}
-              >
-                {blogPosts.map((post, index) => (
-                  <motion.div key={post.title} variants={scaleIn} className="luxury-glass-hover rounded-2xl p-6 group">
-                    <h4 className="text-lg font-bold text-diamond-200">{post.title}</h4>
-                    <span className="text-xs text-platinum-500">{post.date}</span>
-                    <p className="text-platinum-400 leading-relaxed mb-4">{post.excerpt}</p>
-                    <Link href={`/blog/${post.slug}`} className="text-ruby-400 hover:underline">
-                      Read More
-                    </Link>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-16 sm:py-20 md:py-24 lg:py-32 relative section-divider">
-          <div className="container relative z-10 px-4 md:px-6">
-            <div className="max-w-screen-xl mx-auto">
-              <motion.div
-                className="text-center space-y-6 max-w-4xl mx-auto mb-20"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={fadeInUp}
-              >
-                <h3 className="text-2xl md:text-3xl font-bold text-luxury mb-4">Get In Touch</h3>
-                <p className="text-platinum-400 leading-relaxed mb-6">
-                  Interested in discussing a project, collaboration, or just want to connect? I'd love to hear from you.
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="flex flex-col sm:flex-row gap-8 justify-center items-center"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={staggerContainer}
-              >
-                {contactItems.map((contact, index) => (
-                  <motion.a
-                    key={index}
-                    href={contact.href}
-                    variants={scaleIn}
-                    className="luxury-glass-hover rounded-2xl p-6 group flex items-center gap-4 min-w-[280px] transition-all duration-300 hover:scale-105"
-                  >
-                    <contact.icon className="h-6 w-6 text-ruby-400 group-hover:scale-110 transition-transform duration-300" />
-                    <div>
-                      <span className="font-semibold text-diamond-200 block">{contact.label}</span>
-                      <span className="text-platinum-400">{contact.value}</span>
-                    </div>
-                  </motion.a>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        <HeroSection onNavClick={handleNavClick} />
+        <WorkSection />
+        <ReportsSection />
+        <BlogSection />
+        <ContactSection />
       </main>
     </div>
   )

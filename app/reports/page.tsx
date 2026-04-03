@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { ArrowLeft, Calendar, ChevronRight, Download, Search, Shield } from "lucide-react"
+import { ArrowLeft, Calendar, ChevronRight, Search, Shield } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
+import { getSeverityColor } from "@/lib/severity"
 
-// This would typically come from a CMS or MDX files
 const getSecurityReports = () => {
   return [
     {
@@ -29,26 +29,10 @@ const getSecurityReports = () => {
   ]
 }
 
-// Severity filters
 const severityLevels = ["All", "Critical", "High", "Medium", "Low"]
 
 export default function ReportsPage() {
   const reports = getSecurityReports()
-
-  const getSeverityColor = (severity: string) => {
-    switch (severity.toLowerCase()) {
-      case "critical":
-        return "bg-red-500/10 text-red-400 border-red-500/20"
-      case "high":
-        return "bg-orange-500/10 text-orange-400 border-orange-500/20"
-      case "medium":
-        return "bg-yellow-500/10 text-yellow-400 border-yellow-500/20"
-      case "low":
-        return "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
-      default:
-        return "bg-platinum-500/10 text-platinum-400 border-platinum-500/20"
-    }
-  }
 
   return (
     <div className="min-h-screen bg-obsidian-950 text-platinum-100">
@@ -58,7 +42,7 @@ export default function ReportsPage() {
             <div>
               <Link
                 href="/"
-                className="inline-flex items-center text-sm text-platinum-500 hover:text-emerald-400 mb-6 transition-colors group"
+                className="inline-flex items-center text-sm text-platinum-500 hover:text-ruby-400 mb-6 transition-colors group"
               >
                 <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
                 Back to home
@@ -75,7 +59,7 @@ export default function ReportsPage() {
                 <input
                   type="text"
                   placeholder="Search reports..."
-                  className="w-full md:w-80 px-4 py-3 pl-12 glass-card rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500/50 text-platinum-200 placeholder-platinum-500 transition-all duration-300"
+                  className="w-full md:w-80 px-4 py-3 pl-12 glass-card rounded-xl focus:outline-none focus:ring-2 focus:ring-ruby-500/50 text-platinum-200 placeholder-platinum-500 transition-all duration-300"
                 />
                 <Search className="absolute left-4 top-3.5 h-5 w-5 text-platinum-500" />
               </div>
@@ -88,7 +72,7 @@ export default function ReportsPage() {
                 key={level}
                 className={`px-4 py-2 text-sm cursor-pointer transition-all duration-300 ${
                   level === "All"
-                    ? "bg-gradient-to-r from-emerald-500 to-sapphire-500 text-obsidian-950 hover:from-emerald-400 hover:to-sapphire-400"
+                    ? "bg-gradient-to-r from-ruby-500 to-ruby-400 text-obsidian-950 hover:from-ruby-400 hover:to-ruby-300"
                     : "glass-card-hover text-platinum-300 border-platinum-500/20"
                 }`}
               >
@@ -125,18 +109,10 @@ export default function ReportsPage() {
                   <div className="flex flex-wrap gap-3">
                     <Link
                       href={`/reports/${report.slug}`}
-                      className="text-emerald-400 flex items-center gap-1 text-sm font-medium hover:text-emerald-300 transition-colors group"
+                      className="text-ruby-400 flex items-center gap-1 text-sm font-medium hover:text-ruby-300 transition-colors group"
                     >
                       Read Full Report{" "}
                       <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </Link>
-
-                    <Link
-                      href={`/reports/${report.slug}/download`}
-                      className="text-platinum-500 flex items-center gap-1 text-sm font-medium hover:text-platinum-300 transition-colors group"
-                    >
-                      <Download className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" /> Download
-                      PDF
                     </Link>
                   </div>
                 </div>
