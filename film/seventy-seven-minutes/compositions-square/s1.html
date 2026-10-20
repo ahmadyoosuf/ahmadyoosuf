@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>77 MINUTES · The library (square)</title>
+</head>
+<body>
+<template id="s1-template">
+<style>
+
+
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: block; }
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: block; }
+@font-face { font-family: "JetBrains Mono"; src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2"); font-weight: 100 800; font-display: block; }
+@font-face { font-family: "Noto Serif Tamil"; src: url("../assets/fonts/noto-serif-tamil-tamil-500-normal.woff2") format("woff2"); font-weight: 500; font-display: block; }
+@font-face { font-family: "Noto Emoji"; src: url("../assets/fonts/noto-emoji-9-400-normal.woff2") format("woff2"); font-weight: 400; font-display: block; unicode-range: U+1F605, U+1F622; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+.ground { position: absolute; inset: 0; }
+.black { background: #000; }
+.night { background: #1B1A17 url("../assets/textures/night-1080x1080.jpg") center / cover no-repeat; }
+.paper { background: #F2EBDD url("../assets/textures/paper-1080x1080.jpg") center / cover no-repeat; }
+.card { position: absolute; inset: 0; display: flex; align-items: center;
+  padding: 54px 54px 119px 54px; box-sizing: border-box; }
+.inner { position: relative; width: 972px; }
+.para { margin: 0; text-wrap: balance; font-kerning: normal; }
+.para + .para { margin-top: 0.42em; }
+.fraunces, .italic { font-family: "Fraunces", "Noto Emoji", serif; font-weight: 400;
+  font-optical-sizing: auto; font-variation-settings: "SOFT" 50, "WONK" 0; line-height: 1.22; letter-spacing: -0.004em; }
+.italic { font-style: italic; }
+.mono { font-family: "JetBrains Mono", "Noto Emoji", monospace; font-weight: 400; line-height: 1.32;
+  text-wrap: wrap; font-variant-ligatures: none; }
+.tamil { font-family: "Noto Serif Tamil", serif; font-weight: 500; line-height: 1.5; padding-left: 0.06em; }
+.on-dark { color: #F2EBDD; }
+.on-paper { color: #1B1A17; }
+.acc { color: #C8902E; }
+.w { display: inline; opacity: 0; }
+.ch { position: relative; opacity: 0; --c: 0; }
+.cs-start { position: relative; --c: 0; }
+.caret::after, .cs-start::after { content: ""; position: absolute; top: 0.12em; bottom: 0.06em;
+  right: -0.08em; width: 0.08em; background: #F2EBDD; opacity: var(--c); }
+.cs-start::after { right: auto; left: 0; }
+.blackout { position: absolute; inset: 0; background: #000; z-index: 50; }
+.gourd { position: absolute; }
+
+</style>
+<div id="root" data-composition-id="s1" data-width="1080" data-height="1080" data-duration="30.7500">
+<div id="s1-ground" class="ground night"></div>
+<div id="s1-ahmad-1" class="card clip" data-start="0.5833" data-duration="3.3750" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s1-ahmad-1-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-ahmad-1-p0-w0">I’m</span> <span class="w" id="s1-ahmad-1-p0-w1">Ahmad.</span></p></div>
+</div>
+<div id="s1-ahmad-2" class="card clip" data-start="4.1667" data-duration="5.8333" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s1-ahmad-2-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-ahmad-2-p0-w0">I’m</span> <span class="w" id="s1-ahmad-2-p0-w1">from</span> <span class="w" id="s1-ahmad-2-p0-w2">Adirampattinam,</span> <span class="w" id="s1-ahmad-2-p0-w3">a</span> <span class="w" id="s1-ahmad-2-p0-w4">small</span> <span class="w" id="s1-ahmad-2-p0-w5">town</span> <span class="w" id="s1-ahmad-2-p0-w6">on</span> <span class="w" id="s1-ahmad-2-p0-w7">the</span> <span class="w" id="s1-ahmad-2-p0-w8">Tamil</span> <span class="w" id="s1-ahmad-2-p0-w9">Nadu</span> <span class="w" id="s1-ahmad-2-p0-w10">coast.</span></p></div>
+</div>
+<div id="s1-family-1" class="card clip" data-start="10.2083" data-duration="4.0833" data-track-index="4" data-layout-allow-overflow>
+  <div class="inner" id="s1-family-1-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-family-1-p0-w0">My</span> <span class="w" id="s1-family-1-p0-w1">family</span> <span class="w" id="s1-family-1-p0-w2">are</span> <span class="w" id="s1-family-1-p0-w3">scholars</span> <span class="w" id="s1-family-1-p0-w4">of</span> <span class="w" id="s1-family-1-p0-w5">Islam.</span></p></div>
+</div>
+<div id="s1-family-2" class="card clip" data-start="14.5000" data-duration="5.7917" data-track-index="5" data-layout-allow-overflow>
+  <div class="inner" id="s1-family-2-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-family-2-p0-w0">Most</span> <span class="w" id="s1-family-2-p0-w1">of</span> <span class="w" id="s1-family-2-p0-w2">us</span> <span class="w" id="s1-family-2-p0-w3">stop</span> <span class="w" id="s1-family-2-p0-w4">formal</span> <span class="w" id="s1-family-2-p0-w5">school</span> <span class="w" id="s1-family-2-p0-w6">around</span> <span class="w" id="s1-family-2-p0-w7">class</span> <span class="w" id="s1-family-2-p0-w8">ten</span> <span class="w" id="s1-family-2-p0-w9">or</span> <span class="w" id="s1-family-2-p0-w10">twelve.</span></p></div>
+</div>
+<div id="s1-first" class="card clip" data-start="20.5000" data-duration="5.3333" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s1-first-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-first-p0-w0">I’m</span> <span class="w" id="s1-first-p0-w1">the</span> <span class="w" id="s1-first-p0-w2">first</span> <span class="w" id="s1-first-p0-w3">of</span> <span class="w" id="s1-first-p0-w4">us</span> <span class="w" id="s1-first-p0-w5">to</span> <span class="w" id="s1-first-p0-w6">go</span> <span class="w" id="s1-first-p0-w7">to</span> <span class="w" id="s1-first-p0-w8">college.</span></p></div>
+</div>
+<div id="s1-father-1" class="card clip" data-start="26.0417" data-duration="4.4167" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s1-father-1-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-father-1-p0-w0">My</span> <span class="w" id="s1-father-1-p0-w1">father</span> <span class="w" id="s1-father-1-p0-w2">studied</span> <span class="w" id="s1-father-1-p0-w3">until</span> <span class="w" id="s1-father-1-p0-w4">the</span> <span class="w" id="s1-father-1-p0-w5">third</span> <span class="w" id="s1-father-1-p0-w6">grade.</span></p></div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = 0.3333;
+// typed characters: [id, time, strike density]
+const O = [];
+for (const [id, t, o] of O) tl.set("#" + id, { opacity: o }, t);
+// the caret before the first key: [id, on, off]
+const K = [];
+for (const [id, a, b] of K) { tl.set("#" + id, { "--c": 1 }, a); tl.set("#" + id, { "--c": 0 }, b); }
+// caret after each key while typing: [id, on, off]
+const CA = [];
+for (const [id, a, b] of CA) { tl.set("#" + id, { "--c": 1 }, a); if (b !== null) tl.set("#" + id, { "--c": 0 }, b); }
+// 2 Hz blink once typing stops: [id, time, value]
+const BL = [];
+for (const [id, t, v] of BL) tl.set("#" + id, { "--c": v }, t);
+// soft ink reveal, word by word: [id, time, fade, on paper]
+const W = [["s1-ahmad-1-p0-w0",0.5833,0.34,0],["s1-ahmad-1-p0-w1",0.625,0.34,0],["s1-ahmad-2-p0-w0",4.1667,0.34,0],["s1-ahmad-2-p0-w1",4.2083,0.34,0],["s1-ahmad-2-p0-w2",4.25,0.34,0],["s1-ahmad-2-p0-w3",4.375,0.34,0],["s1-ahmad-2-p0-w4",4.4167,0.34,0],["s1-ahmad-2-p0-w5",4.4583,0.34,0],["s1-ahmad-2-p0-w6",4.5,0.34,0],["s1-ahmad-2-p0-w7",4.5417,0.34,0],["s1-ahmad-2-p0-w8",4.5833,0.34,0],["s1-ahmad-2-p0-w9",4.625,0.34,0],["s1-ahmad-2-p0-w10",4.6667,0.34,0],["s1-family-1-p0-w0",10.2083,0.34,0],["s1-family-1-p0-w1",10.25,0.34,0],["s1-family-1-p0-w2",10.2917,0.34,0],["s1-family-1-p0-w3",10.3333,0.34,0],["s1-family-1-p0-w4",10.4167,0.34,0],["s1-family-1-p0-w5",10.4583,0.34,0],["s1-family-2-p0-w0",14.5,0.34,0],["s1-family-2-p0-w1",14.5417,0.34,0],["s1-family-2-p0-w2",14.5833,0.34,0],["s1-family-2-p0-w3",14.5833,0.34,0],["s1-family-2-p0-w4",14.625,0.34,0],["s1-family-2-p0-w5",14.7083,0.34,0],["s1-family-2-p0-w6",14.7917,0.34,0],["s1-family-2-p0-w7",14.8333,0.34,0],["s1-family-2-p0-w8",14.875,0.34,0],["s1-family-2-p0-w9",14.9167,0.34,0],["s1-family-2-p0-w10",14.9583,0.34,0],["s1-first-p0-w0",20.5,0.34,0],["s1-first-p0-w1",20.5417,0.34,0],["s1-first-p0-w2",20.5833,0.34,0],["s1-first-p0-w3",20.625,0.34,0],["s1-first-p0-w4",20.6667,0.34,0],["s1-first-p0-w5",20.6667,0.34,0],["s1-first-p0-w6",20.7083,0.34,0],["s1-first-p0-w7",20.75,0.34,0],["s1-first-p0-w8",20.75,0.34,0],["s1-father-1-p0-w0",26.0417,0.34,0],["s1-father-1-p0-w1",26.0833,0.34,0],["s1-father-1-p0-w2",26.125,0.34,0],["s1-father-1-p0-w3",26.2083,0.34,0],["s1-father-1-p0-w4",26.25,0.34,0],["s1-father-1-p0-w5",26.2917,0.34,0],["s1-father-1-p0-w6",26.3333,0.34,0]];
+const glow = (p) => p ? "rgba(27,26,23," : "rgba(242,235,221,";
+for (const [id, t, f, p] of W) tl.fromTo("#" + id, { opacity: 0, textShadow: "0 0 14px " + glow(p) + "0.55)" },
+  { opacity: 1, textShadow: "0 0 0px " + glow(p) + "0)", duration: f, ease: "power2.out" }, t);
+// 8-frame dissolves out: [id, time]
+const X = [["s1-ahmad-1-in",3.625],["s1-ahmad-2-in",9.6667],["s1-family-1-in",13.9583],["s1-family-2-in",19.9583],["s1-first-in",25.5],["s1-father-1-in",30.125]];
+for (const [id, t] of X) tl.to("#" + id, { opacity: 0, duration: D, ease: "none" }, t);
+// the gourd, drawn stroke by stroke: [id, start, duration]
+const G = [];
+for (const [id, t, d] of G) {
+  const el = document.getElementById(id); const len = el.getTotalLength();
+  el.style.strokeDasharray = len + " " + len;
+  // round caps would show a dot where an undrawn stroke starts: keep it hidden until its turn
+  tl.set(el, { opacity: 0 }, 0); tl.set(el, { opacity: 1 }, t);
+  tl.fromTo(el, { strokeDashoffset: len }, { strokeDashoffset: 0, duration: d, ease: "sine.inOut" }, t);
+}
+window.__timelines["s1"] = tl;
+</script>
+</template>
+</body>
+</html>

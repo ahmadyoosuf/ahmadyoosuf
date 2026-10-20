@@ -1,0 +1,91 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 370.5833,
+    "samples": [
+      20.588,
+      61.764,
+      102.94,
+      144.116,
+      185.292,
+      226.468,
+      267.643,
+      308.819,
+      349.995
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      20.588,
+      102.94,
+      185.292,
+      267.643,
+      349.995
+    ],
+    "checked": 34,
+    "passed": 34
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "f2b51d75-a670-45b0-84c1-70ab4351e3b3",
+    "revision": "b2d7b88d-cc34-4529-8711-029324692d55",
+    "report": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/.hyperframes/artifacts/checks/f2b51d75-a670-45b0-84c1-70ab4351e3b3.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.181",
+    "latestVersion": "0.8.181",
+    "updateAvailable": false
+  }
+}

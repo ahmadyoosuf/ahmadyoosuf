@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>77 MINUTES · cold open A</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+#root > div[data-composition-src] { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="open-a" data-start="0" data-width="1920" data-height="1080" data-fps="24" data-duration="24.8750">
+  <div id="el-s0a" data-composition-id="s0a" data-composition-src="compositions/s0a.html" data-start="0.0000" data-duration="23.8750" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <audio id="open-a-mix" src="assets/audio/open_A.wav" data-start="0" data-duration="24.8750" data-track-index="10" data-volume="1"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+window.__timelines["open-a"] = tl;
+</script>
+</body>
+</html>

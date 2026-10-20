@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>77 MINUTES · The library</title>
+</head>
+<body>
+<template id="s1-template">
+<style>
+
+
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: block; }
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: block; }
+@font-face { font-family: "JetBrains Mono"; src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2"); font-weight: 100 800; font-display: block; }
+@font-face { font-family: "Noto Serif Tamil"; src: url("../assets/fonts/noto-serif-tamil-tamil-500-normal.woff2") format("woff2"); font-weight: 500; font-display: block; }
+@font-face { font-family: "Noto Emoji"; src: url("../assets/fonts/noto-emoji-9-400-normal.woff2") format("woff2"); font-weight: 400; font-display: block; unicode-range: U+1F605, U+1F622; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+.ground { position: absolute; inset: 0; }
+.black { background: #000; }
+.night { background: #1B1A17 url("../assets/textures/night-1920x1080.jpg") center / cover no-repeat; }
+.paper { background: #F2EBDD url("../assets/textures/paper-1920x1080.jpg") center / cover no-repeat; }
+.card { position: absolute; inset: 0; display: flex; align-items: center;
+  padding: 54px 96px 119px 96px; box-sizing: border-box; }
+.inner { position: relative; width: 1728px; }
+.para { margin: 0; text-wrap: balance; font-kerning: normal; }
+.para + .para { margin-top: 0.42em; }
+.fraunces, .italic { font-family: "Fraunces", "Noto Emoji", serif; font-weight: 400;
+  font-optical-sizing: auto; font-variation-settings: "SOFT" 50, "WONK" 0; line-height: 1.22; letter-spacing: -0.004em; }
+.italic { font-style: italic; }
+.mono { font-family: "JetBrains Mono", "Noto Emoji", monospace; font-weight: 400; line-height: 1.32;
+  text-wrap: wrap; font-variant-ligatures: none; }
+.tamil { font-family: "Noto Serif Tamil", serif; font-weight: 500; line-height: 1.5; padding-left: 0.06em; }
+.on-dark { color: #F2EBDD; }
+.on-paper { color: #1B1A17; }
+.acc { color: #C8902E; }
+.w { display: inline; opacity: 0; }
+.ch { position: relative; opacity: 0; --c: 0; }
+.cs-start { position: relative; --c: 0; }
+.caret::after, .cs-start::after { content: ""; position: absolute; top: 0.12em; bottom: 0.06em;
+  right: -0.08em; width: 0.08em; background: #F2EBDD; opacity: var(--c); }
+.cs-start::after { right: auto; left: 0; }
+.blackout { position: absolute; inset: 0; background: #000; z-index: 50; }
+.gourd { position: absolute; }
+
+</style>
+<div id="root" data-composition-id="s1" data-width="1920" data-height="1080" data-duration="54.9583">
+<div id="s1-ground" class="ground night"></div>
+<div id="s1-ahmad" class="card clip" data-start="0.5833" data-duration="7.1250" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s1-ahmad-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-ahmad-p0-w0">I’m</span> <span class="w" id="s1-ahmad-p0-w1">Ahmad.</span> <span class="fraunces" style="font-size: 64px;"><span class="w" id="s1-ahmad-p1-w0">I’m</span> <span class="w" id="s1-ahmad-p1-w1">from</span> <span class="w" id="s1-ahmad-p1-w2">Adirampattinam,</span> <span class="w" id="s1-ahmad-p1-w3">a</span> <span class="w" id="s1-ahmad-p1-w4">small</span> <span class="w" id="s1-ahmad-p1-w5">town</span> <span class="w" id="s1-ahmad-p1-w6">on</span> <span class="w" id="s1-ahmad-p1-w7">the</span> <span class="w" id="s1-ahmad-p1-w8">Tamil</span> <span class="w" id="s1-ahmad-p1-w9">Nadu</span> <span class="w" id="s1-ahmad-p1-w10">coast.</span></span></p></div>
+</div>
+<div id="s1-family" class="card clip" data-start="7.9167" data-duration="8.5417" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s1-family-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-family-p0-w0">My</span> <span class="w" id="s1-family-p0-w1">family</span> <span class="w" id="s1-family-p0-w2">are</span> <span class="w" id="s1-family-p0-w3">scholars</span> <span class="w" id="s1-family-p0-w4">of</span> <span class="w" id="s1-family-p0-w5">Islam.</span></p><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-family-p1-w0">Most</span> <span class="w" id="s1-family-p1-w1">of</span> <span class="w" id="s1-family-p1-w2">us</span> <span class="w" id="s1-family-p1-w3">stop</span> <span class="w" id="s1-family-p1-w4">formal</span> <span class="w" id="s1-family-p1-w5">school</span> <span class="w" id="s1-family-p1-w6">around</span> <span class="w" id="s1-family-p1-w7">class</span> <span class="w" id="s1-family-p1-w8">ten</span> <span class="w" id="s1-family-p1-w9">or</span> <span class="w" id="s1-family-p1-w10">twelve.</span></p></div>
+</div>
+<div id="s1-first" class="card clip" data-start="16.6667" data-duration="5.3333" data-track-index="4" data-layout-allow-overflow>
+  <div class="inner" id="s1-first-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-first-p0-w0">I’m</span> <span class="w" id="s1-first-p0-w1">the</span> <span class="w" id="s1-first-p0-w2">first</span> <span class="w" id="s1-first-p0-w3">of</span> <span class="w" id="s1-first-p0-w4">us</span> <span class="w" id="s1-first-p0-w5">to</span> <span class="w" id="s1-first-p0-w6">go</span> <span class="w" id="s1-first-p0-w7">to</span> <span class="w" id="s1-first-p0-w8">college.</span></p></div>
+</div>
+<div id="s1-father" class="card clip" data-start="22.2083" data-duration="7.5833" data-track-index="5" data-layout-allow-overflow>
+  <div class="inner" id="s1-father-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-father-p0-w0">My</span> <span class="w" id="s1-father-p0-w1">father</span> <span class="w" id="s1-father-p0-w2">studied</span> <span class="w" id="s1-father-p0-w3">until</span> <span class="w" id="s1-father-p0-w4">the</span> <span class="w" id="s1-father-p0-w5">third</span> <span class="w" id="s1-father-p0-w6">grade.</span></p><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-father-p1-w0">He</span> <span class="w" id="s1-father-p1-w1">owned</span> <span class="w" id="s1-father-p1-w2">more</span> <span class="w" id="s1-father-p1-w3">than</span> <span class="w" id="s1-father-p1-w4">two</span> <span class="w" id="s1-father-p1-w5">thousand</span> <span class="w" id="s1-father-p1-w6">books.</span></p></div>
+</div>
+<div id="s1-world" class="card clip" data-start="30.0000" data-duration="7.8333" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s1-world-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-world-p0-w0">Between</span> <span class="w" id="s1-world-p0-w1">nine</span> <span class="w" id="s1-world-p0-w2">and</span> <span class="w" id="s1-world-p0-w3">fifteen,</span> <span class="w" id="s1-world-p0-w4">before</span> <span class="w" id="s1-world-p0-w5">I</span> <span class="w" id="s1-world-p0-w6">had</span> <span class="w" id="s1-world-p0-w7">a</span> <span class="w" id="s1-world-p0-w8">phone,</span> <span class="w" id="s1-world-p0-w9">that</span> <span class="w" id="s1-world-p0-w10">library</span> <span class="w" id="s1-world-p0-w11">was</span> <span class="w" id="s1-world-p0-w12">how</span> <span class="w" id="s1-world-p0-w13">I</span> <span class="w" id="s1-world-p0-w14">left</span> <span class="w" id="s1-world-p0-w15">my</span> <span class="w" id="s1-world-p0-w16">world.</span></p></div>
+</div>
+<div id="s1-dream" class="card clip" data-start="38.0417" data-duration="7.1250" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s1-dream-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-dream-p0-w0">It’s</span> <span class="w" id="s1-dream-p0-w1">also</span> <span class="w" id="s1-dream-p0-w2">where</span> <span class="w" id="s1-dream-p0-w3">I</span> <span class="w" id="s1-dream-p0-w4">got</span> <span class="w" id="s1-dream-p0-w5">a</span> <span class="w" id="s1-dream-p0-w6">dream</span> <span class="w" id="s1-dream-p0-w7">far</span> <span class="w" id="s1-dream-p0-w8">too</span> <span class="w" id="s1-dream-p0-w9">big</span> <span class="w" id="s1-dream-p0-w10">for</span> <span class="w" id="s1-dream-p0-w11">the</span> <span class="w" id="s1-dream-p0-w12">boy</span> <span class="w" id="s1-dream-p0-w13">reading</span> <span class="w" id="s1-dream-p0-w14">it.</span></p></div>
+</div>
+<div id="s1-reason" class="card clip" data-start="45.3750" data-duration="9.5833" data-track-index="4" data-layout-allow-overflow>
+  <div class="inner" id="s1-reason-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s1-reason-p0-w0">From</span> <span class="w" id="s1-reason-p0-w1">seventh</span> <span class="w" id="s1-reason-p0-w2">grade</span> <span class="w" id="s1-reason-p0-w3">to</span> <span class="w" id="s1-reason-p0-w4">tenth,</span> <span class="w" id="s1-reason-p0-w5">I</span> <span class="w" id="s1-reason-p0-w6">came</span> <span class="w" id="s1-reason-p0-w7">first</span> <span class="w" id="s1-reason-p0-w8">in</span> <span class="w" id="s1-reason-p0-w9">all</span> <span class="w" id="s1-reason-p0-w10">eighteen</span> <span class="w" id="s1-reason-p0-w11">exams</span> <span class="w" id="s1-reason-p0-w12">I</span> <span class="w" id="s1-reason-p0-w13">wrote.</span> <span class="fraunces" style="font-size: 64px;"><span class="w" id="s1-reason-p1-w0">He</span> <span class="w" id="s1-reason-p1-w1">was</span> <span class="w" id="s1-reason-p1-w2">the</span> <span class="w" id="s1-reason-p1-w3">reason.</span></span></p></div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = 0.3333;
+// typed characters: [id, time, strike density]
+const O = [];
+for (const [id, t, o] of O) tl.set("#" + id, { opacity: o }, t);
+// the caret before the first key: [id, on, off]
+const K = [];
+for (const [id, a, b] of K) { tl.set("#" + id, { "--c": 1 }, a); tl.set("#" + id, { "--c": 0 }, b); }
+// caret after each key while typing: [id, on, off]
+const CA = [];
+for (const [id, a, b] of CA) { tl.set("#" + id, { "--c": 1 }, a); if (b !== null) tl.set("#" + id, { "--c": 0 }, b); }
+// 2 Hz blink once typing stops: [id, time, value]
+const BL = [];
+for (const [id, t, v] of BL) tl.set("#" + id, { "--c": v }, t);
+// soft ink reveal, word by word: [id, time, fade, on paper]
+const W = [["s1-ahmad-p0-w0",0.5833,0.34,0],["s1-ahmad-p0-w1",0.625,0.34,0],["s1-ahmad-p1-w0",1.2917,0.34,0],["s1-ahmad-p1-w1",1.3333,0.34,0],["s1-ahmad-p1-w2",1.375,0.34,0],["s1-ahmad-p1-w3",1.5417,0.34,0],["s1-ahmad-p1-w4",1.5417,0.34,0],["s1-ahmad-p1-w5",1.5833,0.34,0],["s1-ahmad-p1-w6",1.625,0.34,0],["s1-ahmad-p1-w7",1.6667,0.34,0],["s1-ahmad-p1-w8",1.7083,0.34,0],["s1-ahmad-p1-w9",1.75,0.34,0],["s1-ahmad-p1-w10",1.7917,0.34,0],["s1-family-p0-w0",7.9167,0.34,0],["s1-family-p0-w1",7.9583,0.34,0],["s1-family-p0-w2",8.0,0.34,0],["s1-family-p0-w3",8.0417,0.34,0],["s1-family-p0-w4",8.125,0.34,0],["s1-family-p0-w5",8.1667,0.34,0],["s1-family-p1-w0",8.875,0.34,0],["s1-family-p1-w1",8.9167,0.34,0],["s1-family-p1-w2",8.9583,0.34,0],["s1-family-p1-w3",9.0,0.34,0],["s1-family-p1-w4",9.0417,0.34,0],["s1-family-p1-w5",9.0833,0.34,0],["s1-family-p1-w6",9.1667,0.34,0],["s1-family-p1-w7",9.2083,0.34,0],["s1-family-p1-w8",9.2917,0.34,0],["s1-family-p1-w9",9.3333,0.34,0],["s1-family-p1-w10",9.3333,0.34,0],["s1-first-p0-w0",16.6667,0.34,0],["s1-first-p0-w1",16.7083,0.34,0],["s1-first-p0-w2",16.75,0.34,0],["s1-first-p0-w3",16.7917,0.34,0],["s1-first-p0-w4",16.8333,0.34,0],["s1-first-p0-w5",16.8333,0.34,0],["s1-first-p0-w6",16.875,0.34,0],["s1-first-p0-w7",16.9167,0.34,0],["s1-first-p0-w8",16.9167,0.34,0],["s1-father-p0-w0",22.2083,0.34,0],["s1-father-p0-w1",22.25,0.34,0],["s1-father-p0-w2",22.2917,0.34,0],["s1-father-p0-w3",22.375,0.34,0],["s1-father-p0-w4",22.4167,0.34,0],["s1-father-p0-w5",22.4583,0.34,0],["s1-father-p0-w6",22.5,0.34,0],["s1-father-p1-w0",23.2917,0.34,0],["s1-father-p1-w1",23.2917,0.34,0],["s1-father-p1-w2",23.375,0.34,0],["s1-father-p1-w3",23.4167,0.34,0],["s1-father-p1-w4",23.4583,0.34,0],["s1-father-p1-w5",23.5,0.34,0],["s1-father-p1-w6",23.5833,0.34,0],["s1-world-p0-w0",30.0,0.34,0],["s1-world-p0-w1",30.0833,0.34,0],["s1-world-p0-w2",30.125,0.34,0],["s1-world-p0-w3",30.1667,0.34,0],["s1-world-p0-w4",30.25,0.34,0],["s1-world-p0-w5",30.2917,0.34,0],["s1-world-p0-w6",30.3333,0.34,0],["s1-world-p0-w7",30.375,0.34,0],["s1-world-p0-w8",30.375,0.34,0],["s1-world-p0-w9",30.4167,0.34,0],["s1-world-p0-w10",30.5,0.34,0],["s1-world-p0-w11",30.5417,0.34,0],["s1-world-p0-w12",30.5833,0.34,0],["s1-world-p0-w13",30.625,0.34,0],["s1-world-p0-w14",30.625,0.34,0],["s1-world-p0-w15",30.7083,0.34,0],["s1-world-p0-w16",30.7083,0.34,0],["s1-dream-p0-w0",38.0417,0.34,0],["s1-dream-p0-w1",38.0833,0.34,0],["s1-dream-p0-w2",38.125,0.34,0],["s1-dream-p0-w3",38.1667,0.34,0],["s1-dream-p0-w4",38.2083,0.34,0],["s1-dream-p0-w5",38.25,0.34,0],["s1-dream-p0-w6",38.25,0.34,0],["s1-dream-p0-w7",38.3333,0.34,0],["s1-dream-p0-w8",38.3333,0.34,0],["s1-dream-p0-w9",38.375,0.34,0],["s1-dream-p0-w10",38.4167,0.34,0],["s1-dream-p0-w11",38.4583,0.34,0],["s1-dream-p0-w12",38.5,0.34,0],["s1-dream-p0-w13",38.5417,0.34,0],["s1-dream-p0-w14",38.625,0.34,0],["s1-reason-p0-w0",45.375,0.34,0],["s1-reason-p0-w1",45.4167,0.34,0],["s1-reason-p0-w2",45.5,0.34,0],["s1-reason-p0-w3",45.5417,0.34,0],["s1-reason-p0-w4",45.5833,0.34,0],["s1-reason-p0-w5",45.625,0.34,0],["s1-reason-p0-w6",45.6667,0.34,0],["s1-reason-p0-w7",45.7083,0.34,0],["s1-reason-p0-w8",45.75,0.34,0],["s1-reason-p0-w9",45.7917,0.34,0],["s1-reason-p0-w10",45.8333,0.34,0],["s1-reason-p0-w11",45.9167,0.34,0],["s1-reason-p0-w12",45.9583,0.34,0],["s1-reason-p0-w13",45.9583,0.34,0],["s1-reason-p1-w0",46.9167,0.34,0],["s1-reason-p1-w1",46.9583,0.34,0],["s1-reason-p1-w2",47.0,0.34,0],["s1-reason-p1-w3",47.0417,0.34,0]];
+const glow = (p) => p ? "rgba(27,26,23," : "rgba(242,235,221,";
+for (const [id, t, f, p] of W) tl.fromTo("#" + id, { opacity: 0, textShadow: "0 0 14px " + glow(p) + "0.55)" },
+  { opacity: 1, textShadow: "0 0 0px " + glow(p) + "0)", duration: f, ease: "power2.out" }, t);
+// 8-frame dissolves out: [id, time]
+const X = [["s1-ahmad-in",7.375],["s1-family-in",16.125],["s1-first-in",21.6667],["s1-father-in",29.4583],["s1-world-in",37.5],["s1-dream-in",44.8333],["s1-reason-in",54.625]];
+for (const [id, t] of X) tl.to("#" + id, { opacity: 0, duration: D, ease: "none" }, t);
+// the gourd, drawn stroke by stroke: [id, start, duration]
+const G = [];
+for (const [id, t, d] of G) {
+  const el = document.getElementById(id); const len = el.getTotalLength();
+  el.style.strokeDasharray = len + " " + len;
+  // round caps would show a dot where an undrawn stroke starts: keep it hidden until its turn
+  tl.set(el, { opacity: 0 }, 0); tl.set(el, { opacity: 1 }, t);
+  tl.fromTo(el, { strokeDashoffset: len }, { strokeDashoffset: 0, duration: d, ease: "sine.inOut" }, t);
+}
+window.__timelines["s1"] = tl;
+</script>
+</template>
+</body>
+</html>

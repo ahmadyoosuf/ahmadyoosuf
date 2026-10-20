@@ -1,0 +1,21 @@
+# Skills are reinstalled with `npx skills add heygen-com/hyperframes --all` (versions in skills-lock.json).
+.agents/
+agent/
+.claude/
+
+# Dependencies and HyperFrames working state
+**/node_modules/
+**/.hyperframes/
+seventy-seven-minutes/renders/
+seventy-seven-minutes/build/qc/
+seventy-seven-minutes/build/*.log
+seventy-seven-minutes/build/check.err
+out/work-*/
+out/.*hf-transaction*/
+__pycache__/
+
+# Large binaries, all regenerable from tools/ (see seventy-seven-minutes/README.md).
+# The rendered films are delivered directly, not committed: this repository is public.
+seventy-seven-minutes/assets/audio/*.wav
+seventy-seven-minutes/assets/audio/stems/
+out/*.mp4

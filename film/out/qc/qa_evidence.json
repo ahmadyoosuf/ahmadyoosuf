@@ -1,0 +1,1278 @@
+{
+ "script": {
+  "ok": true,
+  "cards": 55,
+  "non_script_on_screen": [
+   "27 August 2023",
+   "vaakku.org",
+   "statement2xl.com",
+   "Music and sound made for this film. Piano samples: Salamander Grand Piano V3 by Alexander Holm, CC BY 3.0."
+  ],
+  "first_difference": null
+ },
+ "facts": {
+  "ok": true,
+  "claims": [
+   {
+    "token": "77 minutes",
+    "fact": "I took 77 minutes for writing this message to you",
+    "ok": true
+   },
+   {
+    "token": "77 MINUTES",
+    "fact": "I took 77 minutes for writing this message to you",
+    "ok": true
+   },
+   {
+    "token": "one message to a Harvard professor",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "2022",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "Harvard",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "Ahmad",
+    "fact": "Ahmad Yoosuf",
+    "ok": true
+   },
+   {
+    "token": "Adirampattinam",
+    "fact": "From Adirampattinam, a coastal town",
+    "ok": true
+   },
+   {
+    "token": "Tamil Nadu",
+    "fact": "Tamil Nadu",
+    "ok": true
+   },
+   {
+    "token": "Islam",
+    "fact": "Family are scholars of Islam",
+    "ok": true
+   },
+   {
+    "token": "class ten or twelve",
+    "fact": "around class 10 or 12",
+    "ok": true
+   },
+   {
+    "token": "first of us to go to college",
+    "fact": "First in the family to attend college",
+    "ok": true
+   },
+   {
+    "token": "third grade",
+    "fact": "Father studied until third grade",
+    "ok": true
+   },
+   {
+    "token": "two thousand books",
+    "fact": "owned more than 2,000 books",
+    "ok": true
+   },
+   {
+    "token": "nine and fifteen",
+    "fact": "Ages 9 to 15",
+    "ok": true
+   },
+   {
+    "token": "seventh grade to tenth",
+    "fact": "Grades 7 to 10",
+    "ok": true
+   },
+   {
+    "token": "came first in all eighteen exams",
+    "fact": "first rank in all 18 exams",
+    "ok": true
+   },
+   {
+    "token": "October 2018",
+    "fact": "Maternal grandmother died October 2018",
+    "ok": true
+   },
+   {
+    "token": "15 November 2018",
+    "fact": "Cyclone Gaja, 15 November 2018",
+    "ok": true
+   },
+   {
+    "token": "Gaja",
+    "fact": "Cyclone Gaja",
+    "ok": true
+   },
+   {
+    "token": "December 2018",
+    "fact": "Paternal grandmother died December 2018",
+    "ok": true
+   },
+   {
+    "token": "Forty-five days after the first",
+    "fact": "45 days after the first",
+    "ok": true
+   },
+   {
+    "token": "1 July 2019",
+    "fact": "died 1 July 2019",
+    "ok": true
+   },
+   {
+    "token": "forty-three",
+    "fact": "aged 43",
+    "ok": true
+   },
+   {
+    "token": "two of the final four months",
+    "fact": "sick in bed two of the last four months",
+    "ok": true
+   },
+   {
+    "token": "seventy-five percent",
+    "fact": "finished with 75 percent",
+    "ok": true
+   },
+   {
+    "token": "MIT",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "Princeton",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "Yale",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "SAT",
+    "fact": "no SAT",
+    "ok": true
+   },
+   {
+    "token": "half an hour",
+    "fact": "It took nearly half an hour",
+    "ok": true
+   },
+   {
+    "token": "a hundred companies",
+    "fact": "about 100 companies",
+    "ok": true
+   },
+   {
+    "token": "four hundred",
+    "fact": "more than 400 roles",
+    "ok": true
+   },
+   {
+    "token": "2010",
+    "fact": "a laptop released in 2010",
+    "ok": true
+   },
+   {
+    "token": "27 August 2023",
+    "fact": "Journal, 27 August 2023",
+    "ok": true
+   },
+   {
+    "token": "at eighteen",
+    "fact": "age 18",
+    "ok": true
+   },
+   {
+    "token": "vaakku.org",
+    "fact": "(vaakku.org)",
+    "ok": true
+   },
+   {
+    "token": "statement2xl.com",
+    "fact": "(statement2xl.com)",
+    "ok": true
+   },
+   {
+    "token": "ayyayo",
+    "fact": "ayyayo, voice-to-code",
+    "ok": true
+   },
+   {
+    "token": "Chennai",
+    "fact": "Based in Chennai",
+    "ok": true
+   },
+   {
+    "token": "I first used it for an agent that found lost photos",
+    "fact": "first used for an agent that found lost photos",
+    "ok": true
+   }
+  ],
+  "script_only": [
+   [
+    "five thirty",
+    "script line: I woke up at five thirty, prayed, and put on my school uniform."
+   ],
+   [
+    "Around seven",
+    "script line: Around seven, my brother knocked on my door."
+   ],
+   [
+    "For three years",
+    "script line: For three years I filled notes with plans, rules and resolutions."
+   ]
+  ],
+  "non_numeric": [
+   [
+    "Every one of those notes",
+    "script line: Every one of those notes was a gourd on paper."
+   ]
+  ],
+  "credit_names": [
+   "Salamander Grand Piano V3",
+   "Alexander Holm",
+   "CC BY 3.0"
+  ],
+  "uncovered_numbers": [],
+  "uncovered_names": [],
+  "emoji": [
+   "😅",
+   "😢"
+  ]
+ },
+ "script_open_B": {
+  "ok": true,
+  "cards": 55,
+  "non_script_on_screen": [
+   "27 August 2023",
+   "vaakku.org",
+   "statement2xl.com",
+   "Music and sound made for this film. Piano samples: Salamander Grand Piano V3 by Alexander Holm, CC BY 3.0."
+  ],
+  "first_difference": null
+ },
+ "facts_open_B": {
+  "ok": true,
+  "claims": [
+   {
+    "token": "77 minutes",
+    "fact": "I took 77 minutes for writing this message to you",
+    "ok": true
+   },
+   {
+    "token": "77 MINUTES",
+    "fact": "I took 77 minutes for writing this message to you",
+    "ok": true
+   },
+   {
+    "token": "one message to a Harvard professor",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "2022",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "Harvard",
+    "fact": "2022 letter to a Harvard professor",
+    "ok": true
+   },
+   {
+    "token": "Ahmad",
+    "fact": "Ahmad Yoosuf",
+    "ok": true
+   },
+   {
+    "token": "Adirampattinam",
+    "fact": "From Adirampattinam, a coastal town",
+    "ok": true
+   },
+   {
+    "token": "Tamil Nadu",
+    "fact": "Tamil Nadu",
+    "ok": true
+   },
+   {
+    "token": "Islam",
+    "fact": "Family are scholars of Islam",
+    "ok": true
+   },
+   {
+    "token": "class ten or twelve",
+    "fact": "around class 10 or 12",
+    "ok": true
+   },
+   {
+    "token": "first of us to go to college",
+    "fact": "First in the family to attend college",
+    "ok": true
+   },
+   {
+    "token": "third grade",
+    "fact": "Father studied until third grade",
+    "ok": true
+   },
+   {
+    "token": "two thousand books",
+    "fact": "owned more than 2,000 books",
+    "ok": true
+   },
+   {
+    "token": "nine and fifteen",
+    "fact": "Ages 9 to 15",
+    "ok": true
+   },
+   {
+    "token": "seventh grade to tenth",
+    "fact": "Grades 7 to 10",
+    "ok": true
+   },
+   {
+    "token": "came first in all eighteen exams",
+    "fact": "first rank in all 18 exams",
+    "ok": true
+   },
+   {
+    "token": "October 2018",
+    "fact": "Maternal grandmother died October 2018",
+    "ok": true
+   },
+   {
+    "token": "15 November 2018",
+    "fact": "Cyclone Gaja, 15 November 2018",
+    "ok": true
+   },
+   {
+    "token": "Gaja",
+    "fact": "Cyclone Gaja",
+    "ok": true
+   },
+   {
+    "token": "December 2018",
+    "fact": "Paternal grandmother died December 2018",
+    "ok": true
+   },
+   {
+    "token": "Forty-five days after the first",
+    "fact": "45 days after the first",
+    "ok": true
+   },
+   {
+    "token": "1 July 2019",
+    "fact": "died 1 July 2019",
+    "ok": true
+   },
+   {
+    "token": "forty-three",
+    "fact": "aged 43",
+    "ok": true
+   },
+   {
+    "token": "two of the final four months",
+    "fact": "sick in bed two of the last four months",
+    "ok": true
+   },
+   {
+    "token": "seventy-five percent",
+    "fact": "finished with 75 percent",
+    "ok": true
+   },
+   {
+    "token": "MIT",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "Princeton",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "Yale",
+    "fact": "Harvard, MIT, Princeton and Yale",
+    "ok": true
+   },
+   {
+    "token": "SAT",
+    "fact": "no SAT",
+    "ok": true
+   },
+   {
+    "token": "half an hour",
+    "fact": "It took nearly half an hour",
+    "ok": true
+   },
+   {
+    "token": "a hundred companies",
+    "fact": "about 100 companies",
+    "ok": true
+   },
+   {
+    "token": "four hundred",
+    "fact": "more than 400 roles",
+    "ok": true
+   },
+   {
+    "token": "2010",
+    "fact": "a laptop released in 2010",
+    "ok": true
+   },
+   {
+    "token": "27 August 2023",
+    "fact": "Journal, 27 August 2023",
+    "ok": true
+   },
+   {
+    "token": "at eighteen",
+    "fact": "age 18",
+    "ok": true
+   },
+   {
+    "token": "vaakku.org",
+    "fact": "(vaakku.org)",
+    "ok": true
+   },
+   {
+    "token": "statement2xl.com",
+    "fact": "(statement2xl.com)",
+    "ok": true
+   },
+   {
+    "token": "ayyayo",
+    "fact": "ayyayo, voice-to-code",
+    "ok": true
+   },
+   {
+    "token": "Chennai",
+    "fact": "Based in Chennai",
+    "ok": true
+   },
+   {
+    "token": "I first used it for an agent that found lost photos",
+    "fact": "first used for an agent that found lost photos",
+    "ok": true
+   }
+  ],
+  "script_only": [
+   [
+    "five thirty",
+    "script line: I woke up at five thirty, prayed, and put on my school uniform."
+   ],
+   [
+    "Around seven",
+    "script line: Around seven, my brother knocked on my door."
+   ],
+   [
+    "For three years",
+    "script line: For three years I filled notes with plans, rules and resolutions."
+   ]
+  ],
+  "non_numeric": [
+   [
+    "Every one of those notes",
+    "script line: Every one of those notes was a gourd on paper."
+   ]
+  ],
+  "credit_names": [
+   "Salamander Grand Piano V3",
+   "Alexander Holm",
+   "CC BY 3.0"
+  ],
+  "uncovered_numbers": [],
+  "uncovered_names": [],
+  "emoji": [
+   "😅",
+   "😢"
+  ]
+ },
+ "script_square": {
+  "ok": true,
+  "cards": 12,
+  "non_script_on_screen": [
+   "27 August 2023",
+   "vaakku.org",
+   "statement2xl.com",
+   "Music and sound made for this film. Piano samples: Salamander Grand Piano V3 by Alexander Holm, CC BY 3.0."
+  ],
+  "first_difference": null
+ },
+ "tamil": {
+  "ok": true,
+  "glyphs": [
+   "uni0B8F",
+   "uni0B9F",
+   "uni0BCD",
+   "ttutamil",
+   "uni0B9A",
+   "uni0BCD",
+   "space",
+   "cutamil",
+   "uni0BC8",
+   "uni0BB0",
+   "uni0B95",
+   "uni0BCD",
+   "uni0B95",
+   "uni0BBE",
+   "uni0BAF",
+   "uni0BCD",
+   "space",
+   "uni0B95",
+   "uni0BB1",
+   "uni0BBF.alt01",
+   "uni0B95",
+   "uni0BCD",
+   "kutamil",
+   "space",
+   "uni0B89",
+   "uni0BA4",
+   "uni0BB5",
+   "uni0BBE",
+   "tutamil"
+  ],
+  "broken": [],
+  "conjunct_ligatures": [
+   "ttutamil",
+   "cutamil",
+   "kutamil",
+   "tutamil"
+  ],
+  "rendered_crop": "qc/tamil_rendered.png",
+  "rendered_at_s": 252.417
+ },
+ "film": {
+  "path": "/out/77minutes_1080p.mp4",
+  "duration_s": 370.583333,
+  "width": 1920,
+  "height": 1080,
+  "fps": "24/1",
+  "vcodec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "video_bitrate": 1340695,
+  "acodec": "aac",
+  "sample_rate": 48000,
+  "channels": 2,
+  "audio_bitrate": 251635,
+  "size_bytes": 73949889
+ },
+ "delivery_ok": true,
+ "runtime_ok": true,
+ "loudness": {
+  "integrated_lufs": -16.0,
+  "true_peak_dbtp": -2.0,
+  "lra_lu": 21.7
+ },
+ "sync": {
+  "strikes": 131,
+  "max_abs_ms": 12.41,
+  "p95_abs_ms": 0.42,
+  "frame_ms": 41.67,
+  "within_one_frame": true
+ },
+ "sync_ok": true,
+ "loudness_ok": true,
+ "flat_colour": {
+  "accent_target": [
+   200,
+   144,
+   46
+  ],
+  "accent_decoded": [
+   200,
+   143,
+   47
+  ],
+  "paper_target": [
+   242,
+   235,
+   221
+  ],
+  "paper_decoded": [
+   242,
+   233,
+   220
+  ]
+ },
+ "first_three_seconds": {
+  "0.5": {
+   "text_px": 3374,
+   "share_of_full": 0.114,
+   "accent_px": 592
+  },
+  "1.0": {
+   "text_px": 8470,
+   "share_of_full": 0.305,
+   "accent_px": 2878
+  },
+  "2.0": {
+   "text_px": 19582,
+   "share_of_full": 0.722,
+   "accent_px": 2878
+  },
+  "2.9": {
+   "text_px": 26994,
+   "share_of_full": 1.0,
+   "accent_px": 2878
+  }
+ },
+ "first_three_ok": true,
+ "margins_ok": true,
+ "margins": {
+  "cards": 55,
+  "failing": [],
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "min_x": 96,
+  "max_x": 1804,
+  "min_y": 421,
+  "max_y": 603,
+  "max_lines": 2
+ },
+ "margins_square": {
+  "cards": 12,
+  "failing": [],
+  "min_x": 55,
+  "max_x": 1020,
+  "min_y": 442,
+  "max_y": 584,
+  "max_lines": 2,
+  "safe": [
+   54,
+   54,
+   1026,
+   1026
+  ]
+ },
+ "holds_ok": true,
+ "total_open_B": 374.9166666666667,
+ "holds": {
+  "cards": 59,
+  "failing": [],
+  "min_margin": 0.017
+ },
+ "palette": {
+  "sampled_frames": 74,
+  "measured_on": "2x2 block means (4:2:0 chroma resolution)",
+  "worst_p999": 7.28,
+  "worst_frame": [
+   6.0,
+   7.28,
+   29.2,
+   9.98
+  ],
+  "worst_p999_full_resolution": 14.9,
+  "frames": [
+   [
+    1.0,
+    5.1,
+    29.2,
+    7.18
+   ],
+   [
+    6.0,
+    7.28,
+    29.2,
+    9.98
+   ],
+   [
+    11.0,
+    4.89,
+    28.6,
+    14.9
+   ],
+   [
+    16.0,
+    1.4,
+    3.5,
+    1.97
+   ],
+   [
+    21.0,
+    2.14,
+    7.3,
+    1.67
+   ],
+   [
+    26.0,
+    2.44,
+    4.0,
+    5.0
+   ],
+   [
+    31.0,
+    2.44,
+    4.3,
+    5.76
+   ],
+   [
+    36.0,
+    2.5,
+    4.7,
+    5.87
+   ],
+   [
+    41.0,
+    1.61,
+    4.1,
+    1.64
+   ],
+   [
+    46.0,
+    2.36,
+    4.7,
+    4.02
+   ],
+   [
+    51.0,
+    2.44,
+    3.9,
+    5.98
+   ],
+   [
+    56.0,
+    2.45,
+    4.0,
+    5.76
+   ],
+   [
+    61.0,
+    2.45,
+    4.0,
+    5.76
+   ],
+   [
+    66.0,
+    2.44,
+    4.7,
+    5.57
+   ],
+   [
+    71.0,
+    2.4,
+    3.8,
+    5.56
+   ],
+   [
+    76.0,
+    2.45,
+    3.8,
+    5.87
+   ],
+   [
+    81.0,
+    2.1,
+    3.5,
+    2.62
+   ],
+   [
+    86.0,
+    2.07,
+    3.3,
+    2.42
+   ],
+   [
+    91.0,
+    2.45,
+    3.9,
+    3.62
+   ],
+   [
+    96.0,
+    2.59,
+    6.1,
+    5.13
+   ],
+   [
+    101.0,
+    2.61,
+    4.1,
+    5.87
+   ],
+   [
+    106.0,
+    2.11,
+    3.6,
+    2.41
+   ],
+   [
+    111.0,
+    2.06,
+    3.7,
+    2.41
+   ],
+   [
+    116.0,
+    2.61,
+    5.3,
+    5.87
+   ],
+   [
+    121.0,
+    2.55,
+    5.8,
+    5.87
+   ],
+   [
+    126.0,
+    2.52,
+    4.2,
+    4.64
+   ],
+   [
+    131.0,
+    2.45,
+    6.1,
+    4.56
+   ],
+   [
+    136.0,
+    2.61,
+    5.1,
+    5.98
+   ],
+   [
+    141.0,
+    2.68,
+    5.1,
+    6.21
+   ],
+   [
+    146.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    151.0,
+    2.47,
+    4.5,
+    5.87
+   ],
+   [
+    156.0,
+    2.47,
+    4.5,
+    5.87
+   ],
+   [
+    161.0,
+    2.94,
+    21.0,
+    11.07
+   ],
+   [
+    166.0,
+    2.08,
+    4.8,
+    4.02
+   ],
+   [
+    171.0,
+    2.63,
+    4.3,
+    6.21
+   ],
+   [
+    176.0,
+    1.73,
+    3.2,
+    2.98
+   ],
+   [
+    181.0,
+    1.61,
+    3.7,
+    2.36
+   ],
+   [
+    186.0,
+    1.61,
+    3.7,
+    1.86
+   ],
+   [
+    191.0,
+    1.89,
+    4.0,
+    4.02
+   ],
+   [
+    196.0,
+    2.44,
+    4.2,
+    5.84
+   ],
+   [
+    201.0,
+    2.27,
+    4.0,
+    5.56
+   ],
+   [
+    206.0,
+    2.43,
+    4.4,
+    5.68
+   ],
+   [
+    211.0,
+    2.43,
+    4.0,
+    5.56
+   ],
+   [
+    216.0,
+    2.45,
+    4.3,
+    5.98
+   ],
+   [
+    221.0,
+    2.05,
+    3.7,
+    3.91
+   ],
+   [
+    226.0,
+    2.79,
+    23.2,
+    7.67
+   ],
+   [
+    231.0,
+    2.36,
+    4.7,
+    4.31
+   ],
+   [
+    236.0,
+    2.65,
+    4.2,
+    6.11
+   ],
+   [
+    241.0,
+    1.74,
+    3.7,
+    3.74
+   ],
+   [
+    246.0,
+    1.61,
+    3.1,
+    1.64
+   ],
+   [
+    251.0,
+    2.77,
+    5.0,
+    5.98
+   ],
+   [
+    256.0,
+    3.01,
+    5.6,
+    6.33
+   ],
+   [
+    261.0,
+    2.57,
+    5.0,
+    5.56
+   ],
+   [
+    266.0,
+    2.44,
+    25.7,
+    5.45
+   ],
+   [
+    271.0,
+    1.64,
+    3.9,
+    2.05
+   ],
+   [
+    276.0,
+    2.39,
+    6.1,
+    5.49
+   ],
+   [
+    281.0,
+    1.89,
+    3.5,
+    3.54
+   ],
+   [
+    286.0,
+    2.42,
+    4.2,
+    5.57
+   ],
+   [
+    291.0,
+    2.44,
+    5.6,
+    5.76
+   ],
+   [
+    296.0,
+    2.15,
+    4.5,
+    3.12
+   ],
+   [
+    301.0,
+    2.37,
+    3.9,
+    5.31
+   ],
+   [
+    306.0,
+    2.44,
+    4.0,
+    5.76
+   ],
+   [
+    311.0,
+    2.19,
+    3.6,
+    4.51
+   ],
+   [
+    316.0,
+    1.64,
+    4.1,
+    1.75
+   ],
+   [
+    321.0,
+    2.64,
+    21.0,
+    10.84
+   ],
+   [
+    326.0,
+    2.47,
+    4.9,
+    4.56
+   ],
+   [
+    331.0,
+    2.56,
+    3.7,
+    4.6
+   ],
+   [
+    336.0,
+    2.56,
+    5.3,
+    5.87
+   ],
+   [
+    341.0,
+    2.64,
+    4.4,
+    5.93
+   ],
+   [
+    346.0,
+    2.62,
+    4.0,
+    5.98
+   ],
+   [
+    351.0,
+    2.42,
+    4.8,
+    3.35
+   ],
+   [
+    356.0,
+    2.67,
+    4.9,
+    6.27
+   ],
+   [
+    361.0,
+    2.67,
+    4.9,
+    6.27
+   ],
+   [
+    366.0,
+    2.59,
+    4.1,
+    5.69
+   ]
+  ]
+ },
+ "palette_ok": true,
+ "square": {
+  "path": "/out/77minutes_square.mp4",
+  "duration_s": 60.0,
+  "width": 1080,
+  "height": 1080,
+  "fps": "24/1",
+  "vcodec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "video_bitrate": 734473,
+  "acodec": "aac",
+  "sample_rate": 48000,
+  "channels": 2,
+  "audio_bitrate": 246027,
+  "size_bytes": 7386049,
+  "loudness": {
+   "integrated_lufs": -28.1,
+   "true_peak_dbtp": -2.0,
+   "lra_lu": 21.8
+  }
+ },
+ "square_ok": true,
+ "opens": {
+  "open_A.mp4": {
+   "path": "/out/open_A.mp4",
+   "duration_s": 24.875,
+   "width": 1920,
+   "height": 1080,
+   "fps": "24/1",
+   "vcodec": "h264",
+   "profile": "High",
+   "pix_fmt": "yuv420p",
+   "video_bitrate": 270265,
+   "acodec": "aac",
+   "sample_rate": 48000,
+   "channels": 2,
+   "audio_bitrate": 244404,
+   "size_bytes": 1614906,
+   "loudness": {
+    "integrated_lufs": -20.2,
+    "true_peak_dbtp": -1.3,
+    "lra_lu": 24.6
+   },
+   "letter_complete_by_2.9s": 1.0
+  },
+  "open_B.mp4": {
+   "path": "/out/open_B.mp4",
+   "duration_s": 29.208333,
+   "width": 1920,
+   "height": 1080,
+   "fps": "24/1",
+   "vcodec": "h264",
+   "profile": "High",
+   "pix_fmt": "yuv420p",
+   "video_bitrate": 85245,
+   "acodec": "aac",
+   "sample_rate": 48000,
+   "channels": 2,
+   "audio_bitrate": 259812,
+   "size_bytes": 1276647,
+   "loudness": {
+    "integrated_lufs": -21.9,
+    "true_peak_dbtp": -1.9,
+    "lra_lu": 11.9
+   },
+   "letter_complete_by_2.9s": 1.0
+  }
+ },
+ "excerpts_true_peak_ok": true,
+ "excerpts_integrated_ok": false,
+ "licensing": {
+  "media_files": 108,
+  "rows": 16,
+  "uncovered": []
+ },
+ "licensing_ok": true,
+ "transitions": {
+  "card_exits": {
+   "dissolve": 48,
+   "cut": 7
+  },
+  "dissolve_frames": 8,
+  "section_entries": {
+   "s1": [
+    "black",
+    0.4
+   ],
+   "s2": [
+    "black",
+    0.5
+   ],
+   "s3": [
+    "black",
+    0.6
+   ],
+   "s4": [
+    "cut",
+    0.0
+   ],
+   "s5": [
+    "dissolve",
+    0.0
+   ],
+   "s6": [
+    "cut",
+    0.0
+   ],
+   "s7": [
+    "dissolve",
+    0.0
+   ]
+  },
+  "sections_fading_to_black": [
+   "s1",
+   "s2",
+   "s7"
+  ]
+ },
+ "transitions_ok": true,
+ "gourd": {
+  "cards_with_drawing": 1,
+  "card_on_screen_s": 7.167,
+  "drawing_on_screen_s": 6.847
+ },
+ "gourd_ok": true,
+ "hyperframes_check": {
+  "lint": {
+   "ok": true,
+   "errors": 0,
+   "warnings": 0
+  },
+  "runtime": {
+   "ok": true,
+   "errors": 0,
+   "warnings": 0
+  },
+  "layout": {
+   "ok": true,
+   "errors": 0,
+   "warnings": 0
+  },
+  "motion": {
+   "ok": true,
+   "errors": 0,
+   "warnings": 0
+  },
+  "contrast": {
+   "ok": true,
+   "errors": 0,
+   "warnings": 0
+  }
+ },
+ "hyperframes_check_ok": true
+}

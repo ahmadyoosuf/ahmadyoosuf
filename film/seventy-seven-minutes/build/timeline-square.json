@@ -1,0 +1,1074 @@
+{
+ "total": 60.0,
+ "fps": 24,
+ "sections": [
+  {
+   "sid": "s0a",
+   "name": "Cold open (A: two voices)",
+   "start": 0.0,
+   "end": 28.333333333333332,
+   "ground": "black",
+   "cards": [
+    {
+     "id": "s0a-letter-1",
+     "exit": "cut",
+     "extra": null,
+     "air": 0.0,
+     "note": "The 2022 letter's last line, typed in under three seconds.",
+     "script": "The letter's last line typed character by character (square split 1/2)",
+     "lead": 0.17,
+     "start": 0.0,
+     "end": 6.291666666666667,
+     "exit_at": 6.291666666666667,
+     "last_visible": 1.9166666666666667,
+     "words": 10,
+     "hold_min": 4.2,
+     "hold": 4.375,
+     "extra_used": 0.15,
+     "parts_t": [
+      {
+       "t0": 0.17,
+       "chars": [
+        {
+         "c": "I",
+         "t": 0.16666666666666666
+        },
+        {
+         "c": " ",
+         "t": 0.20833333333333334
+        },
+        {
+         "c": "t",
+         "t": 0.20833333333333334
+        },
+        {
+         "c": "o",
+         "t": 0.25
+        },
+        {
+         "c": "o",
+         "t": 0.2916666666666667
+        },
+        {
+         "c": "k",
+         "t": 0.3333333333333333
+        },
+        {
+         "c": " ",
+         "t": 0.4583333333333333
+        },
+        {
+         "c": "7",
+         "t": 0.4583333333333333
+        },
+        {
+         "c": "7",
+         "t": 0.5
+        },
+        {
+         "c": " ",
+         "t": 0.5416666666666666
+        },
+        {
+         "c": "m",
+         "t": 0.5416666666666666
+        },
+        {
+         "c": "i",
+         "t": 0.5833333333333334
+        },
+        {
+         "c": "n",
+         "t": 0.625
+        },
+        {
+         "c": "u",
+         "t": 0.6666666666666666
+        },
+        {
+         "c": "t",
+         "t": 0.7083333333333334
+        },
+        {
+         "c": "e",
+         "t": 0.75
+        },
+        {
+         "c": "s",
+         "t": 0.7916666666666666
+        },
+        {
+         "c": " ",
+         "t": 0.8333333333333334
+        },
+        {
+         "c": "f",
+         "t": 0.8333333333333334
+        },
+        {
+         "c": "o",
+         "t": 0.875
+        },
+        {
+         "c": "r",
+         "t": 0.9166666666666666
+        },
+        {
+         "c": " ",
+         "t": 0.9583333333333334
+        },
+        {
+         "c": "w",
+         "t": 0.9583333333333334
+        },
+        {
+         "c": "r",
+         "t": 1.0
+        },
+        {
+         "c": "i",
+         "t": 1.0416666666666667
+        },
+        {
+         "c": "t",
+         "t": 1.0833333333333333
+        },
+        {
+         "c": "i",
+         "t": 1.125
+        },
+        {
+         "c": "n",
+         "t": 1.1666666666666667
+        },
+        {
+         "c": "g",
+         "t": 1.2083333333333333
+        },
+        {
+         "c": " ",
+         "t": 1.25
+        },
+        {
+         "c": "t",
+         "t": 1.25
+        },
+        {
+         "c": "h",
+         "t": 1.2916666666666667
+        },
+        {
+         "c": "i",
+         "t": 1.3333333333333333
+        },
+        {
+         "c": "s",
+         "t": 1.375
+        },
+        {
+         "c": " ",
+         "t": 1.4166666666666667
+        },
+        {
+         "c": "m",
+         "t": 1.4166666666666667
+        },
+        {
+         "c": "e",
+         "t": 1.4583333333333333
+        },
+        {
+         "c": "s",
+         "t": 1.5
+        },
+        {
+         "c": "s",
+         "t": 1.5416666666666667
+        },
+        {
+         "c": "a",
+         "t": 1.5833333333333333
+        },
+        {
+         "c": "g",
+         "t": 1.625
+        },
+        {
+         "c": "e",
+         "t": 1.6666666666666667
+        },
+        {
+         "c": " ",
+         "t": 1.7083333333333333
+        },
+        {
+         "c": "t",
+         "t": 1.7083333333333333
+        },
+        {
+         "c": "o",
+         "t": 1.75
+        },
+        {
+         "c": " ",
+         "t": 1.7916666666666667
+        },
+        {
+         "c": "y",
+         "t": 1.7916666666666667
+        },
+        {
+         "c": "o",
+         "t": 1.8333333333333333
+        },
+        {
+         "c": "u",
+         "t": 1.875
+        }
+       ],
+       "visible": 1.9166666666666667
+      }
+     ],
+     "lines": 2,
+     "widest_px": 972,
+     "parts": [
+      {
+       "text": "I took 77 minutes for writing this message to you",
+       "face": "mono",
+       "size": 60,
+       "reveal": "type",
+       "accent": [
+        "77 minutes"
+       ],
+       "pause": 0.0,
+       "block": false,
+       "schedule": "coldopen",
+       "caret": true
+      }
+     ]
+    },
+    {
+     "id": "s0a-letter-2",
+     "exit": "dissolve",
+     "extra": null,
+     "air": null,
+     "note": "The 2022 letter's last line, typed in under three seconds.",
+     "script": "The letter's last line typed character by character (square split 2/2)",
+     "lead": 0.17,
+     "start": 6.291666666666667,
+     "end": 10.375,
+     "exit_at": 10.041666666666666,
+     "last_visible": 7.375,
+     "words": 2,
+     "hold_min": 2.5,
+     "hold": 2.667,
+     "extra_used": 0.15,
+     "parts_t": [
+      {
+       "t0": 6.461666666666667,
+       "chars": [
+        {
+         "c": "(",
+         "t": 6.458333333333333
+        },
+        {
+         "c": "#",
+         "t": 6.5
+        },
+        {
+         "c": "h",
+         "t": 6.541666666666667
+        },
+        {
+         "c": "a",
+         "t": 6.583333333333333
+        },
+        {
+         "c": "r",
+         "t": 6.625
+        },
+        {
+         "c": "d",
+         "t": 6.666666666666667
+        },
+        {
+         "c": "w",
+         "t": 6.708333333333333
+        },
+        {
+         "c": "o",
+         "t": 6.75
+        },
+        {
+         "c": "r",
+         "t": 6.791666666666667
+        },
+        {
+         "c": "k",
+         "t": 6.833333333333333
+        },
+        {
+         "c": "😅",
+         "t": 6.875
+        },
+        {
+         "c": ")",
+         "t": 6.916666666666667
+        },
+        {
+         "c": ".",
+         "t": 6.958333333333333
+        },
+        {
+         "c": " ",
+         "t": 7.083333333333333
+        },
+        {
+         "c": "P",
+         "t": 7.083333333333333
+        },
+        {
+         "c": "e",
+         "t": 7.125
+        },
+        {
+         "c": "r",
+         "t": 7.166666666666667
+        },
+        {
+         "c": "i",
+         "t": 7.208333333333333
+        },
+        {
+         "c": "o",
+         "t": 7.25
+        },
+        {
+         "c": "d",
+         "t": 7.291666666666667
+        },
+        {
+         "c": ".",
+         "t": 7.333333333333333
+        }
+       ],
+       "visible": 7.375
+      }
+     ],
+     "lines": 1,
+     "widest_px": 796,
+     "parts": [
+      {
+       "text": "(#hardwork😅). Period.",
+       "face": "mono",
+       "size": 60,
+       "reveal": "type",
+       "accent": [],
+       "pause": 0.0,
+       "block": false,
+       "schedule": "coldopen",
+       "caret": true
+      }
+     ]
+    },
+    {
+     "id": "s0a-2022-1",
+     "exit": "dissolve",
+     "extra": null,
+     "air": 0.2,
+     "note": "",
+     "script": "In 2022, it took me 77 minutes to write one message to a Harvard professor. (square split 1/2)",
+     "start": 10.666666666666666,
+     "end": 15.75,
+     "exit_at": 15.416666666666666,
+     "last_visible": 11.333333333333334,
+     "words": 9,
+     "hold_min": 3.9,
+     "hold": 4.083,
+     "extra_used": 0.15,
+     "parts_t": [
+      {
+       "t0": 10.666666666666666,
+       "words": [
+        {
+         "w": "In",
+         "t": 10.666666666666666
+        },
+        {
+         "w": "2022,",
+         "t": 10.708333333333334
+        },
+        {
+         "w": "it",
+         "t": 10.75
+        },
+        {
+         "w": "took",
+         "t": 10.791666666666666
+        },
+        {
+         "w": "me",
+         "t": 10.833333333333334
+        },
+        {
+         "w": "77",
+         "t": 10.833333333333334
+        },
+        {
+         "w": "minutes",
+         "t": 10.875
+        },
+        {
+         "w": "to",
+         "t": 10.958333333333334
+        },
+        {
+         "w": "write",
+         "t": 10.958333333333334
+        }
+       ],
+       "fade": 0.34,
+       "visible": 11.333333333333334
+      }
+     ],
+     "lines": 2,
+     "widest_px": 916,
+     "parts": [
+      {
+       "text": "In 2022, it took me 77 minutes to write",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [
+        "77 minutes"
+       ],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s0a-2022-2",
+     "exit": "dissolve",
+     "extra": null,
+     "air": null,
+     "note": "",
+     "script": "In 2022, it took me 77 minutes to write one message to a Harvard professor. (square split 2/2)",
+     "start": 15.958333333333334,
+     "end": 20.041666666666668,
+     "exit_at": 19.708333333333332,
+     "last_visible": 16.541666666666668,
+     "words": 6,
+     "hold_min": 3.0,
+     "hold": 3.167,
+     "extra_used": 0.15,
+     "parts_t": [
+      {
+       "t0": 15.958333333333334,
+       "words": [
+        {
+         "w": "one",
+         "t": 15.958333333333334
+        },
+        {
+         "w": "message",
+         "t": 16.0
+        },
+        {
+         "w": "to",
+         "t": 16.083333333333332
+        },
+        {
+         "w": "a",
+         "t": 16.083333333333332
+        },
+        {
+         "w": "Harvard",
+         "t": 16.125
+        },
+        {
+         "w": "professor.",
+         "t": 16.166666666666668
+        }
+       ],
+       "fade": 0.34,
+       "visible": 16.541666666666668
+      }
+     ],
+     "lines": 2,
+     "widest_px": 721,
+     "parts": [
+      {
+       "text": "one message to a Harvard professor.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s0a-proud",
+     "exit": "cut",
+     "extra": 0.45,
+     "air": 0.4,
+     "note": "",
+     "script": "I was proud of that.",
+     "start": 20.333333333333332,
+     "end": 24.0,
+     "exit_at": 24.0,
+     "last_visible": 20.833333333333332,
+     "words": 5,
+     "hold_min": 2.7,
+     "hold": 3.167,
+     "extra_used": 0.45,
+     "parts_t": [
+      {
+       "t0": 20.333333333333332,
+       "words": [
+        {
+         "w": "I",
+         "t": 20.333333333333332
+        },
+        {
+         "w": "was",
+         "t": 20.333333333333332
+        },
+        {
+         "w": "proud",
+         "t": 20.375
+        },
+        {
+         "w": "of",
+         "t": 20.458333333333332
+        },
+        {
+         "w": "that.",
+         "t": 20.458333333333332
+        }
+       ],
+       "fade": 0.34,
+       "visible": 20.833333333333332
+      }
+     ],
+     "lines": 1,
+     "widest_px": 537,
+     "parts": [
+      {
+       "text": "I was proud of that.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s0a-title",
+     "exit": "dissolve",
+     "extra": 0.4,
+     "air": 0.0,
+     "note": "",
+     "script": "Title: 77 MINUTES",
+     "start": 24.416666666666668,
+     "end": 28.333333333333332,
+     "exit_at": 28.0,
+     "last_visible": 25.083333333333336,
+     "words": 2,
+     "hold_min": 2.5,
+     "hold": 2.917,
+     "extra_used": 0.4,
+     "parts_t": [
+      {
+       "t0": 24.416666666666668,
+       "chars": [
+        {
+         "c": "7",
+         "t": 24.416666666666668
+        },
+        {
+         "c": "7",
+         "t": 24.5
+        },
+        {
+         "c": " ",
+         "t": 24.541666666666668
+        },
+        {
+         "c": "M",
+         "t": 24.625
+        },
+        {
+         "c": "I",
+         "t": 24.708333333333332
+        },
+        {
+         "c": "N",
+         "t": 24.791666666666668
+        },
+        {
+         "c": "U",
+         "t": 24.833333333333332
+        },
+        {
+         "c": "T",
+         "t": 24.916666666666668
+        },
+        {
+         "c": "E",
+         "t": 25.0
+        },
+        {
+         "c": "S",
+         "t": 25.041666666666668
+        }
+       ],
+       "visible": 25.083333333333336
+      }
+     ],
+     "lines": 1,
+     "widest_px": 510,
+     "parts": [
+      {
+       "text": "77 MINUTES",
+       "face": "mono",
+       "size": 72,
+       "reveal": "type",
+       "accent": [],
+       "pause": 0.0,
+       "block": false,
+       "cps": 14.0,
+       "tracking": 0.12,
+       "heavy": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "sid": "s1",
+   "name": "The library",
+   "start": 28.75,
+   "end": 59.5,
+   "ground": "night",
+   "cards": [
+    {
+     "id": "s1-ahmad-1",
+     "exit": "dissolve",
+     "extra": null,
+     "air": 0.2,
+     "note": "",
+     "script": "I'm Ahmad. I'm from Adirampattinam, a small town on the Tamil Nadu coast. (square split 1/2)",
+     "start": 0.5833333333333334,
+     "end": 3.9583333333333335,
+     "exit_at": 3.625,
+     "last_visible": 1.0,
+     "words": 2,
+     "hold_min": 2.5,
+     "hold": 2.625,
+     "extra_used": 0.1,
+     "parts_t": [
+      {
+       "t0": 0.5833333333333334,
+       "words": [
+        {
+         "w": "I’m",
+         "t": 0.5833333333333334
+        },
+        {
+         "w": "Ahmad.",
+         "t": 0.625
+        }
+       ],
+       "fade": 0.34,
+       "visible": 1.0
+      }
+     ],
+     "lines": 1,
+     "widest_px": 324,
+     "parts": [
+      {
+       "text": "I’m Ahmad.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s1-ahmad-2",
+     "exit": "dissolve",
+     "extra": null,
+     "air": null,
+     "note": "",
+     "script": "I'm Ahmad. I'm from Adirampattinam, a small town on the Tamil Nadu coast. (square split 2/2)",
+     "start": 4.166666666666667,
+     "end": 10.0,
+     "exit_at": 9.666666666666666,
+     "last_visible": 5.041666666666667,
+     "words": 11,
+     "hold_min": 4.5,
+     "hold": 4.625,
+     "extra_used": 0.1,
+     "parts_t": [
+      {
+       "t0": 4.166666666666667,
+       "words": [
+        {
+         "w": "I’m",
+         "t": 4.166666666666667
+        },
+        {
+         "w": "from",
+         "t": 4.208333333333333
+        },
+        {
+         "w": "Adirampattinam,",
+         "t": 4.25
+        },
+        {
+         "w": "a",
+         "t": 4.375
+        },
+        {
+         "w": "small",
+         "t": 4.416666666666667
+        },
+        {
+         "w": "town",
+         "t": 4.458333333333333
+        },
+        {
+         "w": "on",
+         "t": 4.5
+        },
+        {
+         "w": "the",
+         "t": 4.541666666666667
+        },
+        {
+         "w": "Tamil",
+         "t": 4.583333333333333
+        },
+        {
+         "w": "Nadu",
+         "t": 4.625
+        },
+        {
+         "w": "coast.",
+         "t": 4.666666666666667
+        }
+       ],
+       "fade": 0.34,
+       "visible": 5.041666666666667
+      }
+     ],
+     "lines": 2,
+     "widest_px": 950,
+     "parts": [
+      {
+       "text": "I’m from Adirampattinam, a small town on the Tamil Nadu coast.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s1-family-1",
+     "exit": "dissolve",
+     "extra": null,
+     "air": 0.2,
+     "note": "",
+     "script": "My family are scholars of Islam. Most of us stop formal school around class ten or twelve. (split 1/2: line exceeds two lines, D026) (square split 1/2)",
+     "start": 10.208333333333334,
+     "end": 14.291666666666666,
+     "exit_at": 13.958333333333334,
+     "last_visible": 10.833333333333334,
+     "words": 6,
+     "hold_min": 3.0,
+     "hold": 3.125,
+     "extra_used": 0.1,
+     "parts_t": [
+      {
+       "t0": 10.208333333333334,
+       "words": [
+        {
+         "w": "My",
+         "t": 10.208333333333334
+        },
+        {
+         "w": "family",
+         "t": 10.25
+        },
+        {
+         "w": "are",
+         "t": 10.291666666666666
+        },
+        {
+         "w": "scholars",
+         "t": 10.333333333333334
+        },
+        {
+         "w": "of",
+         "t": 10.416666666666666
+        },
+        {
+         "w": "Islam.",
+         "t": 10.458333333333334
+        }
+       ],
+       "fade": 0.34,
+       "visible": 10.833333333333334
+      }
+     ],
+     "lines": 1,
+     "widest_px": 885,
+     "parts": [
+      {
+       "text": "My family are scholars of Islam.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s1-family-2",
+     "exit": "dissolve",
+     "extra": null,
+     "air": null,
+     "note": "",
+     "script": "My family are scholars of Islam. Most of us stop formal school around class ten or twelve. (split 1/2: line exceeds two lines, D026) (square split 2/2)",
+     "start": 14.5,
+     "end": 20.291666666666668,
+     "exit_at": 19.958333333333332,
+     "last_visible": 15.333333333333334,
+     "words": 11,
+     "hold_min": 4.5,
+     "hold": 4.625,
+     "extra_used": 0.1,
+     "parts_t": [
+      {
+       "t0": 14.5,
+       "words": [
+        {
+         "w": "Most",
+         "t": 14.5
+        },
+        {
+         "w": "of",
+         "t": 14.541666666666666
+        },
+        {
+         "w": "us",
+         "t": 14.583333333333334
+        },
+        {
+         "w": "stop",
+         "t": 14.583333333333334
+        },
+        {
+         "w": "formal",
+         "t": 14.625
+        },
+        {
+         "w": "school",
+         "t": 14.708333333333334
+        },
+        {
+         "w": "around",
+         "t": 14.791666666666666
+        },
+        {
+         "w": "class",
+         "t": 14.833333333333334
+        },
+        {
+         "w": "ten",
+         "t": 14.875
+        },
+        {
+         "w": "or",
+         "t": 14.916666666666666
+        },
+        {
+         "w": "twelve.",
+         "t": 14.958333333333334
+        }
+       ],
+       "fade": 0.34,
+       "visible": 15.333333333333334
+      }
+     ],
+     "lines": 2,
+     "widest_px": 819,
+     "parts": [
+      {
+       "text": "Most of us stop formal school around class ten or twelve.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s1-first",
+     "exit": "dissolve",
+     "extra": 0.45,
+     "air": null,
+     "note": "",
+     "script": "I'm the first of us to go to college. (split 2/2)",
+     "start": 20.5,
+     "end": 25.833333333333332,
+     "exit_at": 25.5,
+     "last_visible": 21.125,
+     "words": 9,
+     "hold_min": 3.9,
+     "hold": 4.375,
+     "extra_used": 0.45,
+     "parts_t": [
+      {
+       "t0": 20.5,
+       "words": [
+        {
+         "w": "I’m",
+         "t": 20.5
+        },
+        {
+         "w": "the",
+         "t": 20.541666666666668
+        },
+        {
+         "w": "first",
+         "t": 20.583333333333332
+        },
+        {
+         "w": "of",
+         "t": 20.625
+        },
+        {
+         "w": "us",
+         "t": 20.666666666666668
+        },
+        {
+         "w": "to",
+         "t": 20.666666666666668
+        },
+        {
+         "w": "go",
+         "t": 20.708333333333332
+        },
+        {
+         "w": "to",
+         "t": 20.75
+        },
+        {
+         "w": "college.",
+         "t": 20.75
+        }
+       ],
+       "fade": 0.34,
+       "visible": 21.125
+      }
+     ],
+     "lines": 1,
+     "widest_px": 914,
+     "parts": [
+      {
+       "text": "I’m the first of us to go to college.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    },
+    {
+     "id": "s1-father-1",
+     "exit": "dissolve",
+     "extra": null,
+     "air": 0.2,
+     "note": "",
+     "script": "My father studied until the third grade. He owned more than two thousand books. (square split 1/2)",
+     "start": 26.041666666666668,
+     "end": 30.458333333333332,
+     "exit_at": 30.125,
+     "last_visible": 26.708333333333332,
+     "words": 7,
+     "hold_min": 3.3,
+     "hold": 3.417,
+     "extra_used": 0.1,
+     "parts_t": [
+      {
+       "t0": 26.041666666666668,
+       "words": [
+        {
+         "w": "My",
+         "t": 26.041666666666668
+        },
+        {
+         "w": "father",
+         "t": 26.083333333333332
+        },
+        {
+         "w": "studied",
+         "t": 26.125
+        },
+        {
+         "w": "until",
+         "t": 26.208333333333332
+        },
+        {
+         "w": "the",
+         "t": 26.25
+        },
+        {
+         "w": "third",
+         "t": 26.291666666666668
+        },
+        {
+         "w": "grade.",
+         "t": 26.333333333333332
+        }
+       ],
+       "fade": 0.34,
+       "visible": 26.708333333333332
+      }
+     ],
+     "lines": 2,
+     "widest_px": 890,
+     "parts": [
+      {
+       "text": "My father studied until the third grade.",
+       "face": "fraunces",
+       "size": 64,
+       "reveal": "ink",
+       "accent": [],
+       "pause": 0.0,
+       "block": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

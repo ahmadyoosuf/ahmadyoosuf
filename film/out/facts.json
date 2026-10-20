@@ -1,0 +1,46 @@
+{
+  "title": "77 MINUTES",
+  "source": "User prompt, FACTS section, copied verbatim on 2026-10-20. These are the only facts the film may show.",
+  "facts": [
+    "Ahmad Yoosuf. From Adirampattinam, a coastal town in Thanjavur district, Tamil Nadu. Based in Chennai.",
+    "Family are scholars of Islam; most stop formal school around class 10 or 12. First in the family to attend college.",
+    "Father studied until third grade; owned more than 2,000 books; died 1 July 2019, aged 43. That morning his brother said: \"Everything is over. Change your dress.\"",
+    "Maternal grandmother died October 2018. Cyclone Gaja, 15 November 2018: the roof of their house landed on the next street. Paternal grandmother died December 2018, 45 days after the first.",
+    "Ages 9 to 15, before a phone, his father's library was how he \"left his world\".",
+    "Grades 7 to 10: first rank in all 18 exams. Final school year: sick in bed two of the last four months; finished with 75 percent.",
+    "2022: applied to Harvard, MIT, Princeton and Yale alone; no counsellor, no SAT, no mentor. Wrote on Discord: \"I'm not a fast writer. It took nearly half an hour to write the above statement.\" A stranger reviewed the essay once, harshly and usefully; later replies were \"no i'm busy\" and \"No I'm busy\"; his reply: \"Ok😢\". Rejections followed.",
+    "2022 letter to a Harvard professor ended: \"I took 77 minutes for writing this message to you (#hardwork😅). Period.\"",
+    "Rejected for more than 400 roles at about 100 companies. Most applications written on a laptop released in 2010.",
+    "Journal, 27 August 2023, age 18: \"Well said and well thought is better than well done according to my intuition which seems ridiculous but does not hinder me from practicing that terrible idea.\"",
+    "Tamil proverb: ஏட்டுச் சுரைக்காய் கறிக்கு உதவாது (A gourd drawn on paper won't cook a curry).",
+    "Work: Vaakku, a Tamil speech-to-speech system that called voters, shown to district officials (vaakku.org). statement2xl, an engine that turns bank statements into spreadsheets (statement2xl.com). ayyayo, voice-to-code for children who think in Tamil (ayyayo.app, ayyayo.ai); \"ayyayo\" is Tamil for \"oh no\"; first used for an agent that found lost photos. Tagline: \"ayyayo. just say it.\"",
+    "No other numbers, names or dates exist for this film."
+  ],
+  "qa_index": {
+    "_note": "Derived lookup for QA only. Every entry traces to a sentence in `facts` above; nothing here adds a fact.",
+    "numbers": ["10", "12", "2,000", "two thousand", "43", "forty-three", "45", "Forty-five", "9", "nine", "15", "fifteen", "7", "seventh", "tenth", "18", "eighteen", "two", "four", "75", "seventy-five", "77", "400", "four hundred", "100", "a hundred", "2010", "third", "half an hour"],
+    "dates": ["1 July 2019", "October 2018", "15 November 2018", "December 2018", "2022", "27 August 2023"],
+    "names": ["Ahmad", "Ahmad Yoosuf", "Adirampattinam", "Thanjavur", "Tamil Nadu", "Chennai", "Islam", "Harvard", "MIT", "Princeton", "Yale", "SAT", "Discord", "Gaja", "Vaakku", "vaakku.org", "statement2xl", "statement2xl.com", "ayyayo", "ayyayo.app", "ayyayo.ai", "Tamil", "English"],
+    "quotes": [
+      "I took 77 minutes for writing this message to you (#hardwork😅). Period.",
+      "Everything is over. Change your dress.",
+      "I'm not a fast writer. It took nearly half an hour to write the above statement.",
+      "no i'm busy",
+      "No I'm busy",
+      "Ok😢",
+      "Well said and well thought is better than well done according to my intuition which seems ridiculous but does not hinder me from practicing that terrible idea.",
+      "ஏட்டுச் சுரைக்காய் கறிக்கு உதவாது",
+      "A gourd drawn on paper won't cook a curry.",
+      "ayyayo. just say it."
+    ],
+    "emoji": ["😅", "😢"]
+  },
+  "script_details_not_in_facts": {
+    "_note": "These appear in the user's fixed SCRIPT (wording not mine to change) but not in FACTS. They are shown verbatim because the script is fixed, and are flagged in QA.md and in the v2 list for confirmation.",
+    "items": [
+      {"script_line": "I woke up at five thirty, prayed, and put on my school uniform.", "detail": "five thirty"},
+      {"script_line": "Around seven, my brother knocked on my door.", "detail": "Around seven"},
+      {"script_line": "For three years I filled notes with plans, rules and resolutions.", "detail": "three years"}
+    ]
+  }
+}

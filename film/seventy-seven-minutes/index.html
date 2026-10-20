@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>77 MINUTES</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+#root > div[data-composition-src] { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="film" data-start="0" data-width="1920" data-height="1080" data-fps="24" data-duration="370.5833">
+  <div id="el-s0a" data-composition-id="s0a" data-composition-src="compositions/s0a.html" data-start="0.0000" data-duration="23.8750" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="el-s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="24.2917" data-duration="54.9583" data-track-index="2" data-width="1920" data-height="1080"></div>
+  <div id="el-s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="79.7500" data-duration="65.7083" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="el-s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="146.0417" data-duration="58.5000" data-track-index="2" data-width="1920" data-height="1080"></div>
+  <div id="el-s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="204.5417" data-duration="57.7917" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="el-s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="262.0000" data-duration="39.6667" data-track-index="2" data-width="1920" data-height="1080"></div>
+  <div id="el-s6" data-composition-id="s6" data-composition-src="compositions/s6.html" data-start="301.6667" data-duration="20.9583" data-track-index="1" data-width="1920" data-height="1080"></div>
+  <div id="el-s7" data-composition-id="s7" data-composition-src="compositions/s7.html" data-start="322.2917" data-duration="46.7917" data-track-index="2" data-width="1920" data-height="1080"></div>
+  <audio id="film-mix" src="assets/audio/mix_A.wav" data-start="0" data-duration="370.5833" data-track-index="10" data-volume="1"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#el-s1", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 24.2917);
+tl.to("#el-s1", { opacity: 0, duration: 0.3333, ease: "none" }, 78.9167);
+tl.fromTo("#el-s2", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 79.7500);
+tl.to("#el-s2", { opacity: 0, duration: 0.3333, ease: "none" }, 145.1250);
+tl.fromTo("#el-s3", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 146.0417);
+tl.fromTo("#el-s5", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 262.0000);
+tl.fromTo("#el-s7", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 322.2917);
+tl.to("#el-s7", { opacity: 0, duration: 0.3333, ease: "none" }, 368.7500);
+window.__timelines["film"] = tl;
+</script>
+</body>
+</html>

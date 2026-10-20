@@ -1,0 +1,514 @@
+{
+ "total": 60.0,
+ "fps": 24,
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "section",
+   "sid": "s0a",
+   "ground": "black",
+   "end": 28.3333
+  },
+  {
+   "t": 0.1667,
+   "kind": "key",
+   "c": "I",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.2083,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.2083,
+   "kind": "key",
+   "c": "t",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.25,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.2917,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.3333,
+   "kind": "key",
+   "c": "k",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.4583,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.4583,
+   "kind": "key",
+   "c": "7",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.5,
+   "kind": "key",
+   "c": "7",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.5417,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.5417,
+   "kind": "key",
+   "c": "m",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.5833,
+   "kind": "key",
+   "c": "i",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.625,
+   "kind": "key",
+   "c": "n",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.6667,
+   "kind": "key",
+   "c": "u",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.7083,
+   "kind": "key",
+   "c": "t",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.75,
+   "kind": "key",
+   "c": "e",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.7917,
+   "kind": "key",
+   "c": "s",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.8333,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.8333,
+   "kind": "key",
+   "c": "f",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.875,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.9167,
+   "kind": "key",
+   "c": "r",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.9583,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 0.9583,
+   "kind": "key",
+   "c": "w",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.0,
+   "kind": "key",
+   "c": "r",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.0417,
+   "kind": "key",
+   "c": "i",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.0833,
+   "kind": "key",
+   "c": "t",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.125,
+   "kind": "key",
+   "c": "i",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.1667,
+   "kind": "key",
+   "c": "n",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.2083,
+   "kind": "key",
+   "c": "g",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.25,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.25,
+   "kind": "key",
+   "c": "t",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.2917,
+   "kind": "key",
+   "c": "h",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.3333,
+   "kind": "key",
+   "c": "i",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.375,
+   "kind": "key",
+   "c": "s",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.4167,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.4167,
+   "kind": "key",
+   "c": "m",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.4583,
+   "kind": "key",
+   "c": "e",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.5,
+   "kind": "key",
+   "c": "s",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.5417,
+   "kind": "key",
+   "c": "s",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.5833,
+   "kind": "key",
+   "c": "a",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.625,
+   "kind": "key",
+   "c": "g",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.6667,
+   "kind": "key",
+   "c": "e",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.7083,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.7083,
+   "kind": "key",
+   "c": "t",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.75,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.7917,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.7917,
+   "kind": "key",
+   "c": "y",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.8333,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 1.875,
+   "kind": "key",
+   "c": "u",
+   "card": "s0a-letter-1"
+  },
+  {
+   "t": 6.4583,
+   "kind": "key",
+   "c": "(",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.5,
+   "kind": "key",
+   "c": "#",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.5417,
+   "kind": "key",
+   "c": "h",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.5833,
+   "kind": "key",
+   "c": "a",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.625,
+   "kind": "key",
+   "c": "r",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.6667,
+   "kind": "key",
+   "c": "d",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.7083,
+   "kind": "key",
+   "c": "w",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.75,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.7917,
+   "kind": "key",
+   "c": "r",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.8333,
+   "kind": "key",
+   "c": "k",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.875,
+   "kind": "key",
+   "c": "😅",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.9167,
+   "kind": "key",
+   "c": ")",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 6.9583,
+   "kind": "key",
+   "c": ".",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.0833,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.0833,
+   "kind": "key",
+   "c": "P",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.125,
+   "kind": "key",
+   "c": "e",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.1667,
+   "kind": "key",
+   "c": "r",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.2083,
+   "kind": "key",
+   "c": "i",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.25,
+   "kind": "key",
+   "c": "o",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.2917,
+   "kind": "key",
+   "c": "d",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 7.3333,
+   "kind": "key",
+   "c": ".",
+   "card": "s0a-letter-2"
+  },
+  {
+   "t": 24.4167,
+   "kind": "heavy",
+   "c": "7",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.5,
+   "kind": "heavy",
+   "c": "7",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.5417,
+   "kind": "space",
+   "c": " ",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.625,
+   "kind": "heavy",
+   "c": "M",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.7083,
+   "kind": "heavy",
+   "c": "I",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.7917,
+   "kind": "heavy",
+   "c": "N",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.8333,
+   "kind": "heavy",
+   "c": "U",
+   "card": "s0a-title"
+  },
+  {
+   "t": 24.9167,
+   "kind": "heavy",
+   "c": "T",
+   "card": "s0a-title"
+  },
+  {
+   "t": 25.0,
+   "kind": "heavy",
+   "c": "E",
+   "card": "s0a-title"
+  },
+  {
+   "t": 25.0417,
+   "kind": "heavy",
+   "c": "S",
+   "card": "s0a-title"
+  },
+  {
+   "t": 28.75,
+   "kind": "section",
+   "sid": "s1",
+   "ground": "night",
+   "end": 59.5
+  }
+ ],
+ "sections": [
+  {
+   "sid": "s0a",
+   "start": 0.0,
+   "end": 28.333333333333332,
+   "ground": "black"
+  },
+  {
+   "sid": "s1",
+   "start": 28.75,
+   "end": 59.5,
+   "ground": "night"
+  }
+ ]
+}

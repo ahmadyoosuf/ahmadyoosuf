@@ -1,0 +1,6 @@
+Salamander Grand Piano V3 samples by Alexander Holm.
+Licensed under Creative Commons Attribution 3.0 (CC BY 3.0): https://creativecommons.org/licenses/by/3.0/
+Source: https://archive.org/details/SalamanderGrandPianoV3
+Copied from the npm packages @audio-samples/piano-mp3-velocity6, -velocity8 and -velocity10 (v1.0.5,
+packaging by Jan Forst, MIT), which state the samples' licence and author in their README files.
+Used in 77 MINUTES to perform an original score; credited on the end-credits card.

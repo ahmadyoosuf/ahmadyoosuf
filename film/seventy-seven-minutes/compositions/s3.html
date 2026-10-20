@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>77 MINUTES · Alone</title>
+</head>
+<body>
+<template id="s3-template">
+<style>
+
+
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: block; }
+@font-face { font-family: "Fraunces"; src: url("../assets/fonts/fraunces-latin-full-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: block; }
+@font-face { font-family: "JetBrains Mono"; src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2"); font-weight: 100 800; font-display: block; }
+@font-face { font-family: "Noto Serif Tamil"; src: url("../assets/fonts/noto-serif-tamil-tamil-500-normal.woff2") format("woff2"); font-weight: 500; font-display: block; }
+@font-face { font-family: "Noto Emoji"; src: url("../assets/fonts/noto-emoji-9-400-normal.woff2") format("woff2"); font-weight: 400; font-display: block; unicode-range: U+1F605, U+1F622; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+.ground { position: absolute; inset: 0; }
+.black { background: #000; }
+.night { background: #1B1A17 url("../assets/textures/night-1920x1080.jpg") center / cover no-repeat; }
+.paper { background: #F2EBDD url("../assets/textures/paper-1920x1080.jpg") center / cover no-repeat; }
+.card { position: absolute; inset: 0; display: flex; align-items: center;
+  padding: 54px 96px 119px 96px; box-sizing: border-box; }
+.inner { position: relative; width: 1728px; }
+.para { margin: 0; text-wrap: balance; font-kerning: normal; }
+.para + .para { margin-top: 0.42em; }
+.fraunces, .italic { font-family: "Fraunces", "Noto Emoji", serif; font-weight: 400;
+  font-optical-sizing: auto; font-variation-settings: "SOFT" 50, "WONK" 0; line-height: 1.22; letter-spacing: -0.004em; }
+.italic { font-style: italic; }
+.mono { font-family: "JetBrains Mono", "Noto Emoji", monospace; font-weight: 400; line-height: 1.32;
+  text-wrap: wrap; font-variant-ligatures: none; }
+.tamil { font-family: "Noto Serif Tamil", serif; font-weight: 500; line-height: 1.5; padding-left: 0.06em; }
+.on-dark { color: #F2EBDD; }
+.on-paper { color: #1B1A17; }
+.acc { color: #C8902E; }
+.w { display: inline; opacity: 0; }
+.ch { position: relative; opacity: 0; --c: 0; }
+.cs-start { position: relative; --c: 0; }
+.caret::after, .cs-start::after { content: ""; position: absolute; top: 0.12em; bottom: 0.06em;
+  right: -0.08em; width: 0.08em; background: #F2EBDD; opacity: var(--c); }
+.cs-start::after { right: auto; left: 0; }
+.blackout { position: absolute; inset: 0; background: #000; z-index: 50; }
+.gourd { position: absolute; }
+
+</style>
+<div id="root" data-composition-id="s3" data-width="1920" data-height="1080" data-duration="58.5000">
+<div id="s3-ground" class="ground night"></div>
+<div id="s3-applied" class="card clip" data-start="1.0000" data-duration="9.7500" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s3-applied-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-applied-p0-w0">So</span> <span class="w" id="s3-applied-p0-w1">I</span> <span class="w" id="s3-applied-p0-w2">applied</span> <span class="w" id="s3-applied-p0-w3">to</span> <span class="w" id="s3-applied-p0-w4">Harvard,</span> <span class="w" id="s3-applied-p0-w5">MIT,</span> <span class="w" id="s3-applied-p0-w6">Princeton</span> <span class="w" id="s3-applied-p0-w7">and</span> <span class="w" id="s3-applied-p0-w8">Yale</span> <span class="w" id="s3-applied-p0-w9">by</span> <span class="w" id="s3-applied-p0-w10">myself.</span></p><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-applied-p1-w0">No</span> <span class="w" id="s3-applied-p1-w1">counsellor.</span> <span class="fraunces" style="font-size: 64px;"><span class="w" id="s3-applied-p2-w0">No</span> <span class="w" id="s3-applied-p2-w1">SAT.</span></span> <span class="fraunces" style="font-size: 64px;"><span class="w" id="s3-applied-p3-w0">No</span> <span class="w" id="s3-applied-p3-w1">mentor.</span></span></p></div>
+</div>
+<div id="s3-slow" class="card clip" data-start="10.9583" data-duration="8.3750" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s3-slow-in"><p class="para italic on-dark" style="font-size: 64px;"><span class="w" id="s3-slow-p0-w0">I'm</span> <span class="w" id="s3-slow-p0-w1">not</span> <span class="w" id="s3-slow-p0-w2">a</span> <span class="w" id="s3-slow-p0-w3">fast</span> <span class="w" id="s3-slow-p0-w4">writer.</span></p><p class="para italic on-dark" style="font-size: 64px;"><span class="w" id="s3-slow-p1-w0">It</span> <span class="w" id="s3-slow-p1-w1">took</span> <span class="w" id="s3-slow-p1-w2">nearly</span> <span class="w acc" id="s3-slow-p1-w3">half</span> <span class="w acc" id="s3-slow-p1-w4">an</span> <span class="w acc" id="s3-slow-p1-w5">hour</span> <span class="w" id="s3-slow-p1-w6">to</span> <span class="w" id="s3-slow-p1-w7">write</span> <span class="w" id="s3-slow-p1-w8">the</span> <span class="w" id="s3-slow-p1-w9">above</span> <span class="w" id="s3-slow-p1-w10">statement.</span></p></div>
+</div>
+<div id="s3-stranger" class="card clip" data-start="19.5417" data-duration="9.7083" data-track-index="4" data-layout-allow-overflow>
+  <div class="inner" id="s3-stranger-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-stranger-p0-w0">A</span> <span class="w" id="s3-stranger-p0-w1">stranger</span> <span class="w" id="s3-stranger-p0-w2">reviewed</span> <span class="w" id="s3-stranger-p0-w3">my</span> <span class="w" id="s3-stranger-p0-w4">essay</span> <span class="w" id="s3-stranger-p0-w5">once.</span> <span class="fraunces" style="font-size: 64px;"><span class="w" id="s3-stranger-p1-w0">It</span> <span class="w" id="s3-stranger-p1-w1">was</span> <span class="w" id="s3-stranger-p1-w2">brutal,</span> <span class="w" id="s3-stranger-p1-w3">and</span> <span class="w" id="s3-stranger-p1-w4">it</span> <span class="w" id="s3-stranger-p1-w5">was</span> <span class="w" id="s3-stranger-p1-w6">the</span> <span class="w" id="s3-stranger-p1-w7">most</span> <span class="w" id="s3-stranger-p1-w8">useful</span> <span class="w" id="s3-stranger-p1-w9">thing</span> <span class="w" id="s3-stranger-p1-w10">anyone</span> <span class="w" id="s3-stranger-p1-w11">had</span> <span class="w" id="s3-stranger-p1-w12">told</span> <span class="w" id="s3-stranger-p1-w13">me.</span></span></p></div>
+</div>
+<div id="s3-again1" class="card clip" data-start="29.4583" data-duration="4.7083" data-track-index="5" data-layout-allow-overflow>
+  <div class="inner" id="s3-again1-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-again1-p0-w0">When</span> <span class="w" id="s3-again1-p0-w1">I</span> <span class="w" id="s3-again1-p0-w2">asked</span> <span class="w" id="s3-again1-p0-w3">again:</span></p><p class="para italic on-dark" style="font-size: 64px;"><span class="w" id="s3-again1-p1-w0">no</span> <span class="w" id="s3-again1-p1-w1">i'm</span> <span class="w" id="s3-again1-p1-w2">busy</span></p></div>
+</div>
+<div id="s3-again2" class="card clip" data-start="34.3750" data-duration="4.0000" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s3-again2-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-again2-p0-w0">And</span> <span class="w" id="s3-again2-p0-w1">again:</span></p><p class="para italic on-dark" style="font-size: 64px;"><span class="w" id="s3-again2-p1-w0">No</span> <span class="w" id="s3-again2-p1-w1">I'm</span> <span class="w" id="s3-again2-p1-w2">busy</span></p></div>
+</div>
+<div id="s3-ok" class="card clip" data-start="38.5833" data-duration="3.6250" data-track-index="3" data-layout-allow-overflow>
+  <div class="inner" id="s3-ok-in"><p class="para italic on-dark" style="font-size: 64px;"><span class="w" id="s3-ok-p0-w0">Ok😢</span></p></div>
+</div>
+<div id="s3-rejections" class="card clip" data-start="42.4167" data-duration="3.7500" data-track-index="4" data-layout-allow-overflow>
+  <div class="inner" id="s3-rejections-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-rejections-p0-w0">The</span> <span class="w" id="s3-rejections-p0-w1">rejection</span> <span class="w" id="s3-rejections-p0-w2">letters</span> <span class="w" id="s3-rejections-p0-w3">came.</span></p></div>
+</div>
+<div id="s3-hundred" class="card clip" data-start="46.3750" data-duration="6.2083" data-track-index="5" data-layout-allow-overflow>
+  <div class="inner" id="s3-hundred-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-hundred-p0-w0">Later,</span> <span class="w" id="s3-hundred-p0-w1">a</span> <span class="w" id="s3-hundred-p0-w2">hundred</span> <span class="w" id="s3-hundred-p0-w3">companies</span> <span class="w" id="s3-hundred-p0-w4">rejected</span> <span class="w" id="s3-hundred-p0-w5">more</span> <span class="w" id="s3-hundred-p0-w6">than</span> <span class="w" id="s3-hundred-p0-w7">four</span> <span class="w" id="s3-hundred-p0-w8">hundred</span> <span class="w" id="s3-hundred-p0-w9">of</span> <span class="w" id="s3-hundred-p0-w10">my</span> <span class="w" id="s3-hundred-p0-w11">applications.</span></p></div>
+</div>
+<div id="s3-laptop" class="card clip" data-start="52.7917" data-duration="5.7083" data-track-index="2" data-layout-allow-overflow>
+  <div class="inner" id="s3-laptop-in"><p class="para fraunces on-dark" style="font-size: 64px;"><span class="w" id="s3-laptop-p0-w0">I</span> <span class="w" id="s3-laptop-p0-w1">wrote</span> <span class="w" id="s3-laptop-p0-w2">most</span> <span class="w" id="s3-laptop-p0-w3">of</span> <span class="w" id="s3-laptop-p0-w4">them</span> <span class="w" id="s3-laptop-p0-w5">on</span> <span class="w" id="s3-laptop-p0-w6">a</span> <span class="w" id="s3-laptop-p0-w7">laptop</span> <span class="w" id="s3-laptop-p0-w8">made</span> <span class="w" id="s3-laptop-p0-w9">in</span> <span class="w" id="s3-laptop-p0-w10">2010.</span></p></div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = 0.3333;
+// typed characters: [id, time, strike density]
+const O = [];
+for (const [id, t, o] of O) tl.set("#" + id, { opacity: o }, t);
+// the caret before the first key: [id, on, off]
+const K = [];
+for (const [id, a, b] of K) { tl.set("#" + id, { "--c": 1 }, a); tl.set("#" + id, { "--c": 0 }, b); }
+// caret after each key while typing: [id, on, off]
+const CA = [];
+for (const [id, a, b] of CA) { tl.set("#" + id, { "--c": 1 }, a); if (b !== null) tl.set("#" + id, { "--c": 0 }, b); }
+// 2 Hz blink once typing stops: [id, time, value]
+const BL = [];
+for (const [id, t, v] of BL) tl.set("#" + id, { "--c": v }, t);
+// soft ink reveal, word by word: [id, time, fade, on paper]
+const W = [["s3-applied-p0-w0",1.0,0.34,0],["s3-applied-p0-w1",1.0417,0.34,0],["s3-applied-p0-w2",1.0417,0.34,0],["s3-applied-p0-w3",1.125,0.34,0],["s3-applied-p0-w4",1.125,0.34,0],["s3-applied-p0-w5",1.2083,0.34,0],["s3-applied-p0-w6",1.2917,0.34,0],["s3-applied-p0-w7",1.375,0.34,0],["s3-applied-p0-w8",1.4167,0.34,0],["s3-applied-p0-w9",1.4583,0.34,0],["s3-applied-p0-w10",1.4583,0.34,0],["s3-applied-p1-w0",2.2917,0.34,0],["s3-applied-p1-w1",2.2917,0.34,0],["s3-applied-p2-w0",2.9167,0.34,0],["s3-applied-p2-w1",2.9583,0.34,0],["s3-applied-p3-w0",3.5833,0.34,0],["s3-applied-p3-w1",3.625,0.34,0],["s3-slow-p0-w0",10.9583,0.34,0],["s3-slow-p0-w1",11.0,0.34,0],["s3-slow-p0-w2",11.0417,0.34,0],["s3-slow-p0-w3",11.0417,0.34,0],["s3-slow-p0-w4",11.0833,0.34,0],["s3-slow-p1-w0",11.7917,0.34,0],["s3-slow-p1-w1",11.8333,0.34,0],["s3-slow-p1-w2",11.875,0.34,0],["s3-slow-p1-w3",11.9583,0.34,0],["s3-slow-p1-w4",12.0,0.34,0],["s3-slow-p1-w5",12.0,0.34,0],["s3-slow-p1-w6",12.0833,0.34,0],["s3-slow-p1-w7",12.0833,0.34,0],["s3-slow-p1-w8",12.125,0.34,0],["s3-slow-p1-w9",12.1667,0.34,0],["s3-slow-p1-w10",12.25,0.34,0],["s3-stranger-p0-w0",19.5417,0.34,0],["s3-stranger-p0-w1",19.5417,0.34,0],["s3-stranger-p0-w2",19.625,0.34,0],["s3-stranger-p0-w3",19.7083,0.34,0],["s3-stranger-p0-w4",19.75,0.34,0],["s3-stranger-p0-w5",19.7917,0.34,0],["s3-stranger-p1-w0",20.625,0.34,0],["s3-stranger-p1-w1",20.625,0.34,0],["s3-stranger-p1-w2",20.6667,0.34,0],["s3-stranger-p1-w3",20.75,0.34,0],["s3-stranger-p1-w4",20.7917,0.34,0],["s3-stranger-p1-w5",20.8333,0.34,0],["s3-stranger-p1-w6",20.8333,0.34,0],["s3-stranger-p1-w7",20.875,0.34,0],["s3-stranger-p1-w8",20.9167,0.34,0],["s3-stranger-p1-w9",21.0,0.34,0],["s3-stranger-p1-w10",21.0417,0.34,0],["s3-stranger-p1-w11",21.125,0.34,0],["s3-stranger-p1-w12",21.1667,0.34,0],["s3-stranger-p1-w13",21.2083,0.34,0],["s3-again1-p0-w0",29.4583,0.34,0],["s3-again1-p0-w1",29.5,0.34,0],["s3-again1-p0-w2",29.5417,0.34,0],["s3-again1-p0-w3",29.5833,0.34,0],["s3-again1-p1-w0",30.2917,0.34,0],["s3-again1-p1-w1",30.3333,0.34,0],["s3-again1-p1-w2",30.375,0.34,0],["s3-again2-p0-w0",34.375,0.34,0],["s3-again2-p0-w1",34.4167,0.34,0],["s3-again2-p1-w0",35.0833,0.34,0],["s3-again2-p1-w1",35.125,0.34,0],["s3-again2-p1-w2",35.1667,0.34,0],["s3-ok-p0-w0",38.5833,0.34,0],["s3-rejections-p0-w0",42.4167,0.34,0],["s3-rejections-p0-w1",42.4583,0.34,0],["s3-rejections-p0-w2",42.5417,0.34,0],["s3-rejections-p0-w3",42.625,0.34,0],["s3-hundred-p0-w0",46.375,0.34,0],["s3-hundred-p0-w1",46.4583,0.34,0],["s3-hundred-p0-w2",46.4583,0.34,0],["s3-hundred-p0-w3",46.5417,0.34,0],["s3-hundred-p0-w4",46.625,0.34,0],["s3-hundred-p0-w5",46.7083,0.34,0],["s3-hundred-p0-w6",46.75,0.34,0],["s3-hundred-p0-w7",46.7917,0.34,0],["s3-hundred-p0-w8",46.8333,0.34,0],["s3-hundred-p0-w9",46.9167,0.34,0],["s3-hundred-p0-w10",46.9583,0.34,0],["s3-hundred-p0-w11",46.9583,0.34,0],["s3-laptop-p0-w0",52.7917,0.34,0],["s3-laptop-p0-w1",52.7917,0.34,0],["s3-laptop-p0-w2",52.875,0.34,0],["s3-laptop-p0-w3",52.9167,0.34,0],["s3-laptop-p0-w4",52.9167,0.34,0],["s3-laptop-p0-w5",53.0,0.34,0],["s3-laptop-p0-w6",53.0,0.34,0],["s3-laptop-p0-w7",53.0417,0.34,0],["s3-laptop-p0-w8",53.0833,0.34,0],["s3-laptop-p0-w9",53.125,0.34,0],["s3-laptop-p0-w10",53.1667,0.34,0]];
+const glow = (p) => p ? "rgba(27,26,23," : "rgba(242,235,221,";
+for (const [id, t, f, p] of W) tl.fromTo("#" + id, { opacity: 0, textShadow: "0 0 14px " + glow(p) + "0.55)" },
+  { opacity: 1, textShadow: "0 0 0px " + glow(p) + "0)", duration: f, ease: "power2.out" }, t);
+// 8-frame dissolves out: [id, time]
+const X = [["s3-applied-in",10.4167],["s3-slow-in",19.0],["s3-stranger-in",28.9167],["s3-ok-in",41.875],["s3-rejections-in",45.8333],["s3-hundred-in",52.25],["s3-laptop-in",58.1667]];
+for (const [id, t] of X) tl.to("#" + id, { opacity: 0, duration: D, ease: "none" }, t);
+// the gourd, drawn stroke by stroke: [id, start, duration]
+const G = [];
+for (const [id, t, d] of G) {
+  const el = document.getElementById(id); const len = el.getTotalLength();
+  el.style.strokeDasharray = len + " " + len;
+  // round caps would show a dot where an undrawn stroke starts: keep it hidden until its turn
+  tl.set(el, { opacity: 0 }, 0); tl.set(el, { opacity: 1 }, t);
+  tl.fromTo(el, { strokeDashoffset: len }, { strokeDashoffset: 0, duration: d, ease: "sine.inOut" }, t);
+}
+window.__timelines["s3"] = tl;
+</script>
+</template>
+</body>
+</html>

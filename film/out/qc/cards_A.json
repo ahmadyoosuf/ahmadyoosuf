@@ -1,0 +1,1267 @@
+[
+ {
+  "id": "s0a-letter",
+  "section": "s0a",
+  "t": 3.833,
+  "box": [
+   99,
+   442,
+   1710,
+   579
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-000.png"
+ },
+ {
+  "id": "s0a-2022",
+  "section": "s0a",
+  "t": 10.375,
+  "box": [
+   98,
+   443,
+   1159,
+   584
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-001.png"
+ },
+ {
+  "id": "s0a-proud",
+  "section": "s0a",
+  "t": 17.375,
+  "box": [
+   99,
+   482,
+   625,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-002.png"
+ },
+ {
+  "id": "s0a-title",
+  "section": "s0a",
+  "t": 21.625,
+  "box": [
+   102,
+   480,
+   600,
+   533
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-003.png"
+ },
+ {
+  "id": "s1-ahmad",
+  "section": "s1",
+  "t": 27.458,
+  "box": [
+   98,
+   442,
+   1160,
+   569
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-004.png"
+ },
+ {
+  "id": "s1-family",
+  "section": "s1",
+  "t": 35.0,
+  "box": [
+   97,
+   430,
+   1650,
+   596
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-005.png"
+ },
+ {
+  "id": "s1-first",
+  "section": "s1",
+  "t": 42.583,
+  "box": [
+   99,
+   481,
+   998,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-006.png"
+ },
+ {
+  "id": "s1-father",
+  "section": "s1",
+  "t": 49.25,
+  "box": [
+   97,
+   430,
+   1259,
+   582
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-007.png"
+ },
+ {
+  "id": "s1-world",
+  "section": "s1",
+  "t": 56.375,
+  "box": [
+   97,
+   443,
+   1291,
+   583
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-008.png"
+ },
+ {
+  "id": "s1-dream",
+  "section": "s1",
+  "t": 64.292,
+  "box": [
+   99,
+   481,
+   1761,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-009.png"
+ },
+ {
+  "id": "s1-reason",
+  "section": "s1",
+  "t": 72.708,
+  "box": [
+   98,
+   443,
+   1359,
+   584
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-010.png"
+ },
+ {
+  "id": "s2-oct",
+  "section": "s2",
+  "t": 83.292,
+  "box": [
+   97,
+   431,
+   843,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-011.png"
+ },
+ {
+  "id": "s2-gaja",
+  "section": "s2",
+  "t": 89.083,
+  "box": [
+   98,
+   431,
+   694,
+   596
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-012.png"
+ },
+ {
+  "id": "s2-roof",
+  "section": "s2",
+  "t": 93.333,
+  "box": [
+   98,
+   482,
+   1396,
+   529
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-013.png"
+ },
+ {
+  "id": "s2-dec",
+  "section": "s2",
+  "t": 101.417,
+  "box": [
+   97,
+   431,
+   1637,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-014.png"
+ },
+ {
+  "id": "s2-july",
+  "section": "s2",
+  "t": 108.042,
+  "box": [
+   101,
+   483,
+   514,
+   539
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-015.png"
+ },
+ {
+  "id": "s2-woke",
+  "section": "s2",
+  "t": 113.333,
+  "box": [
+   99,
+   482,
+   1804,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-016.png"
+ },
+ {
+  "id": "s2-knock",
+  "section": "s2",
+  "t": 119.958,
+  "box": [
+   97,
+   482,
+   1413,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-017.png"
+ },
+ {
+  "id": "s2-over",
+  "section": "s2",
+  "t": 125.0,
+  "box": [
+   103,
+   481,
+   1123,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-018.png"
+ },
+ {
+  "id": "s2-fortythree",
+  "section": "s2",
+  "t": 129.958,
+  "box": [
+   97,
+   482,
+   815,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-019.png"
+ },
+ {
+  "id": "s2-school",
+  "section": "s2",
+  "t": 137.708,
+  "box": [
+   98,
+   443,
+   1622,
+   583
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-020.png"
+ },
+ {
+  "id": "s3-applied",
+  "section": "s3",
+  "t": 151.042,
+  "box": [
+   99,
+   430,
+   1721,
+   582
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-021.png"
+ },
+ {
+  "id": "s3-slow",
+  "section": "s3",
+  "t": 159.667,
+  "box": [
+   96,
+   427,
+   1544,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-022.png"
+ },
+ {
+  "id": "s3-stranger",
+  "section": "s3",
+  "t": 168.625,
+  "box": [
+   97,
+   443,
+   1534,
+   584
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-023.png"
+ },
+ {
+  "id": "s3-again1",
+  "section": "s3",
+  "t": 177.792,
+  "box": [
+   96,
+   430,
+   649,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-024.png"
+ },
+ {
+  "id": "s3-again2",
+  "section": "s3",
+  "t": 182.583,
+  "box": [
+   96,
+   430,
+   402,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-025.png"
+ },
+ {
+  "id": "s3-ok",
+  "section": "s3",
+  "t": 186.0,
+  "box": [
+   100,
+   475,
+   255,
+   539
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-026.png"
+ },
+ {
+  "id": "s3-rejections",
+  "section": "s3",
+  "t": 190.042,
+  "box": [
+   97,
+   482,
+   824,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-027.png"
+ },
+ {
+  "id": "s3-hundred",
+  "section": "s3",
+  "t": 194.375,
+  "box": [
+   97,
+   443,
+   1263,
+   583
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-028.png"
+ },
+ {
+  "id": "s3-laptop",
+  "section": "s3",
+  "t": 200.583,
+  "box": [
+   99,
+   482,
+   1393,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-029.png"
+ },
+ {
+  "id": "s4-did-well",
+  "section": "s4",
+  "t": 206.792,
+  "box": [
+   97,
+   443,
+   1077,
+   584
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-030.png"
+ },
+ {
+  "id": "s4-notes",
+  "section": "s4",
+  "t": 214.25,
+  "box": [
+   99,
+   482,
+   1784,
+   543
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-031.png"
+ },
+ {
+  "id": "s4-journal-1",
+  "section": "s4",
+  "t": 224.542,
+  "box": [
+   100,
+   431,
+   1405,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-032.png"
+ },
+ {
+  "id": "s4-journal-2",
+  "section": "s4",
+  "t": 234.208,
+  "box": [
+   97,
+   444,
+   1479,
+   584
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-033.png"
+ },
+ {
+  "id": "s4-eighteen",
+  "section": "s4",
+  "t": 242.542,
+  "box": [
+   97,
+   430,
+   745,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-034.png"
+ },
+ {
+  "id": "s4-saying",
+  "section": "s4",
+  "t": 247.583,
+  "box": [
+   97,
+   481,
+   860,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-035.png"
+ },
+ {
+  "id": "s4-gourd",
+  "section": "s4",
+  "t": 252.417,
+  "box": [
+   97,
+   421,
+   1350,
+   603
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-036.png"
+ },
+ {
+  "id": "s4-notes-gourd",
+  "section": "s4",
+  "t": 258.292,
+  "box": [
+   99,
+   482,
+   1383,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-037.png"
+ },
+ {
+  "id": "s5-cooking",
+  "section": "s5",
+  "t": 264.5,
+  "box": [
+   99,
+   482,
+   874,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-038.png"
+ },
+ {
+  "id": "s5-vaakku-url",
+  "section": "s5",
+  "t": 269.208,
+  "box": [
+   96,
+   479,
+   440,
+   549
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-039.png"
+ },
+ {
+  "id": "s5-vaakku",
+  "section": "s5",
+  "t": 273.625,
+  "box": [
+   96,
+   443,
+   1063,
+   579
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-040.png"
+ },
+ {
+  "id": "s5-s2xl-url",
+  "section": "s5",
+  "t": 279.583,
+  "box": [
+   98,
+   479,
+   644,
+   532
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-041.png"
+ },
+ {
+  "id": "s5-s2xl",
+  "section": "s5",
+  "t": 283.792,
+  "box": [
+   97,
+   482,
+   1641,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-042.png"
+ },
+ {
+  "id": "s5-name",
+  "section": "s5",
+  "t": 290.25,
+  "box": [
+   97,
+   430,
+   1797,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-043.png"
+ },
+ {
+  "id": "s5-photos",
+  "section": "s5",
+  "t": 297.5,
+  "box": [
+   99,
+   482,
+   1414,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-044.png"
+ },
+ {
+  "id": "s6-think",
+  "section": "s6",
+  "t": 305.042,
+  "box": [
+   97,
+   430,
+   1296,
+   597
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-045.png"
+ },
+ {
+  "id": "s6-like-me",
+  "section": "s6",
+  "t": 311.958,
+  "box": [
+   97,
+   481,
+   1321,
+   539
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-046.png"
+ },
+ {
+  "id": "s6-say",
+  "section": "s6",
+  "t": 318.583,
+  "box": [
+   98,
+   429,
+   982,
+   596
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-047.png"
+ },
+ {
+  "id": "s7-still",
+  "section": "s7",
+  "t": 324.583,
+  "box": [
+   99,
+   481,
+   760,
+   529
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-048.png"
+ },
+ {
+  "id": "s7-anymore",
+  "section": "s7",
+  "t": 330.458,
+  "box": [
+   99,
+   429,
+   840,
+   596
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-049.png"
+ },
+ {
+  "id": "s7-chennai",
+  "section": "s7",
+  "t": 336.292,
+  "box": [
+   99,
+   481,
+   1383,
+   544
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-050.png"
+ },
+ {
+  "id": "s7-dms",
+  "section": "s7",
+  "t": 341.458,
+  "box": [
+   97,
+   443,
+   1267,
+   583
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-051.png"
+ },
+ {
+  "id": "s7-end",
+  "section": "s7",
+  "t": 350.042,
+  "box": [
+   99,
+   483,
+   637,
+   548
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-052.png"
+ },
+ {
+  "id": "s7-credits",
+  "section": "s7",
+  "t": 355.75,
+  "box": [
+   97,
+   447,
+   1663,
+   579
+  ],
+  "inside_safe": true,
+  "rendered_lines": 2,
+  "predicted_lines": 2,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-053.png"
+ },
+ {
+  "id": "s7-father",
+  "section": "s7",
+  "t": 364.333,
+  "box": [
+   99,
+   484,
+   1344,
+   542
+  ],
+  "inside_safe": true,
+  "rendered_lines": 1,
+  "predicted_lines": 1,
+  "ok": true,
+  "safe": [
+   96,
+   54,
+   1824,
+   1026
+  ],
+  "source": "/out/77minutes_1080p.mp4",
+  "frame": "/home/user/ahmadyoosuf/film/seventy-seven-minutes/build/qc/cards-mp4-A/frame-054.png"
+ }
+]

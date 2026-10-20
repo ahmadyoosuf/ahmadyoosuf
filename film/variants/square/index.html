@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1080" />
+<title>77 MINUTES · square, first 60 s</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+html, body { margin: 0; width: 1080px; height: 1080px; overflow: hidden; background: #000; }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+#root > div[data-composition-src] { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="square" data-start="0" data-width="1080" data-height="1080" data-fps="24" data-duration="60.0000">
+  <div id="el-s0a" data-composition-id="s0a" data-composition-src="compositions/s0a.html" data-start="0.0000" data-duration="28.3333" data-track-index="1" data-width="1080" data-height="1080"></div>
+  <div id="el-s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="28.7500" data-duration="30.7500" data-track-index="2" data-width="1080" data-height="1080"></div>
+  <audio id="square-mix" src="assets/audio/mix_square.wav" data-start="0" data-duration="60.0000" data-track-index="10" data-volume="1"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#el-s1", { opacity: 0 }, { opacity: 1, duration: 0.3333, ease: "none" }, 28.7500);
+tl.to("#el-s1", { opacity: 0, duration: 0.3333, ease: "none" }, 59.1667);
+window.__timelines["square"] = tl;
+</script>
+</body>
+</html>
